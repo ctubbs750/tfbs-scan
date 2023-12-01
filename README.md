@@ -1,0 +1,1 @@
+--conda-prefix ~/snakemake_condas
