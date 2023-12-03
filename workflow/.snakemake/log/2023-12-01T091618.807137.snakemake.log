@@ -1,0 +1,99 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                           count
+--------------------------  -------
+all                               1
+scan_calc_probabilities           2
+scan_calculate_pwm                2
+scan_process_probabilities        2
+total                             7
+
+Select jobs to execute...
+
+[Fri Dec  1 09:16:23 2023]
+rule scan_calculate_pwm:
+    input: ../resources/data/jaspar/MA0007.3.jaspar
+    output: ../results/jaspar/MA0007.3/MA0007.3-pwm.txt
+    jobid: 7
+    reason: Missing output files: ../results/jaspar/MA0007.3/MA0007.3-pwm.txt
+    wildcards: PROFILE=MA0007.3
+    resources: tmpdir=/tmp
+
+[Fri Dec  1 09:16:23 2023]
+rule scan_calculate_pwm:
+    input: ../resources/data/jaspar/MA0139.1.jaspar
+    output: ../results/jaspar/MA0139.1/MA0139.1-pwm.txt
+    jobid: 3
+    reason: Missing output files: ../results/jaspar/MA0139.1/MA0139.1-pwm.txt
+    wildcards: PROFILE=MA0139.1
+    resources: tmpdir=/tmp
+
+[Fri Dec  1 09:16:30 2023]
+Finished job 3.
+1 of 7 steps (14%) done
+Select jobs to execute...
+
+[Fri Dec  1 09:16:30 2023]
+Job 2: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: ../results/jaspar/MA0139.1/MA0139.1-pvals.raw; Input files updated by another job: ../results/jaspar/MA0139.1/MA0139.1-pwm.txt
+
+[Fri Dec  1 09:16:30 2023]
+Finished job 7.
+2 of 7 steps (29%) done
+Select jobs to execute...
+
+[Fri Dec  1 09:16:30 2023]
+Job 6: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: ../results/jaspar/MA0007.3/MA0007.3-pvals.raw; Input files updated by another job: ../results/jaspar/MA0007.3/MA0007.3-pwm.txt
+
+[Fri Dec  1 09:16:30 2023]
+Finished job 2.
+3 of 7 steps (43%) done
+Select jobs to execute...
+
+[Fri Dec  1 09:16:30 2023]
+Job 1: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: ../results/jaspar/MA0139.1/MA0139.1-coeff.txt, ../results/jaspar/MA0139.1/MA0139.1-pvals.txt; Input files updated by another job: ../results/jaspar/MA0139.1/MA0139.1-pvals.raw; Code has changed since last execution
+
+[Fri Dec  1 09:16:30 2023]
+Finished job 6.
+4 of 7 steps (57%) done
+Select jobs to execute...
+
+[Fri Dec  1 09:16:30 2023]
+Job 5: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: ../results/jaspar/MA0007.3/MA0007.3-pvals.txt, ../results/jaspar/MA0007.3/MA0007.3-coeff.txt; Input files updated by another job: ../results/jaspar/MA0007.3/MA0007.3-pvals.raw; Code has changed since last execution
+
+[Fri Dec  1 09:16:30 2023]
+Finished job 1.
+5 of 7 steps (71%) done
+[Fri Dec  1 09:16:30 2023]
+Finished job 5.
+6 of 7 steps (86%) done
+Select jobs to execute...
+
+[Fri Dec  1 09:16:30 2023]
+localrule all:
+    input: ../results/jaspar/MA0139.1/MA0139.1-pvals.txt, ../results/jaspar/MA0007.3/MA0007.3-pvals.txt, ../results/jaspar/MA0139.1/MA0139.1-coeff.txt, ../results/jaspar/MA0007.3/MA0007.3-coeff.txt
+    jobid: 0
+    reason: Input files updated by another job: ../results/jaspar/MA0139.1/MA0139.1-coeff.txt, ../results/jaspar/MA0007.3/MA0007.3-pvals.txt, ../results/jaspar/MA0139.1/MA0139.1-pvals.txt, ../results/jaspar/MA0007.3/MA0007.3-coeff.txt
+    resources: tmpdir=/tmp
+
+[Fri Dec  1 09:16:30 2023]
+Finished job 0.
+7 of 7 steps (100%) done
+Complete log: .snakemake/log/2023-12-01T091618.807137.snakemake.log

@@ -1,0 +1,138 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                           count
+--------------------------  -------
+all                               1
+main_calc_probabilities           2
+main_calculate_pwm                2
+main_decompress_genome            1
+main_process_probabilities        2
+main_scan_genome                  2
+total                            10
+
+Select jobs to execute...
+
+[Sat Dec  2 12:53:10 2023]
+Job 6: 
+        - d
+        
+Reason: Missing output files: ../resources/data/genome/hg38/hg38.fa
+
+
+[Sat Dec  2 12:53:10 2023]
+rule main_calculate_pwm:
+    input: ../resources/data/jaspar/MA0139.1.jaspar
+    output: ../results/jaspar/MA0139.1/MA0139.1-pwm.txt
+    jobid: 2
+    reason: Software environment definition has changed since last execution
+    wildcards: PROFILE=MA0139.1
+    resources: tmpdir=/tmp
+
+[Sat Dec  2 12:53:10 2023]
+rule main_calculate_pwm:
+    input: ../resources/data/jaspar/MA0007.3.jaspar
+    output: ../results/jaspar/MA0007.3/MA0007.3-pwm.txt
+    jobid: 9
+    reason: Software environment definition has changed since last execution
+    wildcards: PROFILE=MA0007.3
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+[Sat Dec  2 12:53:17 2023]
+Finished job 9.
+1 of 10 steps (10%) done
+Select jobs to execute...
+
+[Sat Dec  2 12:53:17 2023]
+Job 12: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: ../results/jaspar/MA0007.3/MA0007.3-pvals.raw; Input files updated by another job: ../results/jaspar/MA0007.3/MA0007.3-pwm.txt
+
+[Sat Dec  2 12:53:17 2023]
+Finished job 2.
+2 of 10 steps (20%) done
+Select jobs to execute...
+
+[Sat Dec  2 12:53:17 2023]
+Job 5: 
+        - Generates pval distribution for given PWM.
+        
+Reason: Missing output files: ../results/jaspar/MA0139.1/MA0139.1-pvals.raw; Input files updated by another job: ../results/jaspar/MA0139.1/MA0139.1-pwm.txt
+
+[Sat Dec  2 12:53:34 2023]
+Finished job 5.
+3 of 10 steps (30%) done
+Select jobs to execute...
+
+[Sat Dec  2 12:53:34 2023]
+Job 4: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: ../results/jaspar/MA0139.1/MA0139.1-pvals.raw
+
+[Sat Dec  2 12:53:34 2023]
+Finished job 12.
+4 of 10 steps (40%) done
+Select jobs to execute...
+
+[Sat Dec  2 12:53:34 2023]
+Job 11: 
+        - Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: ../results/jaspar/MA0007.3/MA0007.3-pvals.raw
+
+[Sat Dec  2 12:53:34 2023]
+Finished job 4.
+5 of 10 steps (50%) done
+Removing temporary output ../results/jaspar/MA0139.1/MA0139.1-pvals.raw.
+[Sat Dec  2 12:53:34 2023]
+Finished job 11.
+6 of 10 steps (60%) done
+Removing temporary output ../results/jaspar/MA0007.3/MA0007.3-pvals.raw.
+[Sat Dec  2 13:40:53 2023]
+Finished job 6.
+7 of 10 steps (70%) done
+Select jobs to execute...
+
+[Sat Dec  2 13:40:53 2023]
+Job 1: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: ../results/jaspar/MA0139.1/MA0139.1-sites.bed; Input files updated by another job: ../results/jaspar/MA0139.1/MA0139.1-pwm.txt, ../results/jaspar/MA0139.1/MA0139.1-coeff.txt, ../resources/data/genome/hg38/hg38.fa
+
+
+[Sat Dec  2 13:40:53 2023]
+Job 8: 
+        - Scans rerference genome for matches againts input motif.
+        
+Reason: Missing output files: ../results/jaspar/MA0007.3/MA0007.3-sites.bed; Input files updated by another job: ../resources/data/genome/hg38/hg38.fa, ../results/jaspar/MA0007.3/MA0007.3-pwm.txt, ../results/jaspar/MA0007.3/MA0007.3-coeff.txt
+
+[Sat Dec  2 14:57:48 2023]
+Finished job 8.
+8 of 10 steps (80%) done
+[Sat Dec  2 14:57:48 2023]
+Finished job 1.
+9 of 10 steps (90%) done
+Select jobs to execute...
+
+[Sat Dec  2 14:57:48 2023]
+localrule all:
+    input: ../results/jaspar/MA0139.1/MA0139.1-sites.bed, ../results/jaspar/MA0007.3/MA0007.3-sites.bed
+    jobid: 0
+    reason: Input files updated by another job: ../results/jaspar/MA0139.1/MA0139.1-sites.bed, ../results/jaspar/MA0007.3/MA0007.3-sites.bed
+    resources: tmpdir=/tmp
+
+[Sat Dec  2 14:57:48 2023]
+Finished job 0.
+10 of 10 steps (100%) done
+Complete log: .snakemake/log/2023-12-02T125301.692405.snakemake.log

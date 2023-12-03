@@ -1,0 +1,14 @@
+PWMSCAN:
+  MATRIX_PROB: "../resources/software/PWMScan/matrix_prob"
+  MATRIX_SCAN: "../resources/software/PWMScan/matrix_scan"
+GENOMES:
+  - "hg38"
+TARGETS:
+  - MA0139.1 # CTCf
+  - MA0007.3 # FOXA1
+INSTALL_DIR: "../resources/data/jaspar"
+PROCESS_DIR: "../results/jaspar"
+GENOME:
+  INSTALL_DIR: ../resources/data/genome
+  GENOME_BUILDS:
+    - hg38

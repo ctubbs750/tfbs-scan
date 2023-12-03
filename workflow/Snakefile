@@ -1,0 +1,43 @@
+"""Workflow for generating matches to a set of input motif against a given reference genome"""
+
+from snakemake.utils import min_version
+
+min_version("7.0")
+
+
+configfile: "../config/config.yaml"
+
+
+# Define modules
+module genome:
+    snakefile:
+        "https://raw.githubusercontent.com/ctubbs750/genome/main/workflow/Snakefile"
+    config:
+        config["GENOME"]
+    prefix:
+        "../resources/data/genome"
+
+
+module main:
+    snakefile:
+        "rules/main.smk"
+    config:
+        config
+
+
+# Import modules
+use rule * from genome as genome_*
+
+
+use rule * from main as main_*
+
+
+###
+# Rules
+###
+
+
+rule all:
+    input:
+        rules.main_all.input,
+    default_target: True

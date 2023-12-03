@@ -1,0 +1,62 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                           count
+--------------------------  -------
+all                               1
+genome_install_genome             1
+scan_calc_probabilities           2
+scan_calculate_pwm                2
+scan_download_jaspar              1
+scan_process_probabilities        2
+scan_scan_genome                  2
+total                            11
+
+Select jobs to execute...
+
+[Thu Nov 30 11:26:44 2023]
+Job 9: 
+        - Downloads motif PCM from the Jaspar database.
+        
+Reason: Forced execution
+
+
+[Thu Nov 30 11:26:44 2023]
+Job 6: 
+        Installs target genome(s) under install dir
+        - Regex to filter down to main chromosomes
+        - Default provider set to UCSC
+        
+Reason: Missing output files: ../resources/data/genome/hg38/hg38.fa.gz
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/ada2ba84c8bd6f04984fd5f5fda51637_
+
+[Thu Nov 30 11:26:44 2023]
+rule scan_calculate_pwm:
+    input: ../resources/data/pwmscan/../results/MA0139.1/MA0139.1-jaspar.txt
+    output: ../results/../results/MA0139.1/MA0139.1/../results/MA0139.1/MA0139.1-pwm.txt
+    jobid: 2
+    reason: Missing output files: ../results/../results/MA0139.1/MA0139.1/../results/MA0139.1/MA0139.1-pwm.txt
+    wildcards: PROFILE=../results/MA0139.1/MA0139.1
+    resources: tmpdir=/tmp
+
+[Thu Nov 30 11:26:47 2023]
+Finished job 9.
+1 of 11 steps (9%) done
+Terminating processes on user request, this might take some time.
+[Thu Nov 30 14:58:26 2023]
+Error in rule genome_install_genome:
+    jobid: 6
+    output: ../resources/data/genome/hg38/hg38.fa.gz
+    conda-env: /home/tubbsca/snakemake_condas/ada2ba84c8bd6f04984fd5f5fda51637_
+    shell:
+        
+        genomepy plugin enable blacklist &&
+        genomepy install hg38         --provider "UCSC"         --genomes_dir ../resources/data/genome         --bgzip         --threads 4         --regex "chr[0-9XY]+$"
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2023-11-30T112638.418186.snakemake.log

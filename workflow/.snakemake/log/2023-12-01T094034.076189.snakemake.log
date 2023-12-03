@@ -1,0 +1,4 @@
+TypeError in file /gpfs52/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/pwm-scan/workflow/rules/scan.smk, line 39:
+set_wildcard_constraints() takes 1 positional argument but 2 were given
+  File "/gpfs52/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/pwm-scan/workflow/Snakefile", line 29, in <module>
+  File "/gpfs52/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/pwm-scan/workflow/rules/scan.smk", line 39, in <module>
