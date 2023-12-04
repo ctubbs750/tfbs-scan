@@ -64,7 +64,7 @@ rule calc_probabilities:
     output:
         temp(PROCESS_DIR + "/{PROFILE}/{PROFILE}-pvals.raw"),
     params:
-        matrix_prob=MATRIX_PROB,
+        matrix_prob=workflow.source_path(MATRIX_PROB),
     shell:
         """
         {params.matrix_prob} {input} > {output}
@@ -120,7 +120,7 @@ rule scan_genome:
     output:
         PROCESS_DIR + "/{PROFILE}/{PROFILE}-sites.bed",
     params:
-        matrix_scan=MATRIX_SCAN,
+        matrix_scan=workflow.source_path(MATRIX_SCAN),
     shell:
         """
         {params.matrix_scan} -m {input.matrix} -c $(cat {input.cutoff}) {input.genome} > {output}
