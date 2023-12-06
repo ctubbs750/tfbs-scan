@@ -1,6 +1,6 @@
 PWMSCAN:
-  MATRIX_PROB: "../resources/software/PWMScan/matrix_prob"
-  MATRIX_SCAN: "../resources/software/PWMScan/matrix_scan"
+  MATRIX_PROB: "resources/software/PWMScan/matrix_prob"
+  MATRIX_SCAN: "resources/software/PWMScan/matrix_scan"
 GENOMES:
   - "hg38"
 TARGETS:
