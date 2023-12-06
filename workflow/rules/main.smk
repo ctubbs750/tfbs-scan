@@ -27,6 +27,24 @@ rule all:
         expand(PROCESS_DIR + "/{PROFILE}/{PROFILE}-sites.fa.gz", PROFILE=PROFILES),
 
 
+rule compile_pwmscan:
+    message:
+        """
+        c99 mode
+        """
+    input:
+        prob=f"{MATRIX_PROB}.c",
+        scan=f"{MATRIX_SCAN}.c",
+    output:
+        compiled_prob=MATRIX_PROB,
+        compiled_scan=MATRIX_SCAN,
+    shell:
+        """
+        gcc -std=c99 -o matrix_prob {input.prob} &&
+        gcc -std=c99 -o matrix_scan {input.scan}
+        """
+
+
 rule download_jaspar:
     message:
         """
@@ -64,7 +82,7 @@ rule calc_probabilities:
     output:
         temp(PROCESS_DIR + "/{PROFILE}/{PROFILE}-pvals.raw"),
     params:
-        matrix_prob=workflow.source_path(MATRIX_PROB),
+        matrix_prob=rules.compile_pwmscan.output.compiled_prob,
     shell:
         """
         {params.matrix_prob} {input} > {output}
@@ -120,7 +138,7 @@ rule scan_genome:
     output:
         PROCESS_DIR + "/{PROFILE}/{PROFILE}-sites.bed",
     params:
-        matrix_scan=workflow.source_path(MATRIX_SCAN),
+        matrix_scan=rules.compile_pwmscan.output.compiled_scan,
     shell:
         """
         {params.matrix_scan} -m {input.matrix} -c $(cat {input.cutoff}) {input.genome} > {output}
