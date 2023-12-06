@@ -33,8 +33,8 @@ rule compile_pwmscan:
         c99 mode
         """
     input:
-        prob=f"{MATRIX_PROB}.c",
-        scan=f"{MATRIX_SCAN}.c",
+        prob=workflow.source_path(f"{MATRIX_PROB}.c"),
+        scan=workflow.source_path(f"{MATRIX_SCAN}.c"),
     output:
         compiled_prob=MATRIX_PROB,
         compiled_scan=MATRIX_SCAN,
