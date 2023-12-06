@@ -79,13 +79,12 @@ rule calc_probabilities:
         """
     input:
         rules.calculate_pwm.output,
+        matrix_prob=rules.compile_pwmscan.output.compiled_prob,
     output:
         temp(PROCESS_DIR + "/{PROFILE}/{PROFILE}-pvals.raw"),
-    params:
-        matrix_prob=rules.compile_pwmscan.output.compiled_prob,
     shell:
         """
-        {params.matrix_prob} {input} > {output}
+        {input.matrix_prob} {input} > {output}
         """
 
 
@@ -135,13 +134,12 @@ rule scan_genome:
         matrix=rules.calculate_pwm.output,
         cutoff=rules.process_probabilities.output.coeff,
         genome=rules.decompress_genome.output,
+        matrix_scan=rules.compile_pwmscan.output.compiled_scan,
     output:
         PROCESS_DIR + "/{PROFILE}/{PROFILE}-sites.bed",
-    params:
-        matrix_scan=rules.compile_pwmscan.output.compiled_scan,
     shell:
         """
-        {params.matrix_scan} -m {input.matrix} -c $(cat {input.cutoff}) {input.genome} > {output}
+        {input.matrix_scan} -m {input.matrix} -c $(cat {input.cutoff}) {input.genome} > {output}
         """
 
 
