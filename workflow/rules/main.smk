@@ -36,8 +36,8 @@ rule compile_pwmscan:
         prob=workflow.source_path(f"../{MATRIX_PROB}.c"),
         scan=workflow.source_path(f"../{MATRIX_SCAN}.c"),
     output:
-        compiled_prob=f"../{MATRIX_PROB}",
-        compiled_scan=f"../{MATRIX_SCAN}",
+        compiled_prob=f"{MATRIX_PROB}",
+        compiled_scan=f"{MATRIX_SCAN}",
     shell:
         """
         gcc -std=c99 -o {output.compiled_prob} {input.prob} &&
