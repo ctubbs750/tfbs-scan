@@ -40,8 +40,8 @@ rule compile_pwmscan:
         compiled_scan=f"../{MATRIX_SCAN}",
     shell:
         """
-        gcc -std=c99 -o {output.matrix_prob} {input.prob} &&
-        gcc -std=c99 -o {output.matrix_scan} {input.scan}
+        gcc -std=c99 -o {output.compiled_prob} {input.prob} &&
+        gcc -std=c99 -o {output.compiled_scan} {input.scan}
         """
 
 
