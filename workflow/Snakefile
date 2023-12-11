@@ -13,7 +13,7 @@ module genome:
     snakefile:
         "https://raw.githubusercontent.com/ctubbs750/genome/main/workflow/Snakefile"
     config:
-        config["GENOME"]
+        config
     prefix:
         "../resources/data/genome"
 
