@@ -41,8 +41,8 @@ rule compile_pwmscan:
         compiled_scan=INSTALL_DIR + "/software/PWMScan/matrix_scan",
     shell:
         """
-        gcc -std=c99 -o output.{compiled_prob} {input.prob} &&
-        gcc -std=c99 -o output.{compiled_scan} {input.scan}
+        gcc -std=c99 -o {output.compiled_prob} {input.prob} &&
+        gcc -std=c99 -o {output.compiled_scan} {input.scan}
         """
 
 
