@@ -34,8 +34,8 @@ rule compile_pwmscan:
         c99 mode
         """
     input:
-        prob=workflow.source_path(MATRIX_PROB),
-        scan=workflow.source_path(MATRIX_SCAN),
+        prob=workflow.source_path(f"../../{MATRIX_PROB}"),
+        scan=workflow.source_path(f"../../{MATRIX_SCAN}"),
     output:
         compiled_prob=INSTALL_DIR + "/software/PWMScan/matrix_prob",
         compiled_scan=INSTALL_DIR + "/software/PWMScan/matrix_scan",
