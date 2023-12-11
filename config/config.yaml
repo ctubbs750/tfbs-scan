@@ -1,14 +1,23 @@
-PWMSCAN:
-  MATRIX_PROB: "resources/software/PWMScan/matrix_prob"
-  MATRIX_SCAN: "resources/software/PWMScan/matrix_scan"
-GENOMES:
-  - "hg38"
-TARGETS:
-  - MA0139.1 # CTCf
-  - MA0007.3 # FOXA1
-INSTALL_DIR: "../resources/data/jaspar"
-PROCESS_DIR: "../results/jaspar"
+# pwm-scan module parameters
+PWM-SCAN:
+  # PWMScan software
+  MATRIX_PROB: resources/software/PWMScan/matrix_prob.c
+  MATRIX_SCAN: resources/software/PWMScan/matrix_scan.c
+  # Target JASPAR profiles to scan against
+  TARGETS:
+    - MA0139.1 # CTCf
+    - MA0007.3 # FOXA1
+  # Insallation and processing directories
+  INSTALL_DIR: resources
+  PROCESS_DIR: results/pwmscan
+
+# Genome module parameters
 GENOME:
-  INSTALL_DIR: ../resources/data/genome
-  GENOME_BUILDS:
-    - hg38
+  # Genome build
+  ASSEMBLY: hg38
+  # Genome host
+  PROVIDER: UCSC
+  # Regex filtering - filter FASTA to main chromosomes
+  FILTER: chr[0-9XY]+$
+  # Target installation directory
+  OUTDIR: resources/data/genome

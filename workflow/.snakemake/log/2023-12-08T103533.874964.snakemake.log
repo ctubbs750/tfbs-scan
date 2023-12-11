@@ -1,0 +1,5 @@
+WorkflowError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/pwm-scan/workflow/rules/main.smk, line 36:
+Failed to open source file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/pwm-scan/workflow/rules/../resources/software/PWMScan/matrix_prob.c
+FileNotFoundError: [Errno 2] No such file or directory: '/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/pwm-scan/workflow/rules/../resources/software/PWMScan/matrix_prob.c'
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/pwm-scan/workflow/Snakefile", line 32, in <module>
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/pwm-scan/workflow/rules/main.smk", line 36, in <module>

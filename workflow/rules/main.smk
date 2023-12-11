@@ -5,15 +5,16 @@ from pathlib import Path
 from pandas import read_csv, merge
 
 # I/O
-INSTALL_DIR = config["INSTALL_DIR"]
-PROCESS_DIR = config["PROCESS_DIR"]
+INSTALL_DIR = config["PWM-SCAN"]["INSTALL_DIR"]
+PROCESS_DIR = config["PWM-SCAN"]["PROCESS_DIR"]
 
 # Parameters
-PROFILES = config["TARGETS"]
+PROFILES = config["PWM-SCAN"]["TARGETS"]
+ASSEMBLY = config["GENOME"]["ASSEMBLY"]
 
 # Software
-MATRIX_PROB = config["PWMSCAN"]["MATRIX_PROB"]
-MATRIX_SCAN = config["PWMSCAN"]["MATRIX_SCAN"]
+MATRIX_PROB = config["PWM-SCAN"]["MATRIX_PROB"]
+MATRIX_SCAN = config["PWM-SCAN"]["MATRIX_SCAN"]
 
 
 # WC constraints - JASPAR matrix format
@@ -33,15 +34,15 @@ rule compile_pwmscan:
         c99 mode
         """
     input:
-        prob=workflow.source_path(f"../{MATRIX_PROB}.c"),
-        scan=workflow.source_path(f"../{MATRIX_SCAN}.c"),
+        prob=workflow.source_path(MATRIX_PROB),
+        scan=workflow.source_path(MATRIX_SCAN),
     output:
-        compiled_prob=MATRIX_PROB,
-        compiled_scan=MATRIX_SCAN,
+        compiled_prob=INSTALL_DIR + "/software/PWMScan/matrix_prob",
+        compiled_scan=INSTALL_DIR + "/software/PWMScan/matrix_scan",
     shell:
         """
-        gcc -std=c99 -o matrix_prob {input.prob} &&
-        gcc -std=c99 -o matrix_scan {input.scan}
+        gcc -std=c99 -o output.{compiled_prob} {input.prob} &&
+        gcc -std=c99 -o output.{compiled_scan} {input.scan}
         """
 
 
@@ -51,7 +52,7 @@ rule download_jaspar:
         - Downloads motif PCM from the Jaspar database.
         """
     output:
-        INSTALL_DIR + "/{PROFILE}.jaspar",
+        INSTALL_DIR + "/data/jaspar/{PROFILE}.jaspar",
     params:
         target="https://jaspar.elixir.no/api/v1/matrix/{PROFILE}/?format=jaspar",
     shell:
@@ -116,9 +117,9 @@ rule decompress_genome:
         - d
         """
     input:
-        "../resources/data/genome/hg38/hg38.fa.gz",
+        f"../resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.fa.gz",
     output:
-        "../resources/data/genome/hg38/hg38.fa",
+        f"../resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.fa",
     shell:
         """
         gunzip {input}
