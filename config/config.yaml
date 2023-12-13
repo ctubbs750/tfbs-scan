@@ -8,8 +8,8 @@ PWM-SCAN:
     - MA0139.1 # CTCf
     - MA0007.3 # FOXA1
   # Insallation and processing directories
-  INSTALL_DIR: ../resources
-  PROCESS_DIR: ../results/pwmscan
+  INSTALL_DIR: resources
+  PROCESS_DIR: results/pwmscan
 
 # Genome module parameters
 GENOME:
@@ -20,4 +20,4 @@ GENOME:
   # Regex filtering - filter FASTA to main chromosomes
   FILTER: chr[0-9XY]+$
   # Target installation directory
-  OUTDIR: ../resources/data/genome
+  OUTDIR: resources/data/genome
