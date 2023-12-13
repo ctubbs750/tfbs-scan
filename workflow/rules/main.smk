@@ -150,7 +150,7 @@ rule bed2fasta:
         - Note -s, keep strand information correct. Reports rev comp for neg seqs.
         """
     conda:
-        "envs/pwmscan.yaml"
+        "../envs/pwmscan.yaml"
     input:
         genome=rules.decompress_genome.output,
         sites=rules.scan_genome.output,
