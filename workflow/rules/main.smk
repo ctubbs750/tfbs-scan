@@ -107,7 +107,7 @@ rule process_probabilities:
         """
         set +o pipefail
         sed 's/%//g' {input} | sort -k1n > {output.pvals}
-        awk '{{if($2 < {params.pthresh} && $3>={params.rthresh}) print $1 break}}' {output.pvals} > {output.coeff}
+        awk '{{if($2 < {params.pthresh} && $3>={params.rthresh}) print $1}}' {output.pvals} | head -n1 > {output.coeff}
         """
 
 
