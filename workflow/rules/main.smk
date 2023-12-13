@@ -70,7 +70,7 @@ rule calculate_pwm:
     conda:
         "genome"
     script:
-        "../scripts/pwm.py"
+        "scripts/pwm.py"
 
 
 rule calc_probabilities:
@@ -117,9 +117,9 @@ rule decompress_genome:
         - d
         """
     input:
-        f"../resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.fa.gz",
+        f"resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.fa.gz",
     output:
-        f"../resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.fa",
+        f"resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.fa",
     shell:
         """
         gunzip {input}
@@ -150,7 +150,7 @@ rule bed2fasta:
         - Note -s, keep strand information correct. Reports rev comp for neg seqs.
         """
     conda:
-        "../envs/pwmscan.yaml"
+        "envs/pwmscan.yaml"
     input:
         genome=rules.decompress_genome.output,
         sites=rules.scan_genome.output,
