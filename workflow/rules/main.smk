@@ -70,7 +70,7 @@ rule calculate_pwm:
     conda:
         "genome"
     script:
-        "scripts/pwm.py"
+        "../scripts/pwm.py"
 
 
 rule calc_probabilities:
