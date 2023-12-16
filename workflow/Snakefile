@@ -5,7 +5,7 @@ from snakemake.utils import min_version
 min_version("7.0")
 
 
-configfile: "../config/config.yaml"
+configfile: "config/config.yaml"
 
 
 # Define modules
@@ -14,9 +14,6 @@ module genome:
         "https://raw.githubusercontent.com/ctubbs750/genome/main/workflow/Snakefile"
     config:
         config
-    prefix:
-        "../resources/data/genome"
-
 
 module main:
     snakefile:
