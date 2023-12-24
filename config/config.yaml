@@ -1,15 +1,15 @@
-# pwm-scan module parameters
-PWM-SCAN:
-  # PWMScan software
-  MATRIX_PROB: resources/software/PWMScan/matrix_prob.c
-  MATRIX_SCAN: resources/software/PWMScan/matrix_scan.c
+# TFBS-Scan module parameters
+TFBS-SCAN:
   # Target JASPAR profiles to scan against
   TARGETS:
-    - MA0139.1 # CTCf
-    - MA0007.3 # FOXA1
-  # Insallation and processing directories
-  INSTALL_DIR: resources
-  PROCESS_DIR: results/pwmscan
+    - MA0139.1
+    - MA0007.3
+
+# PWMScan module parameters
+PWMScan:
+  # Path to uncompiled programs
+  MATRIX_PROB: resources/software/PWMScan/matrix_prob.c
+  MATRIX_SCAN: resources/software/PWMScan/matrix_scan.c
 
 # Genome module parameters
 GENOME:
