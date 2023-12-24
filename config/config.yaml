@@ -1,9 +1,9 @@
 # TFBS-Scan module parameters
 TFBS-SCAN:
-  # Target JASPAR profiles to scan against
+  # Target TFs to scan against. Format: [name]-[profile]-[length]
   TARGETS:
-    - MA0139.1
-    - MA0007.3
+    - AR-MA0007.3-17
+    - ARNTL-MA0603.1-10
 
 # PWMScan module parameters
 PWMScan:

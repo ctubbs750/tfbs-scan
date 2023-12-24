@@ -3,7 +3,7 @@ from pathlib import Path
 from pandas import read_csv, merge
 
 # Parameters
-PROFILES = config["TFBS-SCAN"]["TARGETS"]
+PROFILES = [i.split("-")[1] for i in config["TFBS-SCAN"]["TARGETS"]]
 ASSEMBLY = config["GENOME"]["ASSEMBLY"]
 
 
