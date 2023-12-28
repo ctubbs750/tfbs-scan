@@ -14,6 +14,13 @@ module PWMScan:
         config
 
 
+module gencode:
+    snakefile:
+        "https://raw.githubusercontent.com/ctubbs750/gencode/main/workflow/Snakefile"
+    config:
+        config
+
+
 module genome:
     snakefile:
         "https://raw.githubusercontent.com/ctubbs750/genome/main/workflow/Snakefile"
@@ -30,6 +37,9 @@ module scan:
 
 # Import modules
 use rule * from PWMScan as PWMScan_*
+
+
+use rule * from gencode as gencode_*
 
 
 use rule * from genome as genome_*

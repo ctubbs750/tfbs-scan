@@ -1,0 +1,108 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 16
+Rules claiming more threads will be scaled down.
+Job stats:
+job                             count
+----------------------------  -------
+PWMScan_compile_pwmscan             1
+all                                 1
+scan_bed2fasta                      1
+scan_calculate_probabilities        1
+scan_compress_sites                 1
+scan_decompress_genome              1
+scan_mask_genome                    1
+scan_mask_regions                   1
+scan_process_probabilities          1
+scan_scan_genome                    1
+total                              10
+
+Select jobs to execute...
+
+[Wed Dec 27 15:33:34 2023]
+rule scan_mask_regions:
+    input: resources/data/genome/hg38/hg38.gaps.bed, resources/data/genome/hg38/hg38.blacklist.bed, results/gencode/hg38/gencode.hg38.exons.protein_coding.bed
+    output: results/tfbs-scan/hg38/hg38.masked_regions.bed
+    log: workflow/logs/mask_regions_hg38.stdout, workflow/logs/mask_regions_hg38.stderr
+    jobid: 9
+    reason: Missing output files: results/tfbs-scan/hg38/hg38.masked_regions.bed
+    wildcards: ASSEMBLY=hg38
+    threads: 4
+    resources: tmpdir=/tmp
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+
+[Wed Dec 27 15:33:34 2023]
+Job 14: 
+        Necessary to scan uncompressed genome.
+        
+Reason: Missing output files: resources/data/genome/hg38/hg38.fa
+
+
+[Wed Dec 27 15:33:34 2023]
+Job 7: 
+        Compiles PWMScan. Note c99 flag.
+        Installs into resources/software by default.
+        
+Reason: Updated input files: https://raw.githubusercontent.com/ctubbs750/PWMScan/main/resources/software/PWMScan/matrix_prob.c (cached), https://raw.githubusercontent.com/ctubbs750/PWMScan/main/resources/software/PWMScan/matrix_scan.c (cached)
+
+[Wed Dec 27 15:33:34 2023]
+Finished job 7.
+1 of 10 steps (10%) done
+Select jobs to execute...
+
+[Wed Dec 27 15:33:34 2023]
+Job 6: 
+        Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/tfbs-scan/MA0007.3/MA0007.3-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+[Wed Dec 27 15:33:35 2023]
+Finished job 6.
+2 of 10 steps (20%) done
+Select jobs to execute...
+
+[Wed Dec 27 15:33:35 2023]
+Job 5: 
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/tfbs-scan/MA0007.3/MA0007.3-pvals.raw
+
+[Wed Dec 27 15:33:35 2023]
+Error in rule scan_mask_regions:
+    jobid: 9
+    input: resources/data/genome/hg38/hg38.gaps.bed, resources/data/genome/hg38/hg38.blacklist.bed, results/gencode/hg38/gencode.hg38.exons.protein_coding.bed
+    output: results/tfbs-scan/hg38/hg38.masked_regions.bed
+    log: workflow/logs/mask_regions_hg38.stdout, workflow/logs/mask_regions_hg38.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/9f9842bbfc31decc8a1ad02a46329d02_
+    shell:
+        
+        cat resources/data/genome/hg38/hg38.gaps.bed results/gencode/hg38/gencode.hg38.exons.protein_coding.bed resources/data/genome/hg38/hg38.blacklist.bed |
+        vawk '{print $1, $2, $3}' | 
+        vawk '!seen[$1, $2, $3]++' |
+        sort -k 1,1 -k2,2n > results/tfbs-scan/hg38/hg38.masked_regions.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Dec 27 15:33:36 2023]
+Finished job 5.
+3 of 10 steps (30%) done
+Removing temporary output results/tfbs-scan/MA0007.3/MA0007.3-pvals.raw.
+Removing output files of failed job scan_mask_regions since they might be corrupted:
+results/tfbs-scan/hg38/hg38.masked_regions.bed
+Terminating processes on user request, this might take some time.
+[Wed Dec 27 15:33:41 2023]
+Error in rule scan_decompress_genome:
+    jobid: 14
+    input: resources/data/genome/hg38/hg38.fa.gz
+    output: resources/data/genome/hg38/hg38.fa
+    log: workflow/logs/decompress_genome_hg38.stdout, workflow/logs/decompress_genome_hg38.stderr (check log file(s) for error details)
+    shell:
+        
+        gunzip resources/data/genome/hg38/hg38.fa.gz
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2023-12-27T153322.470114.snakemake.log

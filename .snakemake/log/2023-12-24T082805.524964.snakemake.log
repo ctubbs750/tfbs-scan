@@ -1,0 +1,166 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                             count
+----------------------------  -------
+PWMScan_compile_pwmscan             1
+all                                 1
+genome_install_genome               1
+scan_bed2fasta                      2
+scan_calculate_probabilities        2
+scan_calculate_pwm                  2
+scan_compress_sites                 2
+scan_decompress_genome              1
+scan_download_jaspar                2
+scan_process_probabilities          2
+scan_scan_genome                    2
+total                              18
+
+Select jobs to execute...
+
+[Sun Dec 24 08:28:10 2023]
+Job 7: 
+        Compiles PWMScan. Note c99 flag.
+        Installs into resources/software by default.
+        
+Reason: Missing output files: resources/software/PWMScan/matrix_prob
+
+
+[Sun Dec 24 08:28:10 2023]
+Job 14: 
+        Downloads motif matrix from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0007.3.jaspar
+
+
+[Sun Dec 24 08:28:10 2023]
+Job 4: 
+        Downloads motif matrix from the Jaspar database.
+        
+Reason: Missing output files: resources/data/jaspar/MA0139.1.jaspar
+
+[Sun Dec 24 08:28:10 2023]
+Finished job 7.
+1 of 18 steps (6%) done
+Select jobs to execute...
+[Sun Dec 24 08:28:14 2023]
+Finished job 14.
+2 of 18 steps (11%) done
+
+[Sun Dec 24 08:28:14 2023]
+rule scan_calculate_pwm:
+    input: resources/data/jaspar/MA0007.3.jaspar
+    output: results/tfbs-scan/MA0007.3/MA0007.3-pwm.txt
+    log: workflow/logs/calculate_pwm_MA0007.3.stdout, workflow/logs/calculate_pwm_MA0007.3.stderr
+    jobid: 13
+    reason: Missing output files: results/tfbs-scan/MA0007.3/MA0007.3-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0007.3.jaspar
+    wildcards: PROFILE=MA0007.3
+    threads: 2
+    resources: tmpdir=/tmp
+
+[Sun Dec 24 08:28:14 2023]
+Finished job 4.
+3 of 18 steps (17%) done
+Select jobs to execute...
+
+[Sun Dec 24 08:28:14 2023]
+rule scan_calculate_pwm:
+    input: resources/data/jaspar/MA0139.1.jaspar
+    output: results/tfbs-scan/MA0139.1/MA0139.1-pwm.txt
+    log: workflow/logs/calculate_pwm_MA0139.1.stdout, workflow/logs/calculate_pwm_MA0139.1.stderr
+    jobid: 3
+    reason: Missing output files: results/tfbs-scan/MA0139.1/MA0139.1-pwm.txt; Input files updated by another job: resources/data/jaspar/MA0139.1.jaspar
+    wildcards: PROFILE=MA0139.1
+    threads: 2
+    resources: tmpdir=/tmp
+
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+Activating conda environment: genome
+[Sun Dec 24 08:28:24 2023]
+Finished job 13.
+4 of 18 steps (22%) done
+Select jobs to execute...
+
+[Sun Dec 24 08:28:24 2023]
+Job 16: 
+        Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/tfbs-scan/MA0007.3/MA0007.3-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/tfbs-scan/MA0007.3/MA0007.3-pwm.txt
+
+[Sun Dec 24 08:28:24 2023]
+Finished job 3.
+5 of 18 steps (28%) done
+Select jobs to execute...
+
+[Sun Dec 24 08:28:24 2023]
+Job 6: 
+        Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/tfbs-scan/MA0139.1/MA0139.1-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob, results/tfbs-scan/MA0139.1/MA0139.1-pwm.txt
+
+[Sun Dec 24 08:28:24 2023]
+Finished job 16.
+6 of 18 steps (33%) done
+Select jobs to execute...
+
+[Sun Dec 24 08:28:24 2023]
+Job 15: 
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/tfbs-scan/MA0007.3/MA0007.3-coeff.txt; Input files updated by another job: results/tfbs-scan/MA0007.3/MA0007.3-pvals.raw
+
+[Sun Dec 24 08:28:24 2023]
+Error in rule scan_process_probabilities:
+    jobid: 15
+    input: results/tfbs-scan/MA0007.3/MA0007.3-pvals.raw
+    output: results/tfbs-scan/MA0007.3/MA0007.3-pvals.txt, results/tfbs-scan/MA0007.3/MA0007.3-coeff.txt
+    log: workflow/logs/process_probabilities_MA0007.3.stdout, workflow/logs/process_probabilities_MA0007.3.stderr (check log file(s) for error details)
+    shell:
+        
+        sed 's/%//g' results/tfbs-scan/MA0007.3/MA0007.3-pvals.raw | 
+        sort -k1n > results/tfbs-scan/MA0007.3/MA0007.3-pvals.txt
+        awk '{if($2 < 0.05 && $3>=80) print $1}' results/tfbs-scan/MA0007.3/MA0007.3-pvals.txt |
+        head -n1 > results/tfbs-scan/MA0007.3/MA0007.3-coeff.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Sun Dec 24 08:28:24 2023]
+Finished job 6.
+7 of 18 steps (39%) done
+Select jobs to execute...
+
+[Sun Dec 24 08:28:24 2023]
+Job 5: 
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/tfbs-scan/MA0139.1/MA0139.1-coeff.txt; Input files updated by another job: results/tfbs-scan/MA0139.1/MA0139.1-pvals.raw
+
+Removing output files of failed job scan_process_probabilities since they might be corrupted:
+results/tfbs-scan/MA0007.3/MA0007.3-pvals.txt, results/tfbs-scan/MA0007.3/MA0007.3-coeff.txt
+[Sun Dec 24 08:28:24 2023]
+Error in rule scan_process_probabilities:
+    jobid: 5
+    input: results/tfbs-scan/MA0139.1/MA0139.1-pvals.raw
+    output: results/tfbs-scan/MA0139.1/MA0139.1-pvals.txt, results/tfbs-scan/MA0139.1/MA0139.1-coeff.txt
+    log: workflow/logs/process_probabilities_MA0139.1.stdout, workflow/logs/process_probabilities_MA0139.1.stderr (check log file(s) for error details)
+    shell:
+        
+        sed 's/%//g' results/tfbs-scan/MA0139.1/MA0139.1-pvals.raw | 
+        sort -k1n > results/tfbs-scan/MA0139.1/MA0139.1-pvals.txt
+        awk '{if($2 < 0.05 && $3>=80) print $1}' results/tfbs-scan/MA0139.1/MA0139.1-pvals.txt |
+        head -n1 > results/tfbs-scan/MA0139.1/MA0139.1-coeff.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job scan_process_probabilities since they might be corrupted:
+results/tfbs-scan/MA0139.1/MA0139.1-pvals.txt, results/tfbs-scan/MA0139.1/MA0139.1-coeff.txt
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-12-24T082805.524964.snakemake.log
