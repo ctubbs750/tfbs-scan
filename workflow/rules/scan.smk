@@ -26,7 +26,7 @@ rule download_jaspar:
     log:
         stdout="workflow/logs/download_jaspar_{PROFILE}.stdout",
         stderr="workflow/logs/download_jaspar_{PROFILE}.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         curl {params.target} -o {output}
@@ -46,7 +46,7 @@ rule calculate_pwm:
     log:
         stdout="workflow/logs/calculate_pwm_{PROFILE}_{ASSEMBLY}.stdout",
         stderr="workflow/logs/calculate_pwm_{PROFILE}_{ASSEMBLY}.stderr",
-    threads: 2
+    threads: 1
     script:
         "../scripts/pwm.py"
 
@@ -64,7 +64,7 @@ rule calculate_probabilities:
     log:
         stdout="workflow/logs/calculate_probabilities_{PROFILE}_{ASSEMBLY}/.stdout",
         stderr="workflow/logs/calculate_probabilities_{PROFILE}_{ASSEMBLY}/.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         {input.matrix_prob} {input} > {output}
@@ -88,7 +88,7 @@ rule process_probabilities:
     log:
         stdout="workflow/logs/process_probabilities_{PROFILE}_{ASSEMBLY}.stdout",
         stderr="workflow/logs/process_probabilities_{PROFILE}_{ASSEMBLY}.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
         set +o pipefail;
@@ -107,14 +107,14 @@ rule decompress_genome:
     input:
         "resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.fa.gz",
     output:
-        "resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.fa",
+        temp("results/tfbs-scan/{ASSEMBLY}/{ASSEMBLY}.fa"),
     log:
         stdout="workflow/logs/decompress_genome_{ASSEMBLY}.stdout",
         stderr="workflow/logs/decompress_genome_{ASSEMBLY}.stderr",
-    threads: 2
+    threads: 1
     shell:
         """
-        gunzip {input}
+        gunzip {input} -c > {output}
         """
 
 rule mask_regions:
@@ -129,7 +129,7 @@ rule mask_regions:
     log:
         stdout="workflow/logs/mask_regions_{ASSEMBLY}.stdout",
         stderr="workflow/logs/mask_regions_{ASSEMBLY}.stderr",
-    threads: 4
+    threads: 1
     shell:
         """
         cat {input.gaps} {input.exons} {input.blacklist} |
@@ -150,7 +150,7 @@ rule mask_genome:
     log:
         stdout="workflow/logs/mask_genome_{ASSEMBLY}.stdout",
         stderr="workflow/logs/mask_genome_{ASSEMBLY}.stderr",
-    threads: 4
+    threads: 1
     shell:
         """
         bedtools maskfasta -fi {input.genome} -bed {input.regions} -fo {output.masked_genome}
@@ -172,7 +172,7 @@ rule scan_genome:
     log:
         stdout="workflow/logs/scan_genome_{PROFILE}_{ASSEMBLY}.stdout",
         stderr="workflow/logs/scan_genome_{PROFILE}_{ASSEMBLY}.stderr",
-    threads: 4
+    threads: 2
     shell:
         """
         {input.matrix_scan} -m {input.pwm} -c $(cat {input.cut}) {input.ref} > {output}
@@ -195,7 +195,7 @@ rule bed2fasta:
     log:
         stdout="workflow/logs/bed2fasta_{PROFILE}_{ASSEMBLY}.stdout",
         stderr="workflow/logs/bed2fasta_{PROFILE}_{ASSEMBLY}.stderr",
-    threads: 4
+    threads: 1
     shell:
         """
         bedtools getfasta -fi {input.genome} -bed {input.sites} -name -s > {output}
@@ -216,7 +216,7 @@ rule compress_sites:
     log:
         stdout="workflow/logs/compress_sites_{PROFILE}_{ASSEMBLY}.stdout",
         stderr="workflow/logs/compress_sites_{PROFILE}_{ASSEMBLY}.stderr",
-    threads: 4
+    threads: 1
     shell:
         """
         gzip {input.bed} && gzip {input.fa}
