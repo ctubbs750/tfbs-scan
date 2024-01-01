@@ -119,11 +119,13 @@ rule decompress_genome:
 
 rule mask_regions:
     input:
-        gaps="resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.gaps.bed",
+        genome=rules.decompress_genome.output,
         blacklist="resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.blacklist.bed",
         exons="results/gencode/{ASSEMBLY}/gencode.{ASSEMBLY}.exons.protein_coding.bed",
     output:
         temp("results/tfbs-scan/{ASSEMBLY}/{ASSEMBLY}.masked_regions.bed"),
+    params:
+        gaps="resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.gaps.bed"
     conda:
         "../envs/tfbs-scan.yaml"
     log:
@@ -132,7 +134,7 @@ rule mask_regions:
     threads: 1
     shell:
         """
-        cat {input.gaps} {input.exons} {input.blacklist} |
+        cat {params.gaps} {input.exons} {input.blacklist} |
         vawk '{{print $1, $2, $3}}' | 
         vawk '!seen[$1, $2, $3]++' |
         sort -k 1,1 -k2,2n > {output}
