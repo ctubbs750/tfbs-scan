@@ -62,8 +62,8 @@ rule calculate_probabilities:
     output:
         temp("results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-pvals.raw"),
     log:
-        stdout="workflow/logs/calculate_probabilities_{PROFILE}_{ASSEMBLY}/.stdout",
-        stderr="workflow/logs/calculate_probabilities_{PROFILE}_{ASSEMBLY}/.stderr",
+        stdout="workflow/logs/calculate_probabilities_{PROFILE}_{ASSEMBLY}.stdout",
+        stderr="workflow/logs/calculate_probabilities_{PROFILE}_{ASSEMBLY}.stderr",
     threads: 1
     shell:
         """
