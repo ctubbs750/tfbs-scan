@@ -1,6 +1,0 @@
-Building DAG of jobs...
-MissingInputException in rule all in file /gpfs52/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/pwm-scan/workflow/Snakefile, line 37:
-Missing input files for rule all:
-    affected files:
-        ../results/jaspar/MA0139.1/MA0139.1-sites.bed
-        ../results/jaspar/MA0007.3/MA0007.3-sites.bed

@@ -1,7 +1,0 @@
-Building DAG of jobs...
-MissingInputException in rule scan_calculate_pwm in file /gpfs52/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/pwm-scan/workflow/rules/scan.smk, line 44:
-Missing input files for rule scan_calculate_pwm:
-    output: ../results/jaspar/../resources/data/jaspar/MA0139.1/../resources/data/jaspar/MA0139.1-pwm.txt
-    wildcards: PROFILE=../resources/data/jaspar/MA0139.1
-    affected files:
-        ../resources/data/jaspar/../resources/data/jaspar/MA0139.1.jaspar
