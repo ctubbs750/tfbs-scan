@@ -1,4 +1,0 @@
-KeyError in file https://raw.githubusercontent.com/ctubbs750/PWMScan/main/workflow/Snakefile, line 17:
-'PWMScan'
-  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/Snakefile", line 42, in <module>
-  File "https://raw.githubusercontent.com/ctubbs750/PWMScan/main/workflow/Snakefile", line 17, in <module>
