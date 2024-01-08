@@ -1,4 +1,0 @@
-IndentationError in file <tokenize>, line 78:
-unindent does not match any outer indentation level (<tokenize>, line 78)
-  File "/gpfs52/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/pwm-scan/workflow/Snakefile", line 29, in <module>
-  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/tokenize.py", line 512, in _tokenize
