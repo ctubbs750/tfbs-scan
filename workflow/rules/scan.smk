@@ -1,6 +1,11 @@
+from snakemake.utils import min_version
+
 # Parameters
-PROFILES = [i.split("|")[1] for i in config["TFBS-SCAN"]["TARGETS"]]
-ASSEMBLY = config["GENOME"]["BUILDS"][0] # NOTE: Scan assembly has to come first
+ASSEMBLY = config["assembly"]
+PROFILES = [i.split("|")[1] for i in config["targets"]]
+
+# Settings
+min_version("7.32.4")
 
 
 # WC constraints - JASPAR matrix format
@@ -10,8 +15,11 @@ wildcard_constraints:
 
 rule all:
     input:
-        expand("results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.bed.gz", ASSEMBLY=ASSEMBLY, PROFILE=PROFILES),
-        expand("results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.fa.gz", ASSEMBLY=ASSEMBLY, PROFILE=PROFILES),
+        expand(
+            "results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.bed.gz",
+            ASSEMBLY=ASSEMBLY,
+            PROFILE=PROFILES,
+        ),
 
 
 rule download_jaspar:
@@ -26,6 +34,8 @@ rule download_jaspar:
     log:
         stdout="workflow/logs/download_jaspar_{PROFILE}.stdout",
         stderr="workflow/logs/download_jaspar_{PROFILE}.stderr",
+    conda:
+        "../envs/tfbs-scan.yaml"
     threads: 1
     shell:
         """
@@ -46,6 +56,8 @@ rule calculate_pwm:
     log:
         stdout="workflow/logs/calculate_pwm_{PROFILE}_{ASSEMBLY}.stdout",
         stderr="workflow/logs/calculate_pwm_{PROFILE}_{ASSEMBLY}.stderr",
+    conda:
+        "../envs/tfbs-scan.yaml"
     threads: 1
     script:
         "../scripts/pwm.py"
@@ -65,6 +77,8 @@ rule calculate_probabilities:
         stdout="workflow/logs/calculate_probabilities_{PROFILE}_{ASSEMBLY}.stdout",
         stderr="workflow/logs/calculate_probabilities_{PROFILE}_{ASSEMBLY}.stderr",
     threads: 1
+    conda:
+        "../envs/tfbs-scan.yaml"
     shell:
         """
         {input.matrix_prob} {input} > {output}
@@ -89,6 +103,8 @@ rule process_probabilities:
         stdout="workflow/logs/process_probabilities_{PROFILE}_{ASSEMBLY}.stdout",
         stderr="workflow/logs/process_probabilities_{PROFILE}_{ASSEMBLY}.stderr",
     threads: 1
+    conda:
+        "../envs/tfbs-scan.yaml"
     shell:
         """
         set +o pipefail;
@@ -111,11 +127,14 @@ rule decompress_genome:
     log:
         stdout="workflow/logs/decompress_genome_{ASSEMBLY}.stdout",
         stderr="workflow/logs/decompress_genome_{ASSEMBLY}.stderr",
+    conda:
+        "../envs/tfbs-scan.yaml"
     threads: 1
     shell:
         """
         gunzip {input} -c > {output}
         """
+
 
 rule mask_regions:
     input:
@@ -125,12 +144,12 @@ rule mask_regions:
     output:
         temp("results/tfbs-scan/{ASSEMBLY}/{ASSEMBLY}.masked_regions.bed"),
     params:
-        gaps="resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.gaps.bed"
-    conda:
-        "../envs/tfbs-scan.yaml"
+        gaps="resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.gaps.bed",
     log:
         stdout="workflow/logs/mask_regions_{ASSEMBLY}.stdout",
         stderr="workflow/logs/mask_regions_{ASSEMBLY}.stderr",
+    conda:
+        "../envs/tfbs-scan.yaml"
     threads: 1
     shell:
         """
@@ -147,11 +166,11 @@ rule mask_genome:
         genome=rules.decompress_genome.output,
     output:
         masked_genome=temp("results/tfbs-scan/{ASSEMBLY}/hg38/hg38.custom-mask.fa"),
-    conda:
-        "../envs/tfbs-scan.yaml"
     log:
         stdout="workflow/logs/mask_genome_{ASSEMBLY}.stdout",
         stderr="workflow/logs/mask_genome_{ASSEMBLY}.stderr",
+    conda:
+        "../envs/tfbs-scan.yaml"
     threads: 1
     shell:
         """
@@ -163,6 +182,7 @@ rule scan_genome:
     message:
         """
         Scans reference genome for matches againts input motif.
+        Output compressed.
         """
     input:
         pwm=rules.calculate_pwm.output,
@@ -170,14 +190,17 @@ rule scan_genome:
         ref=rules.mask_genome.output.masked_genome,
         matrix_scan="resources/software/PWMScan/matrix_scan",
     output:
-        "results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.bed",
+        "results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.bed.gz",
     log:
         stdout="workflow/logs/scan_genome_{PROFILE}_{ASSEMBLY}.stdout",
         stderr="workflow/logs/scan_genome_{PROFILE}_{ASSEMBLY}.stderr",
-    threads: 2
+    conda:
+        "../envs/tfbs-scan.yaml"
+    threads: 1
     shell:
         """
-        {input.matrix_scan} -m {input.pwm} -c $(cat {input.cut}) {input.ref} > {output}
+        {input.matrix_scan} -m {input.pwm} -c $(cat {input.cut}) {input.ref} |
+        gzip > {output}
         """
 
 
@@ -186,40 +209,21 @@ rule bed2fasta:
         """
         Some utilities want FASTA format, useful to have on hand.
         - Note -s, keep strand information correct. Reports rev comp for neg seqs.
+        Output compressed.
         """
     input:
         genome=rules.decompress_genome.output,
         sites=rules.scan_genome.output,
     output:
-        "results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.fa",
-    conda:
-        "../envs/tfbs-scan.yaml"
+        "results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.fa.gz",
     log:
         stdout="workflow/logs/bed2fasta_{PROFILE}_{ASSEMBLY}.stdout",
         stderr="workflow/logs/bed2fasta_{PROFILE}_{ASSEMBLY}.stderr",
+    conda:
+        "../envs/tfbs-scan.yaml"
     threads: 1
     shell:
         """
-        bedtools getfasta -fi {input.genome} -bed {input.sites} -name -s > {output}
-        """
-
-
-rule compress_sites:
-    message:
-        """
-        Compress sites files to minimize storage.
-        """
-    input:
-        bed=rules.scan_genome.output,
-        fa=rules.bed2fasta.output,
-    output:
-        "results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.bed.gz",
-        "results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.fa.gz",
-    log:
-        stdout="workflow/logs/compress_sites_{PROFILE}_{ASSEMBLY}.stdout",
-        stderr="workflow/logs/compress_sites_{PROFILE}_{ASSEMBLY}.stderr",
-    threads: 1
-    shell:
-        """
-        gzip {input.bed} && gzip {input.fa}
+        bedtools getfasta -fi {input.genome} -bed {input.sites} -name -s |
+        gzip > {output}
         """

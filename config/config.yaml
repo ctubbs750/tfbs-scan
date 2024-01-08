@@ -1,38 +1,40 @@
 TFBS-SCAN:
   # Target TFs to scan against. Format: [name]|[profile]|[length]
-  TARGETS:
+  targets:
     - AR|MA0007.3|17
+  # Target genome build to scan, defaults to hg38
+  assembly: hg38
 
 PWMScan:
-  # Path to uncompiled programs
-  MATRIX_PROB: resources/software/PWMScan/matrix_prob.c
-  MATRIX_SCAN: resources/software/PWMScan/matrix_scan.c
+  # Path to uncompiled PWMScan programs
+  matrix_prob: workflow/scripts/matrix_prob.c
+  matrix_scan: workflow/scripts/matrix_scan.c
 
 GENOME:
-  # Genome build
-  BUILDS:
+  # Genome builds
+  builds:
     - hg38
-  # Genome host
-  PROVIDER: UCSC
+    - hg19
+  # Genome source
+  source: UCSC
   # Regex filtering - filter FASTA to main chromosomes
-  FILTER: chr[0-9XY]+$
-  # Target installation directory
-  OUTDIR: resources/data/genome
-  # Blacklist URLs
-  BLACKLIST_HG19: https://github.com/Boyle-Lab/Blacklist/raw/master/lists/hg19-blacklist.v2.bed.gz
-  BLACKLIST_HG38: https://github.com/Boyle-Lab/Blacklist/raw/master/lists/hg38-blacklist.v2.bed.gz
+  filter: chr[0-9XY]+$
+  # ENCODE Blacklist URLs
+  blacklist_hg19: https://github.com/Boyle-Lab/Blacklist/raw/master/lists/hg19-blacklist.v2.bed.gz
+  blacklist_hg38: https://github.com/Boyle-Lab/Blacklist/raw/master/lists/hg38-blacklist.v2.bed.gz
 
 GENCODE:
   # Genome build
-  BUILDS:
+  builds:
     - hg38
+    - hg19
   # Size of window on TSS to define promoters
-  PROMOTER_WINDOW: 2000
-  # Gencode URLS
-  GENCODE_URLS:
-    hg19: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/GRCh37_mapping/gencode.v44lift37.basic.annotation.gtf.gz
-    hg38: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.basic.annotation.gtf.gz
+  promoter_window: 2000
   # Chromosome size form UCSC URLS
-  UCSC_URLS:
+  ucsc_urls:
     hg19: https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.chrom.sizes
     hg38: https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.chrom.sizes
+  # Gencode URLS
+  gencode_urls:
+    hg19: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/GRCh37_mapping/gencode.v44lift37.basic.annotation.gtf.gz
+    hg38: https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.basic.annotation.gtf.gz

@@ -8,6 +8,7 @@ configfile: "config/config.yaml"
 # Settings
 min_version("7.32.4")
 
+
 # Define modules
 module PWMScan:
     snakefile:
@@ -34,7 +35,7 @@ module scan:
     snakefile:
         "rules/scan.smk"
     config:
-        config
+        config["TFBS-SCAN"]
 
 
 # Import modules
@@ -56,6 +57,10 @@ use rule * from scan as scan_*
 
 
 rule all:
+    message:
+        """
+        DEPLOYING TFBS-SCAN...
+        """
     input:
         rules.scan_all.input,
     default_target: True
