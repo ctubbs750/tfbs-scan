@@ -1,0 +1,2 @@
+WorkflowError:
+Output file cache activated (--cache), but no cache location specified. Please set the environment variable $SNAKEMAKE_OUTPUT_CACHE.

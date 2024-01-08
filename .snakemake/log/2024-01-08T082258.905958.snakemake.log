@@ -1,0 +1,2 @@
+Workflow defines that rule genome_genome_install_genome is eligible for caching between workflows (use the --cache argument to enable this).
+Congratulations, your workflow is in a good condition!
