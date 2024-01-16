@@ -19,7 +19,7 @@ rule all:
             matrix=MATRICES,
             assembly=ASSEMBLY,
         ),
-        "results/tfbs-scan/init.txt",
+        "results/tfbs-scan/setup.txt",
     default_target: True
 
 
