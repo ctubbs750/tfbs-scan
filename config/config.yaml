@@ -1,20 +1,16 @@
 TFBS-SCAN:
-  # Target TFs to scan against. Format: [name]|[profile]|[length]
-  targets:
-    - AR|MA0007.3|17
-  # Target genome build to scan, defaults to hg38
+  # Target genome build to scan against
   assembly: hg38
-
-PWMScan:
-  # Path to uncompiled PWMScan programs
-  matrix_prob: workflow/scripts/matrix_prob.c
-  matrix_scan: workflow/scripts/matrix_scan.c
+  # Directies under `resources/data` containing input matrices to scan with
+  matrices: resources/data/unibind/damo_hg38_PWMs
+  # PWMScan software
+  matrix_prob: workflow/scripts/scan/matrix_prob.c
+  matrix_scan: workflow/scripts/scan/matrix_scan.c
 
 GENOME:
   # Genome builds
   builds:
     - hg38
-    - hg19
   # Genome source
   source: UCSC
   # Regex filtering - filter FASTA to main chromosomes
@@ -27,7 +23,6 @@ GENCODE:
   # Genome build
   builds:
     - hg38
-    - hg19
   # Size of window on TSS to define promoters
   promoter_window: 2000
   # Chromosome size form UCSC URLS

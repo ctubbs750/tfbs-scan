@@ -1,0 +1,1855 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                           count
+--------------------------  -------
+all                               1
+scan_assemble_scan                5
+scan_scan_chromosome            120
+sequence_decompress_genome        1
+sequence_mask_genome              1
+sequence_mask_regions             1
+sequence_split_genome            24
+total                           153
+
+Select jobs to execute...
+
+[Mon Jan 15 14:50:44 2024]
+Job 3: 
+        Makes exclude regions in BED format for genome masking.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.masked_regions.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:50:44 2024]
+Job 4: 
+        Necessary to scan genome.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/hg38.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:50:53 2024]
+Finished job 3.
+1 of 153 steps (1%) done
+[Mon Jan 15 14:52:12 2024]
+Finished job 4.
+2 of 153 steps (1%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:52:12 2024]
+Job 2: 
+        Creates custom-masked genome for scanning against.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.masked_regions.bed, results/tfbs-scan/hg38/hg38.fa; Set of input files has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:53:11 2024]
+Finished job 2.
+3 of 153 steps (2%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:53:11 2024]
+Job 8: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:11 2024]
+Job 1: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:11 2024]
+Job 15: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:11 2024]
+Job 9: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:11 2024]
+Job 23: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 16: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 10: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 24: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 17: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 11: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 25: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 18: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 12: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 26: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 5: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 19: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 13: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 27: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 6: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 20: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 14: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 7: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:12 2024]
+Job 21: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:53:13 2024]
+Job 22: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:53:59 2024]
+Finished job 23.
+4 of 153 steps (3%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:53:59 2024]
+Job 82: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr20.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:02 2024]
+Finished job 27.
+5 of 153 steps (3%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:02 2024]
+Job 140: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr20.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:03 2024]
+Finished job 82.
+6 of 153 steps (4%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:03 2024]
+Job 169: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr20.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:04 2024]
+Finished job 7.
+7 of 153 steps (5%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:04 2024]
+Job 53: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr20.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:05 2024]
+Finished job 1.
+8 of 153 steps (5%) done
+[Mon Jan 15 14:54:05 2024]
+Finished job 20.
+9 of 153 steps (6%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:05 2024]
+Job 86: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chrY.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:05 2024]
+Job 111: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr20.fa
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:06 2024]
+Finished job 24.
+10 of 153 steps (7%) done
+
+[Mon Jan 15 14:54:06 2024]
+Job 144: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chrY.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:10 2024]
+Finished job 140.
+11 of 153 steps (7%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:10 2024]
+Job 173: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chrY.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:11 2024]
+Finished job 18.
+12 of 153 steps (8%) done
+[Mon Jan 15 14:54:11 2024]
+Finished job 13.
+13 of 153 steps (8%) done
+[Mon Jan 15 14:54:11 2024]
+Finished job 169.
+14 of 153 steps (9%) done
+[Mon Jan 15 14:54:11 2024]
+Finished job 25.
+15 of 153 steps (10%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:11 2024]
+Job 43: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr10.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:11 2024]
+Job 72: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr10.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:11 2024]
+Job 130: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr10.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:11 2024]
+Job 159: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr10.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:12 2024]
+Finished job 19.
+16 of 153 steps (10%) done
+[Mon Jan 15 14:54:13 2024]
+Finished job 15.
+17 of 153 steps (11%) done
+[Mon Jan 15 14:54:13 2024]
+Finished job 22.
+18 of 153 steps (12%) done
+[Mon Jan 15 14:54:13 2024]
+Finished job 21.
+19 of 153 steps (12%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:13 2024]
+Job 101: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr10.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:13 2024]
+Job 74: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr12.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr12.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:13 2024]
+Job 132: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr12.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr12.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:13 2024]
+Job 161: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr12.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr12.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:13 2024]
+Finished job 86.
+20 of 153 steps (13%) done
+[Mon Jan 15 14:54:13 2024]
+Finished job 14.
+21 of 153 steps (14%) done
+[Mon Jan 15 14:54:13 2024]
+Finished job 53.
+22 of 153 steps (14%) done
+[Mon Jan 15 14:54:13 2024]
+Finished job 144.
+23 of 153 steps (15%) done
+[Mon Jan 15 14:54:13 2024]
+Finished job 16.
+24 of 153 steps (16%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:13 2024]
+Job 73: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr11.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr11.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:13 2024]
+Job 131: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr11.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr11.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:13 2024]
+Job 44: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr11.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr11.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:14 2024]
+Job 102: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr11.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr11.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:14 2024]
+Job 160: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr11.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr11.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:14 2024]
+Finished job 111.
+25 of 153 steps (16%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:14 2024]
+Job 45: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr12.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr12.fa
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:14 2024]
+Finished job 9.
+26 of 153 steps (17%) done
+
+[Mon Jan 15 14:54:14 2024]
+Job 68: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr6.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:15 2024]
+Finished job 17.
+27 of 153 steps (18%) done
+[Mon Jan 15 14:54:15 2024]
+Finished job 173.
+28 of 153 steps (18%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:15 2024]
+Job 155: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr6.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:15 2024]
+Job 126: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr6.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:15 2024]
+Finished job 12.
+29 of 153 steps (19%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:15 2024]
+Job 39: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr6.fa
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:15 2024]
+Finished job 11.
+30 of 153 steps (20%) done
+
+[Mon Jan 15 14:54:15 2024]
+Job 97: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr6.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:15 2024]
+Finished job 10.
+31 of 153 steps (20%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:15 2024]
+Job 69: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr7.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr7.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:16 2024]
+Finished job 8.
+32 of 153 steps (21%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:16 2024]
+Job 67: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr5.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:16 2024]
+Finished job 26.
+33 of 153 steps (22%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:16 2024]
+Job 125: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr5.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:17 2024]
+Finished job 6.
+34 of 153 steps (22%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:17 2024]
+Job 65: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr3.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:18 2024]
+Finished job 72.
+35 of 153 steps (23%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:18 2024]
+Job 123: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr3.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:18 2024]
+Finished job 43.
+36 of 153 steps (24%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:18 2024]
+Job 152: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr3.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:18 2024]
+Finished job 159.
+37 of 153 steps (24%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:18 2024]
+Job 36: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr3.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:18 2024]
+Finished job 130.
+38 of 153 steps (25%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:18 2024]
+Job 94: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr3.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:19 2024]
+Finished job 74.
+39 of 153 steps (25%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:19 2024]
+Job 154: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr5.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:19 2024]
+Finished job 73.
+40 of 153 steps (26%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:19 2024]
+Job 38: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr5.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:19 2024]
+Finished job 161.
+41 of 153 steps (27%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:19 2024]
+Job 96: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr5.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:19 2024]
+Finished job 131.
+42 of 153 steps (27%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:19 2024]
+Job 127: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr7.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr7.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:19 2024]
+Finished job 101.
+43 of 153 steps (28%) done
+[Mon Jan 15 14:54:19 2024]
+Finished job 132.
+44 of 153 steps (29%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:19 2024]
+Job 156: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr7.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr7.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:19 2024]
+Job 40: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr7.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr7.fa
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:20 2024]
+Finished job 44.
+45 of 153 steps (29%) done
+
+[Mon Jan 15 14:54:20 2024]
+Job 98: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr7.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr7.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:20 2024]
+Finished job 102.
+46 of 153 steps (30%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:20 2024]
+Job 85: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chrX.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chrX.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:20 2024]
+Finished job 160.
+47 of 153 steps (31%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:20 2024]
+Job 143: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chrX.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chrX.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:20 2024]
+Finished job 45.
+48 of 153 steps (31%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:20 2024]
+Job 172: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chrX.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chrX.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:21 2024]
+Finished job 68.
+49 of 153 steps (32%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:21 2024]
+Job 56: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chrX.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chrX.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:22 2024]
+Finished job 69.
+50 of 153 steps (33%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:22 2024]
+Job 114: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chrX.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chrX.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:22 2024]
+Finished job 126.
+51 of 153 steps (33%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:22 2024]
+Job 70: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr8.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:22 2024]
+Finished job 155.
+52 of 153 steps (34%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:22 2024]
+Job 128: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr8.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:22 2024]
+Finished job 39.
+53 of 153 steps (35%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:22 2024]
+Job 157: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr8.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:22 2024]
+Finished job 97.
+54 of 153 steps (35%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:22 2024]
+Job 41: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr8.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:23 2024]
+Finished job 67.
+55 of 153 steps (36%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:23 2024]
+Job 99: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr8.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:23 2024]
+Finished job 125.
+56 of 153 steps (37%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:23 2024]
+Job 71: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr9.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:24 2024]
+Finished job 65.
+57 of 153 steps (37%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:24 2024]
+Job 129: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr9.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:25 2024]
+Finished job 5.
+58 of 153 steps (38%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:25 2024]
+Job 64: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr2.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:25 2024]
+Finished job 127.
+59 of 153 steps (39%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:25 2024]
+Job 122: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr2.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:25 2024]
+Finished job 156.
+60 of 153 steps (39%) done
+[Mon Jan 15 14:54:25 2024]
+Finished job 123.
+61 of 153 steps (40%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:25 2024]
+Job 151: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr2.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:25 2024]
+Job 35: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr2.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:25 2024]
+Finished job 40.
+62 of 153 steps (41%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:25 2024]
+Job 93: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr2.fa
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:26 2024]
+Finished job 152.
+63 of 153 steps (41%) done
+
+[Mon Jan 15 14:54:26 2024]
+Job 158: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr9.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:26 2024]
+Finished job 85.
+64 of 153 steps (42%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:26 2024]
+Job 42: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr9.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:26 2024]
+Finished job 154.
+65 of 153 steps (42%) done
+[Mon Jan 15 14:54:26 2024]
+Finished job 94.
+66 of 153 steps (43%) done
+[Mon Jan 15 14:54:26 2024]
+Finished job 36.
+67 of 153 steps (44%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:26 2024]
+Job 100: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr9.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:26 2024]
+Job 75: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr13.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:26 2024]
+Job 103: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr12.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr12.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:26 2024]
+Finished job 96.
+68 of 153 steps (44%) done
+[Mon Jan 15 14:54:26 2024]
+Finished job 98.
+69 of 153 steps (45%) done
+[Mon Jan 15 14:54:26 2024]
+Finished job 38.
+70 of 153 steps (46%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:26 2024]
+Job 46: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr13.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:26 2024]
+Job 133: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr13.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:26 2024]
+Job 162: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr13.fa
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:26 2024]
+Finished job 143.
+71 of 153 steps (46%) done
+
+[Mon Jan 15 14:54:26 2024]
+Job 104: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr13.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:26 2024]
+Finished job 172.
+72 of 153 steps (47%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:26 2024]
+Job 76: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr14.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr14.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:27 2024]
+Finished job 56.
+73 of 153 steps (48%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:27 2024]
+Job 134: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr14.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr14.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:27 2024]
+Finished job 70.
+74 of 153 steps (48%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:27 2024]
+Job 163: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr14.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr14.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:27 2024]
+Finished job 114.
+75 of 153 steps (49%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:27 2024]
+Job 47: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr14.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr14.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:27 2024]
+Finished job 128.
+76 of 153 steps (50%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:27 2024]
+Job 105: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr14.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr14.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:27 2024]
+Finished job 71.
+77 of 153 steps (50%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:27 2024]
+Job 77: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr15.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:27 2024]
+Finished job 157.
+78 of 153 steps (51%) done
+[Mon Jan 15 14:54:28 2024]
+Finished job 41.
+79 of 153 steps (52%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:28 2024]
+Job 135: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr15.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:28 2024]
+Job 164: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr15.fa
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:28 2024]
+Finished job 99.
+80 of 153 steps (52%) done
+
+[Mon Jan 15 14:54:28 2024]
+Job 48: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr15.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:29 2024]
+Finished job 129.
+81 of 153 steps (53%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:29 2024]
+Job 106: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr15.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:30 2024]
+Finished job 75.
+82 of 153 steps (54%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:30 2024]
+Job 78: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr16.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:30 2024]
+Finished job 76.
+83 of 153 steps (54%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:30 2024]
+Job 136: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr16.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:30 2024]
+Finished job 46.
+84 of 153 steps (55%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:30 2024]
+Job 165: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr16.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:30 2024]
+Finished job 133.
+85 of 153 steps (56%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:30 2024]
+Job 49: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr16.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:31 2024]
+Finished job 162.
+86 of 153 steps (56%) done
+[Mon Jan 15 14:54:31 2024]
+Finished job 104.
+87 of 153 steps (57%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:31 2024]
+Job 107: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr16.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:31 2024]
+Job 80: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr18.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:31 2024]
+Finished job 158.
+88 of 153 steps (58%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:31 2024]
+Job 138: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr18.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:31 2024]
+Finished job 42.
+89 of 153 steps (58%) done
+[Mon Jan 15 14:54:31 2024]
+Finished job 100.
+90 of 153 steps (59%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:31 2024]
+Job 51: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr18.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:31 2024]
+Job 167: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr18.fa
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:31 2024]
+Finished job 77.
+91 of 153 steps (59%) done
+
+[Mon Jan 15 14:54:31 2024]
+Job 109: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr18.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:31 2024]
+Finished job 163.
+92 of 153 steps (60%) done
+[Mon Jan 15 14:54:31 2024]
+Finished job 134.
+93 of 153 steps (61%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:31 2024]
+Job 81: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr19.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr19.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:31 2024]
+Job 139: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr19.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr19.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:31 2024]
+Finished job 135.
+94 of 153 steps (61%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:31 2024]
+Job 168: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr19.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr19.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:31 2024]
+Finished job 103.
+95 of 153 steps (62%) done
+[Mon Jan 15 14:54:31 2024]
+Finished job 47.
+96 of 153 steps (63%) done
+[Mon Jan 15 14:54:31 2024]
+Finished job 164.
+97 of 153 steps (63%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:31 2024]
+Job 57: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chrY.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:31 2024]
+Job 52: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr19.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr19.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:31 2024]
+Job 110: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr19.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/chr19.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:31 2024]
+Finished job 105.
+98 of 153 steps (64%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:31 2024]
+Job 115: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chrY.fa
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:32 2024]
+Finished job 48.
+99 of 153 steps (65%) done
+
+[Mon Jan 15 14:54:32 2024]
+Job 84: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr22.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:32 2024]
+Finished job 106.
+100 of 153 steps (65%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:32 2024]
+Job 142: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr22.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:33 2024]
+Finished job 57.
+101 of 153 steps (66%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:33 2024]
+Job 171: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr22.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:33 2024]
+Finished job 115.
+102 of 153 steps (67%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:33 2024]
+Job 55: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr22.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:33 2024]
+Finished job 81.
+103 of 153 steps (67%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:33 2024]
+Job 113: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr22.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:33 2024]
+Finished job 78.
+104 of 153 steps (68%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:33 2024]
+Job 83: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr21.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:33 2024]
+Finished job 84.
+105 of 153 steps (69%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:33 2024]
+Job 141: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr21.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:34 2024]
+Finished job 136.
+106 of 153 steps (69%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:34 2024]
+Job 170: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr21.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:34 2024]
+Finished job 139.
+107 of 153 steps (70%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:34 2024]
+Job 54: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr21.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:34 2024]
+Finished job 80.
+108 of 153 steps (71%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:34 2024]
+Job 112: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr21.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:34 2024]
+Finished job 165.
+109 of 153 steps (71%) done
+[Mon Jan 15 14:54:34 2024]
+Finished job 168.
+110 of 153 steps (72%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:34 2024]
+Job 66: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr4.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:34 2024]
+Job 59: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr1.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:34 2024]
+Finished job 49.
+111 of 153 steps (73%) done
+[Mon Jan 15 14:54:34 2024]
+Finished job 138.
+112 of 153 steps (73%) done
+[Mon Jan 15 14:54:34 2024]
+Finished job 52.
+113 of 153 steps (74%) done
+[Mon Jan 15 14:54:34 2024]
+Finished job 142.
+114 of 153 steps (75%) done
+[Mon Jan 15 14:54:34 2024]
+Finished job 110.
+115 of 153 steps (75%) done
+[Mon Jan 15 14:54:34 2024]
+Finished job 51.
+116 of 153 steps (76%) done
+Select jobs to execute...
+
+[Mon Jan 15 14:54:34 2024]
+Job 137: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr17.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:34 2024]
+Job 153: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr4.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:34 2024]
+Job 117: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr1.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:34 2024]
+Job 79: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr17.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:34 2024]
+Job 166: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr17.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 14:54:34 2024]
+Job 124: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/chr4.fa
+
+[Mon Jan 15 14:54:34 2024]
+Error in rule scan_scan_chromosome:
+    jobid: 66
+    input: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/hg38/mask/chr4.fa, resources/software/PWMScan/matrix_scan
+    output: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr4.bed
+    log: workflow/logs/scan_chromosome_ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm_hg38_chr4.stdout, workflow/logs/scan_chromosome_ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm_hg38_chr4.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        resources/software/PWMScan/matrix_scan -m results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds -c $(cat results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt) results/tfbs-scan/hg38/mask/chr4.fa > results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr4.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Jan 15 14:54:34 2024]
+Error in rule scan_scan_chromosome:
+    jobid: 59
+    input: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/hg38/mask/chr1.fa, resources/software/PWMScan/matrix_scan
+    output: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr1.bed
+    log: workflow/logs/scan_chromosome_ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm_hg38_chr1.stdout, workflow/logs/scan_chromosome_ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm_hg38_chr1.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        resources/software/PWMScan/matrix_scan -m results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds -c $(cat results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt) results/tfbs-scan/hg38/mask/chr1.fa > results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr1.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 14:54:34 2024]
+Finished job 107.
+117 of 153 steps (76%) done
+[Mon Jan 15 14:54:35 2024]
+Finished job 167.
+118 of 153 steps (77%) done
+[Mon Jan 15 14:54:35 2024]
+Finished job 109.
+119 of 153 steps (78%) done
+Removing output files of failed job scan_scan_chromosome since they might be corrupted:
+results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr4.bed
+Removing output files of failed job scan_scan_chromosome since they might be corrupted:
+results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr1.bed
+[Mon Jan 15 14:54:35 2024]
+Error in rule scan_scan_chromosome:
+    jobid: 137
+    input: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm.IntLogOdds, results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/hg38/mask/chr17.fa, resources/software/PWMScan/matrix_scan
+    output: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr17.bed
+    log: workflow/logs/scan_chromosome_ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm_hg38_chr17.stdout, workflow/logs/scan_chromosome_ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm_hg38_chr17.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        resources/software/PWMScan/matrix_scan -m results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm.IntLogOdds -c $(cat results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-coeff.txt) results/tfbs-scan/hg38/mask/chr17.fa > results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr17.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job scan_scan_chromosome since they might be corrupted:
+results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr17.bed
+[Mon Jan 15 14:54:35 2024]
+Error in rule scan_scan_chromosome:
+    jobid: 153
+    input: results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds, results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/hg38/mask/chr4.fa, resources/software/PWMScan/matrix_scan
+    output: results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr4.bed
+    log: workflow/logs/scan_chromosome_ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm_hg38_chr4.stdout, workflow/logs/scan_chromosome_ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm_hg38_chr4.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        resources/software/PWMScan/matrix_scan -m results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds -c $(cat results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-coeff.txt) results/tfbs-scan/hg38/mask/chr4.fa > results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr4.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job scan_scan_chromosome since they might be corrupted:
+results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr4.bed
+[Mon Jan 15 14:54:35 2024]
+Error in rule scan_scan_chromosome:
+    jobid: 117
+    input: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm.IntLogOdds, results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/hg38/mask/chr1.fa, resources/software/PWMScan/matrix_scan
+    output: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr1.bed
+    log: workflow/logs/scan_chromosome_ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm_hg38_chr1.stdout, workflow/logs/scan_chromosome_ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm_hg38_chr1.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        resources/software/PWMScan/matrix_scan -m results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm.IntLogOdds -c $(cat results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-coeff.txt) results/tfbs-scan/hg38/mask/chr1.fa > results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr1.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job scan_scan_chromosome since they might be corrupted:
+results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr1.bed
+[Mon Jan 15 14:54:35 2024]
+Error in rule scan_scan_chromosome:
+    jobid: 79
+    input: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/hg38/mask/chr17.fa, resources/software/PWMScan/matrix_scan
+    output: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr17.bed
+    log: workflow/logs/scan_chromosome_ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm_hg38_chr17.stdout, workflow/logs/scan_chromosome_ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm_hg38_chr17.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        resources/software/PWMScan/matrix_scan -m results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds -c $(cat results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt) results/tfbs-scan/hg38/mask/chr17.fa > results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr17.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job scan_scan_chromosome since they might be corrupted:
+results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr17.bed
+[Mon Jan 15 14:54:35 2024]
+Error in rule scan_scan_chromosome:
+    jobid: 166
+    input: results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds, results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/hg38/mask/chr17.fa, resources/software/PWMScan/matrix_scan
+    output: results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr17.bed
+    log: workflow/logs/scan_chromosome_ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm_hg38_chr17.stdout, workflow/logs/scan_chromosome_ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm_hg38_chr17.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        resources/software/PWMScan/matrix_scan -m results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds -c $(cat results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-coeff.txt) results/tfbs-scan/hg38/mask/chr17.fa > results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr17.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job scan_scan_chromosome since they might be corrupted:
+results/tfbs-scan/hg38/scan/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm/ENCSR000AOO.astrocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr17.bed
+[Mon Jan 15 14:54:35 2024]
+Error in rule scan_scan_chromosome:
+    jobid: 124
+    input: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm.IntLogOdds, results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/hg38/mask/chr4.fa, resources/software/PWMScan/matrix_scan
+    output: results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr4.bed
+    log: workflow/logs/scan_chromosome_ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm_hg38_chr4.stdout, workflow/logs/scan_chromosome_ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm_hg38_chr4.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        resources/software/PWMScan/matrix_scan -m results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm.IntLogOdds -c $(cat results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-coeff.txt) results/tfbs-scan/hg38/mask/chr4.fa > results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr4.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job scan_scan_chromosome since they might be corrupted:
+results/tfbs-scan/hg38/scan/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm/ENCSR000ANO.normal_lung_fibroblasts.CTCF.MA0139.1.damo.pwm-sites.masked.chr4.bed
+[Mon Jan 15 14:54:35 2024]
+Finished job 171.
+120 of 153 steps (78%) done
+[Mon Jan 15 14:54:35 2024]
+Finished job 55.
+121 of 153 steps (79%) done
+[Mon Jan 15 14:54:35 2024]
+Finished job 83.
+122 of 153 steps (80%) done
+[Mon Jan 15 14:54:35 2024]
+Finished job 141.
+123 of 153 steps (80%) done
+[Mon Jan 15 14:54:35 2024]
+Finished job 113.
+124 of 153 steps (81%) done
+[Mon Jan 15 14:54:35 2024]
+Finished job 170.
+125 of 153 steps (82%) done
+[Mon Jan 15 14:54:35 2024]
+Finished job 54.
+126 of 153 steps (82%) done
+[Mon Jan 15 14:54:36 2024]
+Finished job 112.
+127 of 153 steps (83%) done
+[Mon Jan 15 14:54:38 2024]
+Finished job 64.
+128 of 153 steps (84%) done
+[Mon Jan 15 14:54:39 2024]
+Finished job 122.
+129 of 153 steps (84%) done
+[Mon Jan 15 14:54:39 2024]
+Finished job 151.
+130 of 153 steps (85%) done
+[Mon Jan 15 14:54:39 2024]
+Finished job 93.
+131 of 153 steps (86%) done
+[Mon Jan 15 14:54:40 2024]
+Finished job 35.
+132 of 153 steps (86%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-15T145037.288822.snakemake.log

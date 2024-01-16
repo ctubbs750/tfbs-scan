@@ -1,66 +1,71 @@
+from os import listdir
 from snakemake.utils import min_version
 
 # Parameters
 ASSEMBLY = config["assembly"]
-PROFILES = [i.split("|")[1] for i in config["targets"]]
+MATRICES = listdir(config["matrices"])
+MATRIX_PROB = config["matrix_prob"]
+MATRIX_SCAN = config["matrix_scan"]
+CHROMOSOMES = ["chr" + str(i) for i in range(1, 23)] + ["chrX", "chrY"]
 
 # Settings
 min_version("7.32.4")
 
 
-# WC constraints - JASPAR matrix format
-wildcard_constraints:
-    PROFILE="[a-zA-Z\d]{6}.{1}\d{1}",
-
-
 rule all:
     input:
         expand(
-            "results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.bed.gz",
-            ASSEMBLY=ASSEMBLY,
-            PROFILE=PROFILES,
+            "results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}-sites.masked.genome.sorted.bed.gz",
+            matrix=MATRICES,
+            assembly=ASSEMBLY,
         ),
+    default_target: True
 
 
-rule download_jaspar:
+rule compile_pwmscan:
     message:
         """
-        Downloads motif matrix from the Jaspar database.
+        Compiles PWMScan. Note c99 flag.
+        Installs into resources/software by default.
         """
+    input:
+        prob=workflow.source_path(f"../../{MATRIX_PROB}"),
+        scan=workflow.source_path(f"../../{MATRIX_SCAN}"),
     output:
-        "resources/data/jaspar/{PROFILE}.jaspar",
-    params:
-        target="https://jaspar.elixir.no/api/v1/matrix/{PROFILE}/?format=jaspar",
+        compiled_prob="resources/software/PWMScan/matrix_prob",
+        compiled_scan="resources/software/PWMScan/matrix_scan",
     log:
-        stdout="workflow/logs/download_jaspar_{PROFILE}.stdout",
-        stderr="workflow/logs/download_jaspar_{PROFILE}.stderr",
+        stdout="workflow/logs/compile_pwmscan.stdout",
+        stderr="workflow/logs/compile_pwmscan.stderr",
     conda:
         "../envs/tfbs-scan.yaml"
     threads: 1
     shell:
         """
-        curl {params.target} -o {output}
+        gcc -std=c99 -o {output.compiled_prob} {input.prob}
+        gcc -std=c99 -o {output.compiled_scan} {input.scan}
         """
 
 
-rule calculate_pwm:
-    """
-    Converts counts matrix to weight matrix.
-    """
+rule calculate_IntLogOdds:
+    message:
+        """
+        Converts intput motif models to the IntLogOdds PWM format.
+        """
     input:
-        rules.download_jaspar.output,
+        "resources/data/unibind/damo_hg38_PWMs/{matrix}",
     output:
-        "results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-pwm.txt",
+        "results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}.IntLogOdds",
     conda:
         "../envs/tfbs-scan.yaml"
     log:
-        stdout="workflow/logs/calculate_pwm_{PROFILE}_{ASSEMBLY}.stdout",
-        stderr="workflow/logs/calculate_pwm_{PROFILE}_{ASSEMBLY}.stderr",
+        stdout="workflow/logs/calculate_pwm_{matrix}_{assembly}.stdout",
+        stderr="workflow/logs/calculate_pwm_{matrix}_{assembly}.stderr",
     conda:
         "../envs/tfbs-scan.yaml"
     threads: 1
     script:
-        "../scripts/pwm.py"
+        "../scripts/pwm/pwm.py"
 
 
 rule calculate_probabilities:
@@ -69,13 +74,13 @@ rule calculate_probabilities:
         Generates pval distribution for given PWM.
         """
     input:
-        pwm=rules.calculate_pwm.output,
-        matrix_prob="resources/software/PWMScan/matrix_prob",
+        pwm=rules.calculate_IntLogOdds.output,
+        matrix_prob=rules.compile_pwmscan.output.compiled_prob,
     output:
-        temp("results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-pvals.raw"),
+        temp("results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}-pvals.raw"),
     log:
-        stdout="workflow/logs/calculate_probabilities_{PROFILE}_{ASSEMBLY}.stdout",
-        stderr="workflow/logs/calculate_probabilities_{PROFILE}_{ASSEMBLY}.stderr",
+        stdout="workflow/logs/calculate_probabilities_{matrix}_{assembly}.stdout",
+        stderr="workflow/logs/calculate_probabilities_{matrix}_{assembly}.stderr",
     threads: 1
     conda:
         "../envs/tfbs-scan.yaml"
@@ -94,136 +99,91 @@ rule process_probabilities:
     input:
         rules.calculate_probabilities.output,
     output:
-        pvals="results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-pvals.txt",
-        coeff="results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-coeff.txt",
+        "results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}-pvals.txt",
+    log:
+        stdout="workflow/logs/process_probabilities_{matrix}_{assembly}.stdout",
+        stderr="workflow/logs/process_probabilities_{matrix}_{assembly}.stderr",
+    threads: 1
+    conda:
+        "../envs/tfbs-scan.yaml"
+    shell:
+        """
+        sed 's/%//g' {input} | sort -k1n > {output}
+        """
+
+
+rule calculate_cutoff:
+    message:
+        """
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        """
+    input:
+        rules.process_probabilities.output,
+    output:
+        "results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}-coeff.txt",
     params:
         pthresh=0.05,
         rthresh=80,
     log:
-        stdout="workflow/logs/process_probabilities_{PROFILE}_{ASSEMBLY}.stdout",
-        stderr="workflow/logs/process_probabilities_{PROFILE}_{ASSEMBLY}.stderr",
+        stdout="workflow/logs/calculate_cutoff_{matrix}_{assembly}.stdout",
+        stderr="workflow/logs/calculate_cutoff_{matrix}_{assembly}.stderr",
     threads: 1
     conda:
         "../envs/tfbs-scan.yaml"
     shell:
         """
-        set +o pipefail;
-        sed 's/%//g' {input} | 
-        sort -k1n > {output.pvals}
-        awk '{{if($2 < {params.pthresh} && $3>={params.rthresh}) print $1}}' {output.pvals} |
-        head -n1 > {output.coeff}
+        awk '{{if($2 < {params.pthresh} && $3>={params.rthresh}) print $1}}' {input} | head -n1 > {output}
         """
 
 
-rule decompress_genome:
-    message:
-        """
-        Necessary to scan uncompressed genome.
-        """
-    input:
-        "resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.fa.gz",
-    output:
-        temp("results/tfbs-scan/{ASSEMBLY}/{ASSEMBLY}.fa"),
-    log:
-        stdout="workflow/logs/decompress_genome_{ASSEMBLY}.stdout",
-        stderr="workflow/logs/decompress_genome_{ASSEMBLY}.stderr",
-    conda:
-        "../envs/tfbs-scan.yaml"
-    threads: 1
-    shell:
-        """
-        gunzip {input} -c > {output}
-        """
-
-
-rule mask_regions:
-    input:
-        genome=rules.decompress_genome.output,
-        blacklist="resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.blacklist.bed",
-        exons="results/gencode/{ASSEMBLY}/gencode.{ASSEMBLY}.exons.protein_coding.bed",
-    output:
-        temp("results/tfbs-scan/{ASSEMBLY}/{ASSEMBLY}.masked_regions.bed"),
-    params:
-        gaps="resources/data/genome/{ASSEMBLY}/{ASSEMBLY}.gaps.bed",
-    log:
-        stdout="workflow/logs/mask_regions_{ASSEMBLY}.stdout",
-        stderr="workflow/logs/mask_regions_{ASSEMBLY}.stderr",
-    conda:
-        "../envs/tfbs-scan.yaml"
-    threads: 1
-    shell:
-        """
-        cat {params.gaps} {input.exons} {input.blacklist} |
-        vawk '{{print $1, $2, $3}}' | 
-        vawk '!seen[$1, $2, $3]++' |
-        sort -k 1,1 -k2,2n > {output}
-        """
-
-
-rule mask_genome:
-    input:
-        regions=rules.mask_regions.output,
-        genome=rules.decompress_genome.output,
-    output:
-        masked_genome=temp("results/tfbs-scan/{ASSEMBLY}/hg38/hg38.custom-mask.fa"),
-    log:
-        stdout="workflow/logs/mask_genome_{ASSEMBLY}.stdout",
-        stderr="workflow/logs/mask_genome_{ASSEMBLY}.stderr",
-    conda:
-        "../envs/tfbs-scan.yaml"
-    threads: 1
-    shell:
-        """
-        bedtools maskfasta -fi {input.genome} -bed {input.regions} -fo {output.masked_genome}
-        """
-
-
-rule scan_genome:
+rule scan_chromosome:
     message:
         """
         Scans reference genome for matches againts input motif.
         Output compressed.
         """
     input:
-        pwm=rules.calculate_pwm.output,
-        cut=rules.process_probabilities.output.coeff,
-        ref=rules.mask_genome.output.masked_genome,
-        matrix_scan="resources/software/PWMScan/matrix_scan",
+        pwm=rules.calculate_IntLogOdds.output,
+        cut=rules.calculate_cutoff.output,
+        ref="results/tfbs-scan/{assembly}/mask/{chrom}.masked.fa",
+        matrix_scan=rules.compile_pwmscan.output.compiled_scan,
     output:
-        "results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.bed.gz",
+        temp(
+            "results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}-sites.masked.{chrom}.bed"
+        ),
     log:
-        stdout="workflow/logs/scan_genome_{PROFILE}_{ASSEMBLY}.stdout",
-        stderr="workflow/logs/scan_genome_{PROFILE}_{ASSEMBLY}.stderr",
+        stdout="workflow/logs/scan_chromosome_{matrix}_{assembly}_{chrom}.stdout",
+        stderr="workflow/logs/scan_chromosome_{matrix}_{assembly}_{chrom}.stderr",
     conda:
         "../envs/tfbs-scan.yaml"
     threads: 1
     shell:
         """
-        {input.matrix_scan} -m {input.pwm} -c $(cat {input.cut}) {input.ref} |
-        gzip > {output}
+        {input.matrix_scan} -m {input.pwm} -c $(cat {input.cut}) {input.ref} > {output}
         """
 
 
-rule bed2fasta:
+rule assemble_scan:
     message:
         """
-        Some utilities want FASTA format, useful to have on hand.
-        - Note -s, keep strand information correct. Reports rev comp for neg seqs.
-        Output compressed.
+        Assembles individual chromosome scans into genome sites file.
         """
     input:
-        genome=rules.decompress_genome.output,
-        sites=rules.scan_genome.output,
+        expand(
+            "results/tfbs-scan/{assembly}/scan/{{matrix}}/{{matrix}}-sites.masked.{chrom}.bed",
+            assembly=ASSEMBLY,
+            chrom=CHROMOSOMES,
+        ),
     output:
-        "results/tfbs-scan/{ASSEMBLY}/{PROFILE}/{PROFILE}-sites.masked.fa.gz",
+        "results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}-sites.masked.genome.sorted.bed.gz",
     log:
-        stdout="workflow/logs/bed2fasta_{PROFILE}_{ASSEMBLY}.stdout",
-        stderr="workflow/logs/bed2fasta_{PROFILE}_{ASSEMBLY}.stderr",
+        stdout="workflow/logs/assemble_scan_{assembly}_{matrix}_hg38.stdout",
+        stderr="workflow/logs/assemble_scan_{assembly}_{matrix}_hg38.stderr",
     conda:
         "../envs/tfbs-scan.yaml"
     threads: 1
     shell:
         """
-        bedtools getfasta -fi {input.genome} -bed {input.sites} -name -s |
-        gzip > {output}
+        cat {input} | sort -k 1,1 -k2,2n | gzip > {output}
         """

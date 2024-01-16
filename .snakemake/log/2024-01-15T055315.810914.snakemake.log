@@ -1,0 +1,40 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+scan_scan_genome        2
+total                   3
+
+Select jobs to execute...
+
+[Mon Jan 15 05:53:26 2024]
+Job 34: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/cc3249bab5bc2557d4b9ca5a38caf3e5_
+[Mon Jan 15 05:53:27 2024]
+Error in rule scan_scan_genome:
+    jobid: 34
+    input: results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/hg38/mask/split/chr1.fa, results/tfbs-scan/hg38/mask/split/chr2.fa, results/tfbs-scan/hg38/mask/split/chr3.fa, results/tfbs-scan/hg38/mask/split/chr4.fa, results/tfbs-scan/hg38/mask/split/chr5.fa, results/tfbs-scan/hg38/mask/split/chr6.fa, results/tfbs-scan/hg38/mask/split/chr7.fa, results/tfbs-scan/hg38/mask/split/chr8.fa, results/tfbs-scan/hg38/mask/split/chr9.fa, results/tfbs-scan/hg38/mask/split/chr10.fa, results/tfbs-scan/hg38/mask/split/chr11.fa, results/tfbs-scan/hg38/mask/split/chr12.fa, results/tfbs-scan/hg38/mask/split/chr13.fa, results/tfbs-scan/hg38/mask/split/chr14.fa, results/tfbs-scan/hg38/mask/split/chr15.fa, results/tfbs-scan/hg38/mask/split/chr16.fa, results/tfbs-scan/hg38/mask/split/chr17.fa, results/tfbs-scan/hg38/mask/split/chr18.fa, results/tfbs-scan/hg38/mask/split/chr19.fa, results/tfbs-scan/hg38/mask/split/chr20.fa, results/tfbs-scan/hg38/mask/split/chr21.fa, results/tfbs-scan/hg38/mask/split/chr22.fa, results/tfbs-scan/hg38/mask/split/chrX.fa, results/tfbs-scan/hg38/mask/split/chrY.fa, resources/software/PWMScan/matrix_scan
+    output: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.bed
+    log: workflow/logs/scan_genome_ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm_hg38.stdout, workflow/logs/scan_genome_ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm_hg38.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/cc3249bab5bc2557d4b9ca5a38caf3e5_
+    shell:
+        
+        python /home/tubbsca/.cache/snakemake/snakemake/source-cache/runtime-cache/tmpsd6hn76f/file/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/../scripts/scan/matrix_scan_parallel.py          --processes 24          --cutoff "$(cat results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt)"          --matrix results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds          --seqs results/tfbs-scan/hg38/mask/split/chr1.fa results/tfbs-scan/hg38/mask/split/chr2.fa results/tfbs-scan/hg38/mask/split/chr3.fa results/tfbs-scan/hg38/mask/split/chr4.fa results/tfbs-scan/hg38/mask/split/chr5.fa results/tfbs-scan/hg38/mask/split/chr6.fa results/tfbs-scan/hg38/mask/split/chr7.fa results/tfbs-scan/hg38/mask/split/chr8.fa results/tfbs-scan/hg38/mask/split/chr9.fa results/tfbs-scan/hg38/mask/split/chr10.fa results/tfbs-scan/hg38/mask/split/chr11.fa results/tfbs-scan/hg38/mask/split/chr12.fa results/tfbs-scan/hg38/mask/split/chr13.fa results/tfbs-scan/hg38/mask/split/chr14.fa results/tfbs-scan/hg38/mask/split/chr15.fa results/tfbs-scan/hg38/mask/split/chr16.fa results/tfbs-scan/hg38/mask/split/chr17.fa results/tfbs-scan/hg38/mask/split/chr18.fa results/tfbs-scan/hg38/mask/split/chr19.fa results/tfbs-scan/hg38/mask/split/chr20.fa results/tfbs-scan/hg38/mask/split/chr21.fa results/tfbs-scan/hg38/mask/split/chr22.fa results/tfbs-scan/hg38/mask/split/chrX.fa results/tfbs-scan/hg38/mask/split/chrY.fa          --matrix_scan resources/software/PWMScan/matrix_scan          --parallelize /home/tubbsca/.cache/snakemake/snakemake/source-cache/runtime-cache/tmpsd6hn76f/file/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/../scripts/scan/parallelize.py > results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job scan_scan_genome since they might be corrupted:
+results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.bed
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-15T055315.810914.snakemake.log

@@ -1,0 +1,58 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count
+------------------  -------
+all                       1
+scan_assemble_scan        3
+total                     4
+
+Select jobs to execute...
+
+[Mon Jan 15 10:34:59 2024]
+Job 58: 
+        d
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/hg38/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.genome.sorted.bed.gz
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 10:34:59 2024]
+Job 87: 
+        d
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/hg38/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.genome.sorted.bed.gz
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 10:34:59 2024]
+Job 28: 
+        d
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/hg38/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.genome.sorted.bed.gz
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 10:35:05 2024]
+Finished job 58.
+1 of 4 steps (25%) done
+[Mon Jan 15 10:35:19 2024]
+Finished job 87.
+2 of 4 steps (50%) done
+[Mon Jan 15 10:35:34 2024]
+Finished job 28.
+3 of 4 steps (75%) done
+Select jobs to execute...
+
+[Mon Jan 15 10:35:34 2024]
+Job 0: 
+        DEPLOYING TFBS-SCAN...
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/hg38/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.genome.sorted.bed.gz, results/tfbs-scan/hg38/scan/hg38/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.genome.sorted.bed.gz, results/tfbs-scan/hg38/scan/hg38/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.genome.sorted.bed.gz
+
+[Mon Jan 15 10:35:34 2024]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: .snakemake/log/2024-01-15T103439.105128.snakemake.log

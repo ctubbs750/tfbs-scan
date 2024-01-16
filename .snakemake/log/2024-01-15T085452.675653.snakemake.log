@@ -1,0 +1,369 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                             count
+----------------------------  -------
+all                                 1
+scan_calculate_IntLogOdds           1
+scan_calculate_cutoff               1
+scan_calculate_probabilities        1
+scan_process_probabilities          1
+scan_scan_chromosome               24
+total                              29
+
+Select jobs to execute...
+
+[Mon Jan 15 08:55:03 2024]
+Job 86: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:55:05 2024]
+Finished job 86.
+1 of 29 steps (3%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:55:05 2024]
+Job 89: 
+        Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-pvals.raw; Input files updated by another job: results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:55:06 2024]
+Finished job 89.
+2 of 29 steps (7%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:55:06 2024]
+Job 88: 
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-pvals.txt; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-pvals.raw
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:55:07 2024]
+Finished job 88.
+3 of 29 steps (10%) done
+Removing temporary output results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-pvals.raw.
+Select jobs to execute...
+
+[Mon Jan 15 08:55:07 2024]
+Job 87: 
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-pvals.txt
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:55:08 2024]
+Finished job 87.
+4 of 29 steps (14%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:55:08 2024]
+Job 95: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr7.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 109: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr21.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 103: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr15.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 96: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr8.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 110: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr22.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 90: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr2.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 104: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr16.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 97: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr9.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 111: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chrX.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 91: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr3.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 105: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr17.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 98: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr10.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 112: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chrY.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 106: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr18.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 92: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr4.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 85: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr1.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 99: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr11.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 93: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr5.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 107: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr19.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 100: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr12.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 94: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr6.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:08 2024]
+Job 108: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr20.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:55:09 2024]
+Job 101: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr13.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:55:09 2024]
+Job 102: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr14.bed; Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:55:13 2024]
+Finished job 109.
+5 of 29 steps (17%) done
+[Mon Jan 15 08:55:13 2024]
+Finished job 110.
+6 of 29 steps (21%) done
+[Mon Jan 15 08:55:13 2024]
+Finished job 112.
+7 of 29 steps (24%) done
+[Mon Jan 15 08:55:15 2024]
+Finished job 107.
+8 of 29 steps (28%) done
+[Mon Jan 15 08:55:16 2024]
+Finished job 108.
+9 of 29 steps (31%) done
+[Mon Jan 15 08:55:17 2024]
+Finished job 106.
+10 of 29 steps (34%) done
+[Mon Jan 15 08:55:17 2024]
+Finished job 103.
+11 of 29 steps (38%) done
+[Mon Jan 15 08:55:17 2024]
+Finished job 104.
+12 of 29 steps (41%) done
+[Mon Jan 15 08:55:17 2024]
+Finished job 105.
+13 of 29 steps (45%) done
+[Mon Jan 15 08:55:18 2024]
+Finished job 102.
+14 of 29 steps (48%) done
+[Mon Jan 15 08:55:19 2024]
+Finished job 101.
+15 of 29 steps (52%) done
+[Mon Jan 15 08:55:20 2024]
+Finished job 100.
+16 of 29 steps (55%) done
+[Mon Jan 15 08:55:21 2024]
+Finished job 98.
+17 of 29 steps (59%) done
+[Mon Jan 15 08:55:21 2024]
+Finished job 96.
+18 of 29 steps (62%) done
+[Mon Jan 15 08:55:21 2024]
+Finished job 97.
+19 of 29 steps (66%) done
+[Mon Jan 15 08:55:21 2024]
+Finished job 99.
+20 of 29 steps (69%) done
+[Mon Jan 15 08:55:22 2024]
+Finished job 95.
+21 of 29 steps (72%) done
+[Mon Jan 15 08:55:22 2024]
+Finished job 111.
+22 of 29 steps (76%) done
+[Mon Jan 15 08:55:23 2024]
+Finished job 94.
+23 of 29 steps (79%) done
+[Mon Jan 15 08:55:23 2024]
+Finished job 93.
+24 of 29 steps (83%) done
+[Mon Jan 15 08:55:24 2024]
+Finished job 92.
+25 of 29 steps (86%) done
+[Mon Jan 15 08:55:24 2024]
+Finished job 91.
+26 of 29 steps (90%) done
+[Mon Jan 15 08:55:34 2024]
+Finished job 90.
+27 of 29 steps (93%) done
+[Mon Jan 15 08:56:20 2024]
+Finished job 85.
+28 of 29 steps (97%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:56:20 2024]
+Job 0: 
+        DEPLOYING TFBS-SCAN...
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr13.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr20.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr16.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr3.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr4.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr5.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr12.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr15.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr11.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chrX.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr21.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr1.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr7.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr9.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr2.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr19.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr22.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr18.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr10.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chrY.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr14.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr6.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr8.bed, results/tfbs-scan/hg38/scan/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm/ENCSR000ALJ.keratinocytes.CTCF.MA0139.1.damo.pwm-sites.masked.chr17.bed
+
+[Mon Jan 15 08:56:20 2024]
+Finished job 0.
+29 of 29 steps (100%) done
+Complete log: .snakemake/log/2024-01-15T085452.675653.snakemake.log

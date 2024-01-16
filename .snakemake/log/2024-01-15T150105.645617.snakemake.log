@@ -1,0 +1,29 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+all                          1
+scan_assemble_scan           5
+scan_scan_chromosome       120
+sequence_split_genome       24
+total                      150
+
+Select jobs to execute...
+
+[Mon Jan 15 15:01:10 2024]
+Job 15: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Code has changed since last execution
+
+RuleException in rule sequence_split_genome in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/sequence.smk, line 91:
+NameError: The name '*' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}, when formatting the following:
+
+        #faidx --regex {params.chromosome} --out {output} {input}
+        csplit -s -z {input} '/>/' '{*}'
+        for i in xx* ; do             n=$(sed 's/>// ; s/ .*// ; 1q' "$i") ;             mv "$i" {output}" ;         done
+        

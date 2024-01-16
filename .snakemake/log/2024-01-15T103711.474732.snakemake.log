@@ -1,0 +1,6 @@
+ValueError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 22:
+unexpected '{' in field name
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/Snakefile", line 57, in <module>
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 22, in <module>
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/string.py", line 165, in vformat
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/string.py", line 174, in _vformat

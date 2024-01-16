@@ -1,0 +1,90 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                             count
+----------------------------  -------
+all                                 1
+scan_calculate_cutoff               2
+scan_calculate_probabilities        2
+scan_compile_pwmscan                1
+total                               6
+
+Select jobs to execute...
+
+[Mon Jan 15 04:58:22 2024]
+Job 31: 
+        Compiles PWMScan. Note c99 flag.
+        Installs into resources/software by default.
+        
+Reason: Missing output files: resources/software/PWMScan/matrix_prob
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 04:58:24 2024]
+Finished job 31.
+1 of 6 steps (17%) done
+Select jobs to execute...
+
+[Mon Jan 15 04:58:24 2024]
+Job 33: 
+        Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 04:58:24 2024]
+Job 29: 
+        Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-pvals.raw; Input files updated by another job: resources/software/PWMScan/matrix_prob
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 04:58:25 2024]
+Finished job 33.
+2 of 6 steps (33%) done
+Select jobs to execute...
+
+[Mon Jan 15 04:58:25 2024]
+Job 32: 
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt; Input files updated by another job: results/tfbs-scan/hg38/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-pvals.raw
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 04:58:25 2024]
+Finished job 29.
+3 of 6 steps (50%) done
+Select jobs to execute...
+
+[Mon Jan 15 04:58:25 2024]
+Job 28: 
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt; Input files updated by another job: results/tfbs-scan/hg38/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-pvals.raw
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 04:58:26 2024]
+Finished job 28.
+4 of 6 steps (67%) done
+Removing temporary output results/tfbs-scan/hg38/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-pvals.raw.
+[Mon Jan 15 04:58:26 2024]
+Finished job 32.
+5 of 6 steps (83%) done
+Removing temporary output results/tfbs-scan/hg38/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-pvals.raw.
+Select jobs to execute...
+
+[Mon Jan 15 04:58:26 2024]
+Job 0: 
+        DEPLOYING TFBS-SCAN...
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/hg38/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt
+
+[Mon Jan 15 04:58:26 2024]
+Finished job 0.
+6 of 6 steps (100%) done
+Complete log: .snakemake/log/2024-01-15T045812.694815.snakemake.log

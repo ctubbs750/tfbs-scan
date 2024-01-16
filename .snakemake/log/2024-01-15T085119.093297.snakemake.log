@@ -1,0 +1,728 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                             count
+----------------------------  -------
+all                                 1
+scan_calculate_IntLogOdds           2
+scan_calculate_cutoff               2
+scan_calculate_probabilities        2
+scan_process_probabilities          2
+scan_scan_chromosome               48
+total                              57
+
+Select jobs to execute...
+
+[Mon Jan 15 08:51:36 2024]
+Job 58: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+[Mon Jan 15 08:51:36 2024]
+Job 29: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:43 2024]
+Finished job 58.
+1 of 57 steps (2%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:51:43 2024]
+Job 61: 
+        Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-pvals.raw; Input files updated by another job: results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:43 2024]
+Finished job 29.
+2 of 57 steps (4%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:51:43 2024]
+Job 32: 
+        Generates pval distribution for given PWM.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-pvals.raw; Input files updated by another job: results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:44 2024]
+Finished job 61.
+3 of 57 steps (5%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:51:44 2024]
+Job 60: 
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-pvals.raw
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:44 2024]
+Finished job 32.
+4 of 57 steps (7%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:51:44 2024]
+Job 31: 
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-pvals.raw
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:45 2024]
+Finished job 60.
+5 of 57 steps (9%) done
+Removing temporary output results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-pvals.raw.
+Select jobs to execute...
+
+[Mon Jan 15 08:51:45 2024]
+Job 59: 
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-pvals.txt
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:45 2024]
+Finished job 31.
+6 of 57 steps (11%) done
+Removing temporary output results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-pvals.raw.
+Select jobs to execute...
+
+[Mon Jan 15 08:51:45 2024]
+Job 30: 
+        Relative threshold is percentage of best PWM.
+        For 80%, format as interger 80. Makes life easier.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-pvals.txt
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:45 2024]
+Finished job 59.
+7 of 57 steps (12%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:51:45 2024]
+Job 67: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:45 2024]
+Job 75: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:46 2024]
+Job 82: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 68: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 76: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 62: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 69: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 83: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 63: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 77: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 70: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 84: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 78: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 64: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 57: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 71: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 65: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:46 2024]
+Job 79: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:47 2024]
+Job 72: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+
+[Mon Jan 15 08:51:47 2024]
+Job 66: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:47 2024]
+Job 80: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:47 2024]
+Job 73: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:51:48 2024]
+Job 74: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:49 2024]
+Finished job 30.
+8 of 57 steps (14%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:51:49 2024]
+Job 28: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:51 2024]
+Finished job 82.
+9 of 57 steps (16%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:51:51 2024]
+Job 34: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:55 2024]
+Finished job 75.
+10 of 57 steps (18%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:51:55 2024]
+Job 35: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:56 2024]
+Finished job 76.
+11 of 57 steps (19%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:51:56 2024]
+Job 36: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:51:59 2024]
+Finished job 68.
+12 of 57 steps (21%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:51:59 2024]
+Job 37: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:02 2024]
+Finished job 67.
+13 of 57 steps (23%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:02 2024]
+Job 38: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:04 2024]
+Finished job 84.
+14 of 57 steps (25%) done
+[Mon Jan 15 08:52:06 2024]
+Finished job 77.
+15 of 57 steps (26%) done
+[Mon Jan 15 08:52:06 2024]
+Finished job 69.
+16 of 57 steps (28%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:06 2024]
+Job 39: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:52:08 2024]
+Job 40: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:52:09 2024]
+Job 55: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:10 2024]
+Finished job 83.
+17 of 57 steps (30%) done
+[Mon Jan 15 08:52:10 2024]
+Finished job 79.
+18 of 57 steps (32%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:10 2024]
+Job 43: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:52:10 2024]
+Job 41: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:10 2024]
+Finished job 80.
+19 of 57 steps (33%) done
+[Mon Jan 15 08:52:11 2024]
+Finished job 78.
+20 of 57 steps (35%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:11 2024]
+Job 44: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 08:52:11 2024]
+Job 42: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:11 2024]
+Finished job 63.
+21 of 57 steps (37%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:11 2024]
+Job 45: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:11 2024]
+Finished job 70.
+22 of 57 steps (39%) done
+
+[Mon Jan 15 08:52:11 2024]
+Job 46: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:13 2024]
+Finished job 74.
+23 of 57 steps (40%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:13 2024]
+Job 47: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:14 2024]
+Finished job 73.
+24 of 57 steps (42%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:14 2024]
+Job 48: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:16 2024]
+Finished job 72.
+25 of 57 steps (44%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:16 2024]
+Job 49: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:16 2024]
+Finished job 71.
+26 of 57 steps (46%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:16 2024]
+Job 50: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:19 2024]
+Finished job 35.
+27 of 57 steps (47%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:19 2024]
+Job 52: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:20 2024]
+Finished job 66.
+28 of 57 steps (49%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:20 2024]
+Job 51: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:21 2024]
+Finished job 64.
+29 of 57 steps (51%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:21 2024]
+Job 56: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-coeff.txt, results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:22 2024]
+Finished job 65.
+30 of 57 steps (53%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:22 2024]
+Job 54: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:22 2024]
+Finished job 36.
+31 of 57 steps (54%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:22 2024]
+Job 81: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:23 2024]
+Finished job 37.
+32 of 57 steps (56%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:52:23 2024]
+Job 53: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Forced execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 08:52:23 2024]
+Finished job 46.
+33 of 57 steps (58%) done
+[Mon Jan 15 08:52:23 2024]
+Finished job 45.
+34 of 57 steps (60%) done
+[Mon Jan 15 08:52:23 2024]
+Finished job 47.
+35 of 57 steps (61%) done
+[Mon Jan 15 08:52:24 2024]
+Finished job 48.
+36 of 57 steps (63%) done
+[Mon Jan 15 08:52:24 2024]
+Finished job 41.
+37 of 57 steps (65%) done
+[Mon Jan 15 08:52:24 2024]
+Finished job 38.
+38 of 57 steps (67%) done
+[Mon Jan 15 08:52:24 2024]
+Finished job 39.
+39 of 57 steps (68%) done
+[Mon Jan 15 08:52:24 2024]
+Finished job 40.
+40 of 57 steps (70%) done
+[Mon Jan 15 08:52:24 2024]
+Finished job 55.
+41 of 57 steps (72%) done
+[Mon Jan 15 08:52:25 2024]
+Finished job 43.
+42 of 57 steps (74%) done
+[Mon Jan 15 08:52:25 2024]
+Finished job 42.
+43 of 57 steps (75%) done
+[Mon Jan 15 08:52:25 2024]
+Finished job 44.
+44 of 57 steps (77%) done
+[Mon Jan 15 08:52:25 2024]
+Finished job 50.
+45 of 57 steps (79%) done
+[Mon Jan 15 08:52:25 2024]
+Finished job 49.
+46 of 57 steps (81%) done
+[Mon Jan 15 08:52:25 2024]
+Finished job 56.
+47 of 57 steps (82%) done
+[Mon Jan 15 08:52:26 2024]
+Finished job 51.
+48 of 57 steps (84%) done
+[Mon Jan 15 08:52:26 2024]
+Finished job 54.
+49 of 57 steps (86%) done
+[Mon Jan 15 08:52:26 2024]
+Finished job 52.
+50 of 57 steps (88%) done
+[Mon Jan 15 08:52:26 2024]
+Finished job 81.
+51 of 57 steps (89%) done
+[Mon Jan 15 08:52:27 2024]
+Finished job 53.
+52 of 57 steps (91%) done
+[Mon Jan 15 08:52:28 2024]
+Finished job 62.
+53 of 57 steps (93%) done
+[Mon Jan 15 08:52:34 2024]
+Finished job 34.
+54 of 57 steps (95%) done
+[Mon Jan 15 08:53:18 2024]
+Finished job 57.
+55 of 57 steps (96%) done
+[Mon Jan 15 08:53:22 2024]
+Finished job 28.
+56 of 57 steps (98%) done
+Select jobs to execute...
+
+[Mon Jan 15 08:53:22 2024]
+Job 0: 
+        DEPLOYING TFBS-SCAN...
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr6.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr17.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr8.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr8.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr19.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr14.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr1.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr7.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr6.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr12.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr5.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr10.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr17.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr11.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr5.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr9.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr14.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr1.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr20.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr18.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr21.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chrY.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr13.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr13.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chrY.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr15.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr20.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr4.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr18.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr16.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr21.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr15.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr22.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr9.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr19.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr3.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr16.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr2.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chrX.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr4.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr7.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr11.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr10.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chrX.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr12.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr22.bed, results/tfbs-scan/hg38/scan/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm-sites.masked.chr2.bed, results/tfbs-scan/hg38/scan/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm-sites.masked.chr3.bed
+
+[Mon Jan 15 08:53:22 2024]
+Finished job 0.
+57 of 57 steps (100%) done
+Complete log: .snakemake/log/2024-01-15T085119.093297.snakemake.log

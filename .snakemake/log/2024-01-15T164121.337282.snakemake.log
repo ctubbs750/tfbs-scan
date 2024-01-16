@@ -1,0 +1,67 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                           count
+--------------------------  -------
+all                               1
+scan_assemble_scan                5
+scan_scan_chromosome            120
+sequence_decompress_genome        1
+sequence_mask_genome              1
+sequence_mask_regions             1
+sequence_split_genome            24
+total                           153
+
+Select jobs to execute...
+
+[Mon Jan 15 16:41:26 2024]
+Job 3: 
+        Makes exclude regions in BED format for genome masking.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.masked_regions.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:41:26 2024]
+Job 4: 
+        Necessary to scan genome.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/hg38.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 16:41:31 2024]
+Finished job 3.
+1 of 153 steps (1%) done
+[Mon Jan 15 16:42:15 2024]
+Finished job 4.
+2 of 153 steps (1%) done
+Select jobs to execute...
+
+[Mon Jan 15 16:42:15 2024]
+Job 2: 
+        Creates custom-masked genome for scanning against.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.masked_regions.bed, results/tfbs-scan/hg38/hg38.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Mon Jan 15 16:43:01 2024]
+Finished job 2.
+3 of 153 steps (2%) done
+Removing temporary output results/tfbs-scan/hg38/hg38.fa.
+Select jobs to execute...
+
+[Mon Jan 15 16:43:01 2024]
+Job 1: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr1.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa; Code has changed since last execution
+
+RuleException in rule sequence_split_genome in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/sequence.smk, line 91:
+NameError: The name '*' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}, when formatting the following:
+
+        #faidx --regex "{params.chromosome}" --out {output} {input}
+        csplit -s -z {input} '/>/' '{*}' -f {params.output_dir}
+        

@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                          count
+-------------------------  -------
+all                              1
+scan_calculate_IntLogOdds        2
+total                            3
+
+Select jobs to execute...
+
+[Sun Jan 14 18:35:28 2024]
+Job 28: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+
+[Sun Jan 14 18:35:28 2024]
+Job 29: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule scan_calculate_IntLogOdds in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 54:
+Job 29  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/tfbs-scan/IntLogOdds/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.pwm.IntLogOdds
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule scan_calculate_IntLogOdds in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 54:
+Job 28  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/tfbs-scan/IntLogOdds/ENCSR000AHD.MCF7_Invasive_ductal_breast_carcinoma.CTCF.MA0139.1.damo.pwm.IntLogOdds
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-14T183516.077110.snakemake.log

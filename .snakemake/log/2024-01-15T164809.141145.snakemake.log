@@ -1,0 +1,785 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 24
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+all                          1
+scan_assemble_scan           5
+scan_scan_chromosome       120
+sequence_split_genome       24
+total                      150
+
+Select jobs to execute...
+
+[Mon Jan 15 16:48:14 2024]
+Job 1: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr1.fa; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:14 2024]
+Job 15: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr12.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:14 2024]
+Job 9: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr6.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:14 2024]
+Job 23: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr20.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:14 2024]
+Job 16: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr13.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:14 2024]
+Job 24: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr21.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:14 2024]
+Job 10: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr7.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:14 2024]
+Job 17: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr14.fa; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:14 2024]
+Job 11: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr8.fa; Code has changed since last execution
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:14 2024]
+Job 25: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr22.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:14 2024]
+Job 18: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr15.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:14 2024]
+Job 26: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chrX.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 12: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr9.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 5: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr2.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 19: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr16.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 13: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr10.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 27: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chrY.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 20: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr17.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 6: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr3.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 14: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr11.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 8: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr5.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 7: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr4.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 21: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr18.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Mon Jan 15 16:48:15 2024]
+Job 22: 
+        Splits masked genome by chromsome from parallel scanning.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/chr19.fa; Updated input files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Terminating processes on user request, this might take some time.
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+Error in rule sequence_split_genome:
+    jobid: 5
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr2.fa
+    log: workflow/logs/split_genome_hg38_chr2.stdout, workflow/logs/split_genome_hg38_chr2.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr2" --out results/tfbs-scan/hg38/mask/chr2.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr2' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr2.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr2.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+Error in rule sequence_split_genome:
+    jobid: 12
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr9.fa
+    log: workflow/logs/split_genome_hg38_chr9.stdout, workflow/logs/split_genome_hg38_chr9.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr9" --out results/tfbs-scan/hg38/mask/chr9.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr9' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr9.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr9.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+Error in rule sequence_split_genome:
+    jobid: 16
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr13.fa
+    log: workflow/logs/split_genome_hg38_chr13.stdout, workflow/logs/split_genome_hg38_chr13.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr13" --out results/tfbs-scan/hg38/mask/chr13.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr13' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr13.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr13.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Jan 15 16:48:27 2024]
+Error in rule sequence_split_genome:
+    jobid: 25
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr22.fa
+    log: workflow/logs/split_genome_hg38_chr22.stdout, workflow/logs/split_genome_hg38_chr22.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr22" --out results/tfbs-scan/hg38/mask/chr22.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr22' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr22.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr22.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+Error in rule sequence_split_genome:
+    jobid: 24
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr21.fa
+    log: workflow/logs/split_genome_hg38_chr21.stdout, workflow/logs/split_genome_hg38_chr21.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr21" --out results/tfbs-scan/hg38/mask/chr21.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr21' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr21.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr21.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Jan 15 16:48:27 2024]
+Error in rule sequence_split_genome:
+    jobid: 18
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr15.fa
+    log: workflow/logs/split_genome_hg38_chr15.stdout, workflow/logs/split_genome_hg38_chr15.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr15" --out results/tfbs-scan/hg38/mask/chr15.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr15' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr15.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr15.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+[Mon Jan 15 16:48:27 2024]
+Error in rule sequence_split_genome:
+    jobid: 21
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr18.fa
+    log: workflow/logs/split_genome_hg38_chr18.stdout, workflow/logs/split_genome_hg38_chr18.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr18" --out results/tfbs-scan/hg38/mask/chr18.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr18' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr18.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr18.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 6
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr3.fa
+    log: workflow/logs/split_genome_hg38_chr3.stdout, workflow/logs/split_genome_hg38_chr3.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr3" --out results/tfbs-scan/hg38/mask/chr3.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr3' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr3.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr3.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 22
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr19.fa
+    log: workflow/logs/split_genome_hg38_chr19.stdout, workflow/logs/split_genome_hg38_chr19.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr19" --out results/tfbs-scan/hg38/mask/chr19.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr19' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr19.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr19.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 8
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr5.fa
+    log: workflow/logs/split_genome_hg38_chr5.stdout, workflow/logs/split_genome_hg38_chr5.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr5" --out results/tfbs-scan/hg38/mask/chr5.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr5' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr5.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr5.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 1
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr1.fa
+    log: workflow/logs/split_genome_hg38_chr1.stdout, workflow/logs/split_genome_hg38_chr1.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr1" --out results/tfbs-scan/hg38/mask/chr1.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr1' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr1.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr1.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 19
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr16.fa
+    log: workflow/logs/split_genome_hg38_chr16.stdout, workflow/logs/split_genome_hg38_chr16.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr16" --out results/tfbs-scan/hg38/mask/chr16.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr16' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr16.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr16.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 23
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr20.fa
+    log: workflow/logs/split_genome_hg38_chr20.stdout, workflow/logs/split_genome_hg38_chr20.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr20" --out results/tfbs-scan/hg38/mask/chr20.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr20' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr20.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr20.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 11
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr8.fa
+    log: workflow/logs/split_genome_hg38_chr8.stdout, workflow/logs/split_genome_hg38_chr8.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr8" --out results/tfbs-scan/hg38/mask/chr8.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr8' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr8.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr8.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 17
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr14.fa
+    log: workflow/logs/split_genome_hg38_chr14.stdout, workflow/logs/split_genome_hg38_chr14.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr14" --out results/tfbs-scan/hg38/mask/chr14.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr14' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr14.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr14.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 20
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr17.fa
+    log: workflow/logs/split_genome_hg38_chr17.stdout, workflow/logs/split_genome_hg38_chr17.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr17" --out results/tfbs-scan/hg38/mask/chr17.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr17' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr17.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr17.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 10
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr7.fa
+    log: workflow/logs/split_genome_hg38_chr7.stdout, workflow/logs/split_genome_hg38_chr7.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr7" --out results/tfbs-scan/hg38/mask/chr7.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr7' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr7.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr7.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 9
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr6.fa
+    log: workflow/logs/split_genome_hg38_chr6.stdout, workflow/logs/split_genome_hg38_chr6.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr6" --out results/tfbs-scan/hg38/mask/chr6.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr6' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr6.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr6.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 15
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr12.fa
+    log: workflow/logs/split_genome_hg38_chr12.stdout, workflow/logs/split_genome_hg38_chr12.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr12" --out results/tfbs-scan/hg38/mask/chr12.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr12' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr12.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr12.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 14
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr11.fa
+    log: workflow/logs/split_genome_hg38_chr11.stdout, workflow/logs/split_genome_hg38_chr11.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr11" --out results/tfbs-scan/hg38/mask/chr11.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr11' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr11.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr11.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 27
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chrY.fa
+    log: workflow/logs/split_genome_hg38_chrY.stdout, workflow/logs/split_genome_hg38_chrY.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chrY" --out results/tfbs-scan/hg38/mask/chrY.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chrY' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chrY.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chrY.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 7
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr4.fa
+    log: workflow/logs/split_genome_hg38_chr4.stdout, workflow/logs/split_genome_hg38_chr4.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr4" --out results/tfbs-scan/hg38/mask/chr4.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr4' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr4.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr4.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 26
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chrX.fa
+    log: workflow/logs/split_genome_hg38_chrX.stdout, workflow/logs/split_genome_hg38_chrX.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chrX" --out results/tfbs-scan/hg38/mask/chrX.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chrX' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chrX.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chrX.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule sequence_split_genome:
+    jobid: 13
+    input: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+    output: results/tfbs-scan/hg38/mask/chr10.fa
+    log: workflow/logs/split_genome_hg38_chr10.stdout, workflow/logs/split_genome_hg38_chr10.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        #faidx --regex "chr10" --out results/tfbs-scan/hg38/mask/chr10.fa results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        #csplit -s -z results/tfbs-scan/hg38/mask/hg38.custom-mask.fa '/>/' '{*}' -f results/tfbs-scan/hg38/mask
+        while read line
+        do
+            if [[ ${line:0:1} == 'chr10' ]]
+            then
+                outfile=${line#>}.fa
+                echo $line > results/tfbs-scan/hg38/mask/chr10.fa
+            else
+                echo $line >> results/tfbs-scan/hg38/mask/chr10.fa
+            fi
+        done < results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2024-01-15T164809.141145.snakemake.log
