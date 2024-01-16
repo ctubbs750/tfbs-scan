@@ -54,7 +54,7 @@ rule initialize:
         d
         """
     input:
-        dir("resources/data/unibind/damo_hg38_PWMS"),
+        "resources/data/unibind/damo_hg38_PWMS",
     output:
         temp("results/tfbs-scan/init.txt"),
     conda:
