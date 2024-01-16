@@ -19,6 +19,7 @@ rule all:
             matrix=MATRICES,
             assembly=ASSEMBLY,
         ),
+        "results/tfbs-scan/init.txt",
     default_target: True
 
 
@@ -44,6 +45,29 @@ rule compile_pwmscan:
         """
         gcc -std=c99 -o {output.compiled_prob} {input.prob}
         gcc -std=c99 -o {output.compiled_scan} {input.scan}
+        """
+
+
+rule initialize:
+    message:
+        """
+        d
+        """
+    input:
+        dir("resources/data/unibind/damo_hg38_PWMS"),
+    output:
+        temp("results/tfbs-scan/init.txt"),
+    conda:
+        "../envs/tfbs-scan.yaml"
+    log:
+        stdout="workflow/logs/initialize.stdout",
+        stderr="workflow/logs/initialize.stderr",
+    conda:
+        "../envs/tfbs-scan.yaml"
+    threads: 1
+    shell:
+        """
+        echo "init" > {output}
         """
 
 

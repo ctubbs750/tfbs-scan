@@ -2,7 +2,7 @@ TFBS-SCAN:
   # Target genome build to scan against
   assembly: hg38
   # Directies under `resources/data` containing input matrices to scan with
-  matrices: resources/data/unibind/damo_hg38_PWMs
+  matrices: resources/data/unibind/damo_hg38_PWMS
   # PWMScan software
   matrix_prob: workflow/scripts/scan/matrix_prob.c
   matrix_scan: workflow/scripts/scan/matrix_scan.c
