@@ -8,18 +8,19 @@ MATRIX_PROB = config["matrix_prob"]
 MATRIX_SCAN = config["matrix_scan"]
 CHROMOSOMES = ["chr" + str(i) for i in range(1, 23)] + ["chrX", "chrY"]
 MATRIX_DIR = config["matrices"]
+
 # Settings
 min_version("7.32.4")
 
 
-rule all:
-    input:
-        expand(
-            "results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}-sites.masked.genome.sorted.bed.gz",
-            matrix=MATRICES,
-            assembly=ASSEMBLY,
-        ),
-    default_target: True
+# rule all:
+#     input:
+#         expand(
+#             "results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}-sites.masked.genome.sorted.bed.gz",
+#             matrix=MATRICES,
+#             assembly=ASSEMBLY,
+#         ),
+#     default_target: True
 
 
 rule compile_pwmscan:
