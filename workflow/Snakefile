@@ -10,25 +10,18 @@ min_version("7.32.4")
 
 
 # Define modules
-# module PWMScan:
-#     snakefile:
-#         "https://raw.githubusercontent.com/ctubbs750/PWMScan/main/workflow/Snakefile"
-#     config:
-#         config
+module gencode:
+    snakefile:
+        "https://raw.githubusercontent.com/ctubbs750/gencode/main/workflow/Snakefile"
+    config:
+        config
 
 
-# module gencode:
-#     snakefile:
-#         "https://raw.githubusercontent.com/ctubbs750/gencode/main/workflow/Snakefile"
-#     config:
-#         config
-
-
-# module genome:
-#     snakefile:
-#         "https://raw.githubusercontent.com/ctubbs750/genome/main/workflow/Snakefile"
-#     config:
-#         config
+module genome:
+    snakefile:
+        "https://raw.githubusercontent.com/ctubbs750/genome/main/workflow/Snakefile"
+    config:
+        config
 
 
 module scan:
@@ -36,6 +29,7 @@ module scan:
         "rules/scan.smk"
     config:
         config["TFBS-SCAN"]
+
 
 module sequence:
     snakefile:
@@ -45,16 +39,11 @@ module sequence:
 
 
 # Import modules
-# use rule * from PWMScan as PWMScan_*
-
-
-# use rule * from gencode as gencode_*
-
-
-# use rule * from genome as genome_*
 
 
 use rule * from scan as scan_*
+
+
 use rule * from sequence as sequence_*
 
 
