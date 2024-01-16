@@ -7,7 +7,7 @@ MATRICES = listdir(config["matrices"])
 MATRIX_PROB = config["matrix_prob"]
 MATRIX_SCAN = config["matrix_scan"]
 CHROMOSOMES = ["chr" + str(i) for i in range(1, 23)] + ["chrX", "chrY"]
-
+MATRIX_DIR = config["matrices"]
 # Settings
 min_version("7.32.4")
 
@@ -52,7 +52,7 @@ rule calculate_IntLogOdds:
         Converts intput motif models to the IntLogOdds PWM format.
         """
     input:
-        "resources/data/unibind/damo_hg38_PWMs/{matrix}",
+        MATRIX_DIR + "/{matrix}",
     output:
         "results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}.IntLogOdds",
     conda:
