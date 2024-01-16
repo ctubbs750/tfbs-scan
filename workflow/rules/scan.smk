@@ -48,7 +48,7 @@ rule compile_pwmscan:
         """
 
 
-rule initialize:
+rule setup:
     message:
         """
         d
@@ -56,7 +56,7 @@ rule initialize:
     input:
         "resources/data/unibind/damo_hg38_PWMS",
     output:
-        temp("results/tfbs-scan/init.txt"),
+        temp("results/tfbs-scan/setup.txt"),
     conda:
         "../envs/tfbs-scan.yaml"
     log:
