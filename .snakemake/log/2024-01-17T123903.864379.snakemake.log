@@ -1,0 +1,30 @@
+Building DAG of jobs...
+MissingInputException in rule scan_assemble_scan in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 359:
+Missing input files for rule scan_assemble_scan:
+    output: results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo/sites.masked.genome.sorted.bed.gz
+    wildcards: tf_name=AR, profile=MA0007.3, dataset=ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo
+    affected files:
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr8.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr16.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr13.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr10.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr12.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr17.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr11.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr9.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr6.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr22.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr14.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr20.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr15.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr21.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr5.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr3.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chrY.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chrX.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr19.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr1.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr7.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr18.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr2.bed
+        results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo-sites.masked.chr4.bed

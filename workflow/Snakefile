@@ -31,20 +31,8 @@ module scan:
         config["TFBS-SCAN"]
 
 
-module sequence:
-    snakefile:
-        "rules/sequence.smk"
-    config:
-        config["TFBS-SCAN"]
-
-
 # Import modules
-
-
 use rule * from scan as scan_*
-
-
-use rule * from sequence as sequence_*
 
 
 ###
@@ -58,6 +46,5 @@ rule all:
         DEPLOYING TFBS-SCAN...
         """
     input:
-        rules.sequence_all.input,
         rules.scan_all.input,
     default_target: True

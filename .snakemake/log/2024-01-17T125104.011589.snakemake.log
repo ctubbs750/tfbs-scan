@@ -1,0 +1,945 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 48
+Rules claiming more threads will be scaled down.
+Job stats:
+job                       count
+----------------------  -------
+all                           1
+scan_assemble_scan            2
+scan_decompress_genome        1
+scan_mask_genome              1
+scan_mask_regions             1
+scan_scan_chromosome         48
+scan_split_genome            24
+total                        78
+
+Select jobs to execute...
+
+[Wed Jan 17 12:51:09 2024]
+Job 10: 
+        Makes exclude regions in BED format for genome masking.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.masked_regions.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:51:09 2024]
+Job 11: 
+        Necessary to scan genome.
+        
+Reason: Missing output files: resources/data/genome/hg38/hg38.fa.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:51:14 2024]
+Finished job 10.
+1 of 78 steps (1%) done
+[Wed Jan 17 12:51:51 2024]
+Finished job 11.
+2 of 78 steps (3%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:51:51 2024]
+Job 9: 
+        Creates custom-masked genome for scanning against.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa; Input files updated by another job: resources/data/genome/hg38/hg38.fa.fa, results/tfbs-scan/hg38/mask/hg38.masked_regions.bed
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:52:28 2024]
+Finished job 9.
+3 of 78 steps (4%) done
+Removing temporary output results/tfbs-scan/hg38/mask/hg38.masked_regions.bed.
+Removing temporary output resources/data/genome/hg38/hg38.fa.fa.
+Select jobs to execute...
+
+[Wed Jan 17 12:52:29 2024]
+Job 41: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr16.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:52:29 2024]
+Job 31: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr11.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:52:29 2024]
+Job 13: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr2.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:52:29 2024]
+Job 25: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr8.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:52:29 2024]
+Job 53: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr22.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:52:29 2024]
+Job 39: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr15.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:52:29 2024]
+Job 33: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr12.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:52:29 2024]
+Job 27: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr9.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:52:29 2024]
+Job 55: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chrX.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:52:29 2024]
+Job 17: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr4.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:52:29 2024]
+Job 47: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr19.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:52:29 2024]
+Job 19: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr5.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:01 2024]
+Finished job 27.
+4 of 78 steps (5%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:01 2024]
+Job 57: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chrY.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:04 2024]
+Finished job 53.
+5 of 78 steps (6%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:04 2024]
+Job 35: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr13.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:06 2024]
+Finished job 47.
+6 of 78 steps (8%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:06 2024]
+Job 23: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr7.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:06 2024]
+Finished job 39.
+7 of 78 steps (9%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:06 2024]
+Job 37: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr14.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:06 2024]
+Finished job 57.
+8 of 78 steps (10%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:07 2024]
+Job 51: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr21.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:07 2024]
+Finished job 41.
+9 of 78 steps (12%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:07 2024]
+Job 49: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr20.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:07 2024]
+Finished job 31.
+10 of 78 steps (13%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:07 2024]
+Job 21: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr6.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:10 2024]
+Finished job 33.
+11 of 78 steps (14%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:10 2024]
+Job 8: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr1.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:11 2024]
+Finished job 19.
+12 of 78 steps (15%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:11 2024]
+Job 43: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr17.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:11 2024]
+Finished job 55.
+13 of 78 steps (17%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:11 2024]
+Job 15: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr3.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:12 2024]
+Finished job 51.
+14 of 78 steps (18%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:12 2024]
+Job 29: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr10.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:12 2024]
+Finished job 25.
+15 of 78 steps (19%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:12 2024]
+Job 45: 
+        Splits masked genome by chromsome from parallel scanning.
+        High thread-count seems to be necessary to avoid issues with parallel access
+        
+Reason: Missing output files: results/tfbs-scan/hg38/mask/hg38.chr18.custom-mask.fa; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:12 2024]
+Finished job 35.
+16 of 78 steps (21%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:12 2024]
+Job 85: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chrX.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:12 2024]
+Job 18: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr5.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:12 2024]
+Job 67: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr5.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:12 2024]
+Job 54: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chrX.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:12 2024]
+Finished job 17.
+17 of 78 steps (22%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:12 2024]
+Job 70: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr8.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:12 2024]
+Job 16: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr4.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:12 2024]
+Job 24: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr8.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:12 2024]
+Job 66: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr4.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:12 2024]
+Finished job 49.
+18 of 78 steps (23%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:12 2024]
+Job 74: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr12.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:13 2024]
+Job 30: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr11.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:13 2024]
+Job 73: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr11.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:13 2024]
+Job 32: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr12.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:15 2024]
+Finished job 37.
+19 of 78 steps (24%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:15 2024]
+Job 36: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr14.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:15 2024]
+Job 76: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr14.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:15 2024]
+Job 75: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr13.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:15 2024]
+Job 34: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr13.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:15 2024]
+Finished job 43.
+20 of 78 steps (26%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:15 2024]
+Job 78: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr16.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:15 2024]
+Job 38: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr15.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:16 2024]
+Job 40: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr16.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:16 2024]
+Job 77: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr15.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:16 2024]
+Finished job 23.
+21 of 78 steps (27%) done
+[Wed Jan 17 12:53:16 2024]
+Finished job 45.
+22 of 78 steps (28%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:16 2024]
+Job 79: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr17.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:16 2024]
+Job 80: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr18.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:16 2024]
+Job 82: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr20.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:16 2024]
+Job 42: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr17.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:16 2024]
+Job 44: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr18.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:16 2024]
+Job 48: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr20.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:16 2024]
+Job 22: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr7.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:16 2024]
+Job 69: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr7.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:16 2024]
+Finished job 21.
+23 of 78 steps (29%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:16 2024]
+Job 20: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr6.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:17 2024]
+Job 46: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr19.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:17 2024]
+Job 81: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr19.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:17 2024]
+Job 68: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr6.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Select jobs to execute...
+[Wed Jan 17 12:53:19 2024]
+Finished job 13.
+24 of 78 steps (31%) done
+
+[Wed Jan 17 12:53:19 2024]
+Job 56: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chrY.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:19 2024]
+Job 86: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chrY.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:19 2024]
+Job 12: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr2.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:19 2024]
+Job 64: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr2.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:21 2024]
+Finished job 29.
+25 of 78 steps (32%) done
+[Wed Jan 17 12:53:22 2024]
+Finished job 15.
+26 of 78 steps (33%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:22 2024]
+Job 65: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr3.custom-mask.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:22 2024]
+Job 52: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo/sites.masked.chr22.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr22.custom-mask.fa
+
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:22 2024]
+Job 84: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.MDA-MB-453_breast_adenocarcinoma.AR.MA0007.3.damo/sites.masked.chr22.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr22.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:22 2024]
+Job 14: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr3.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:23 2024]
+Job 28: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr10.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:25 2024]
+Job 72: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr10.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:25 2024]
+Job 50: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr21.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:25 2024]
+Job 83: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr21.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:25 2024]
+Finished job 32.
+27 of 78 steps (35%) done
+[Wed Jan 17 12:53:25 2024]
+Finished job 24.
+28 of 78 steps (36%) done
+[Wed Jan 17 12:53:27 2024]
+Finished job 54.
+29 of 78 steps (37%) done
+[Wed Jan 17 12:53:27 2024]
+Finished job 30.
+30 of 78 steps (38%) done
+[Wed Jan 17 12:53:27 2024]
+Finished job 48.
+31 of 78 steps (40%) done
+[Wed Jan 17 12:53:27 2024]
+Finished job 36.
+32 of 78 steps (41%) done
+[Wed Jan 17 12:53:27 2024]
+Finished job 18.
+33 of 78 steps (42%) done
+[Wed Jan 17 12:53:27 2024]
+Finished job 44.
+34 of 78 steps (44%) done
+[Wed Jan 17 12:53:27 2024]
+Finished job 34.
+35 of 78 steps (45%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 38.
+36 of 78 steps (46%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 40.
+37 of 78 steps (47%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 42.
+38 of 78 steps (49%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 46.
+39 of 78 steps (50%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 16.
+40 of 78 steps (51%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 81.
+41 of 78 steps (53%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 82.
+42 of 78 steps (54%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 74.
+43 of 78 steps (55%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 78.
+44 of 78 steps (56%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 73.
+45 of 78 steps (58%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 70.
+46 of 78 steps (59%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 79.
+47 of 78 steps (60%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 56.
+48 of 78 steps (62%) done
+[Wed Jan 17 12:53:28 2024]
+Finished job 22.
+49 of 78 steps (63%) done
+[Wed Jan 17 12:53:29 2024]
+Finished job 76.
+50 of 78 steps (64%) done
+[Wed Jan 17 12:53:29 2024]
+Finished job 86.
+51 of 78 steps (65%) done
+[Wed Jan 17 12:53:29 2024]
+Finished job 77.
+52 of 78 steps (67%) done
+Select jobs to execute...
+
+[Wed Jan 17 12:53:29 2024]
+Job 71: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.MDA-MB-453_breast_adenocarcinoma.AR.MA0007.3.damo/sites.masked.chr9.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr9.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 12:53:29 2024]
+Job 26: 
+        Scans reference genome for matches againts input motif.
+        Output compressed.
+        
+Reason: Missing output files: results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo/sites.masked.chr9.bed; Input files updated by another job: results/tfbs-scan/hg38/mask/hg38.chr9.custom-mask.fa
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 12:53:29 2024]
+Finished job 52.
+53 of 78 steps (68%) done
+[Wed Jan 17 12:53:29 2024]
+Finished job 80.
+54 of 78 steps (69%) done
+[Wed Jan 17 12:53:29 2024]
+Finished job 20.
+55 of 78 steps (71%) done
+[Wed Jan 17 12:53:29 2024]
+Finished job 75.
+56 of 78 steps (72%) done
+[Wed Jan 17 12:53:29 2024]
+Error in rule scan_scan_chromosome:
+    jobid: 71
+    input: results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.MDA-MB-453_breast_adenocarcinoma.AR.MA0007.3.damo/IntLogOdds.pwm, results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.MDA-MB-453_breast_adenocarcinoma.AR.MA0007.3.damo/cutoff.txt, results/tfbs-scan/hg38/mask/hg38.chr9.custom-mask.fa, resources/software/PWMScan/matrix_scan
+    output: results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.MDA-MB-453_breast_adenocarcinoma.AR.MA0007.3.damo/sites.masked.chr9.bed
+    log: workflow/logs/scan_chromosome_AR_MA0007.3_ERP001226.MDA-MB-453_breast_adenocarcinoma.AR.MA0007.3.damo_chr9.stdout, workflow/logs/scan_chromosome_AR_MA0007.3_ERP001226.MDA-MB-453_breast_adenocarcinoma.AR.MA0007.3.damo_chr9.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        resources/software/PWMScan/matrix_scan -m results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.MDA-MB-453_breast_adenocarcinoma.AR.MA0007.3.damo/IntLogOdds.pwm -c $(cat results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.MDA-MB-453_breast_adenocarcinoma.AR.MA0007.3.damo/cutoff.txt) results/tfbs-scan/hg38/mask/hg38.chr9.custom-mask.fa > results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.MDA-MB-453_breast_adenocarcinoma.AR.MA0007.3.damo/sites.masked.chr9.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Jan 17 12:53:29 2024]
+Finished job 67.
+57 of 78 steps (73%) done
+[Wed Jan 17 12:53:29 2024]
+Finished job 85.
+58 of 78 steps (74%) done
+[Wed Jan 17 12:53:29 2024]
+Finished job 84.
+59 of 78 steps (76%) done
+[Wed Jan 17 12:53:29 2024]
+Error in rule scan_scan_chromosome:
+    jobid: 26
+    input: results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo/IntLogOdds.pwm, results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo/cutoff.txt, results/tfbs-scan/hg38/mask/hg38.chr9.custom-mask.fa, resources/software/PWMScan/matrix_scan
+    output: results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo/sites.masked.chr9.bed
+    log: workflow/logs/scan_chromosome_AR_MA0007.3_ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo_chr9.stdout, workflow/logs/scan_chromosome_AR_MA0007.3_ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo_chr9.stderr (check log file(s) for error details)
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+    shell:
+        
+        resources/software/PWMScan/matrix_scan -m results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo/IntLogOdds.pwm -c $(cat results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo/cutoff.txt) results/tfbs-scan/hg38/mask/hg38.chr9.custom-mask.fa > results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo/sites.masked.chr9.bed
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Jan 17 12:53:29 2024]
+Finished job 66.
+60 of 78 steps (77%) done
+[Wed Jan 17 12:53:29 2024]
+Finished job 50.
+61 of 78 steps (78%) done
+[Wed Jan 17 12:53:29 2024]
+Finished job 83.
+62 of 78 steps (79%) done
+Removing output files of failed job scan_scan_chromosome since they might be corrupted:
+results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.MDA-MB-453_breast_adenocarcinoma.AR.MA0007.3.damo/sites.masked.chr9.bed
+Removing output files of failed job scan_scan_chromosome since they might be corrupted:
+results/tfbs-scan/hg38/scan/AR/MA0007.3/ERP001226.LNCaP_prostate_carcinoma.AR.MA0007.3.damo/sites.masked.chr9.bed
+[Wed Jan 17 12:53:30 2024]
+Finished job 68.
+63 of 78 steps (81%) done
+[Wed Jan 17 12:53:30 2024]
+Finished job 69.
+64 of 78 steps (82%) done
+[Wed Jan 17 12:53:32 2024]
+Finished job 28.
+65 of 78 steps (83%) done
+[Wed Jan 17 12:53:32 2024]
+Finished job 65.
+66 of 78 steps (85%) done
+[Wed Jan 17 12:53:33 2024]
+Finished job 72.
+67 of 78 steps (86%) done
+[Wed Jan 17 12:53:34 2024]
+Finished job 14.
+68 of 78 steps (87%) done
+[Wed Jan 17 12:53:36 2024]
+Finished job 12.
+69 of 78 steps (88%) done
+[Wed Jan 17 12:53:38 2024]
+Finished job 64.
+70 of 78 steps (90%) done
+[Wed Jan 17 12:53:54 2024]
+Finished job 8.
+71 of 78 steps (91%) done
+Removing temporary output results/tfbs-scan/hg38/mask/hg38.custom-mask.fa.
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2024-01-17T125104.011589.snakemake.log

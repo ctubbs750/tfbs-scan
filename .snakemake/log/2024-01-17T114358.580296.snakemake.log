@@ -1,0 +1,2156 @@
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however crucial for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /usr/bin/bash
+Provided cores: 48
+Rules claiming more threads will be scaled down.
+Job stats:
+job                          count
+-------------------------  -------
+all                              1
+scan_calculate_IntLogOdds     4335
+total                         4336
+
+Select jobs to execute...
+
+[Wed Jan 17 11:44:08 2024]
+Job 2214: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IRF3/MA1418.1/ENCSR408JQO.GM12878_female_B-cells_lymphoblastoid_cell_line.IRF3.MA1418.1.damo.IntLogOdds
+
+[Wed Jan 17 11:44:08 2024]
+Job 3502: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BJO.PANC1_pancreatic_ductal_adenocarcinoma.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:08 2024]
+Job 3516: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP010296.U87_glioblastoma.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:08 2024]
+Job 3530: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP054063.K562_myelogenous_leukemia.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:08 2024]
+Job 2208: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IRF1/MA0050.2/GSE43036.CD14.IRF1.MA0050.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:08 2024]
+Job 3524: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR893QWP.liver.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:08 2024]
+Job 3538: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/GSE49014.H295R_adrenal_cortex_carcinoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 2215: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IRF3/MA1418.1/EXP040104.SK-N-SH_neuroblastoma.IRF3.MA1418.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:08 2024]
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Job 3503: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BJP.PFSK1_primitive_neuroectodermal_tumor.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:08 2024]
+Job 3517: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP010585.U87_glioblastoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3531: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP054611.GM12878_female_B-cells_lymphoblastoid_cell_line.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3511: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BTF.HL-60_acute_myeloid_leukemia.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3539: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/GSE49014.H295R_adrenal_cortex_carcinoma_SF1.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:08 2024]
+Job 3518: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP031113.K562_myelogenous_leukemia.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:08 2024]
+Job 3532: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP054614.GM12878_female_B-cells_lymphoblastoid_cell_line.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3498: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BGF.GM12878_female_B-cells_lymphoblastoid_cell_line.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3512: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BUP.PANC1_pancreatic_ductal_adenocarcinoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3526: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR663WAR.WA01_H1_human_embryonic_stem_cells.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3540: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/GSE49570.CD4.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3505: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BMW.K562_myelogenous_leukemia.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 2203: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IRF1/MA0050.2/ENCSR000EGK.K562_myelogenous_leukemia.IRF1.MA0050.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3519: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP031799.acute_promyelocytic_leukemia_blasts.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:08 2024]
+Job 3533: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP054615.Jurkat_T-cells.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:08 2024]
+Job 3523: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP036865.A549_lung_carcinoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3499: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BHM.WA01_H1_human_embryonic_stem_cells.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3093: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/NFIB/MA1643.1/ENCSR582ZOA.MCF7_Invasive_ductal_breast_carcinoma.NFIB.MA1643.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 3541: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/GSE51234.GP5d_colon_adenocarcinoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:08 2024]
+Job 2204: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IRF1/MA0050.2/ENCSR000EGL.K562_myelogenous_leukemia.IRF1.MA0050.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3506: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BOT.HepG2_hepatoblastoma.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:09 2024]
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Job 3520: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP036860.WA01_H1_human_embryonic_stem_cells.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3534: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP058085.CRC107_colorectal_cancer_metastatic_stem_cells.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3500: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BJJ.SK-N-SH_neuroblastoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3514: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BVI.HCT-116_colon_carcinoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3528: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR892DRK.A549_lung_carcinoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3542: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/GSE51234.GP5d_colon_adenocarcinoma_SIRAD21.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3507: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BOX.PFSK1_primitive_neuroectodermal_tumor.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 2205: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IRF1/MA0050.2/ENCSR000EGU.K562_myelogenous_leukemia.IRF1.MA0050.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:09 2024]
+Job 3521: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP036861.WA01_H1_human_embryonic_stem_cells.REST.MA0138.2.damo.IntLogOdds
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3535: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP058086.CRC107_colorectal_cancer_metastatic_stem_cells.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3537: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP058088.CRC121_colorectal_cancer_metastatic_stem_cells.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:09 2024]
+Job 2213: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IRF3/MA1418.1/ENCSR000EEJ.HepG2_hepatoblastoma.IRF3.MA1418.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3501: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BJL.HepG2_hepatoblastoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3515: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ERP000395.hepatocytes.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3543: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/GSE70482.K562_myelogenous_leukemia.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:09 2024]
+Job 3508: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BPK.PANC1_pancreatic_ductal_adenocarcinoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3522: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP036864.A549_lung_carcinoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 3536: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP058087.CRC121_colorectal_cancer_metastatic_stem_cells.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:09 2024]
+Job 2207: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IRF1/MA0050.2/EXP038039.HAEC_human_aortic_endothelial_cells.IRF1.MA0050.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:20 2024]
+Finished job 3093.
+1 of 4336 steps (0.0%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 2215.
+2 of 4336 steps (0.0%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:20 2024]
+Job 3510: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BSP.MCF7_Invasive_ductal_breast_carcinoma.REST.MA0138.2.damo.IntLogOdds
+
+[Wed Jan 17 11:44:20 2024]
+Job 3497: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000ATM.K562_myelogenous_leukemia.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:20 2024]
+Finished job 2214.
+3 of 4336 steps (0.1%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 3515.
+4 of 4336 steps (0.1%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 3522.
+5 of 4336 steps (0.1%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 3514.
+6 of 4336 steps (0.1%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 3508.
+7 of 4336 steps (0.2%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 3511.
+8 of 4336 steps (0.2%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 3523.
+9 of 4336 steps (0.2%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 2207.
+10 of 4336 steps (0.2%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 2208.
+11 of 4336 steps (0.3%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 2213.
+12 of 4336 steps (0.3%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 2203.
+13 of 4336 steps (0.3%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 3500.
+14 of 4336 steps (0.3%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 3542.
+15 of 4336 steps (0.3%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 3505.
+16 of 4336 steps (0.4%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 3528.
+17 of 4336 steps (0.4%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 2205.
+18 of 4336 steps (0.4%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 2204.
+19 of 4336 steps (0.4%) done
+[Wed Jan 17 11:44:20 2024]
+Finished job 3534.
+20 of 4336 steps (0.5%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3540.
+21 of 4336 steps (0.5%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3532.
+22 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3531.
+23 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Finished job 3521.
+24 of 4336 steps (1%) done
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:21 2024]
+Finished job 3499.
+25 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3507.
+26 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3501.
+27 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3520.
+28 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3533.
+29 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3537.
+30 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3517.
+31 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3541.
+32 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3503.
+33 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3498.
+34 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3539.
+35 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3519.
+36 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3502.
+37 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3518.
+38 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3506.
+39 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3516.
+40 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3535.
+41 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3524.
+42 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3530.
+43 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3526.
+44 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3543.
+45 of 4336 steps (1%) done
+[Wed Jan 17 11:44:21 2024]
+Finished job 3512.
+46 of 4336 steps (1%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:21 2024]
+Job 3838: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE66594.macrophages_TPP.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:21 2024]
+Job 3384: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP033781.hMADS-3_adipose-derived_stem_cells.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:21 2024]
+Job 278: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/BACH2/MA1470.1/EXP040449.B-cells.BACH2.MA1470.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:21 2024]
+Job 3804: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/ENCSR000BUW.HL-60_acute_myeloid_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:21 2024]
+Job 3832: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE56857.OCI-LY3_diffuse_large_B-cell_lymphoma_SHSPIB.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:21 2024]
+Job 3846: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE74999.K562_myelogenous_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:21 2024]
+Job 3391: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP034435.subcutaneous_white_adipose_tissue.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:21 2024]
+Job 3811: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP047756.MDMmonocyte_derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:21 2024]
+Job 3839: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE69558.DOHH2_diffuse_large_B-cell_lymphoma.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:21 2024]
+Job 3385: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP034422.subcutaneous_white_adipose_tissue.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:21 2024]
+Job 279: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/BACH2/MA1470.1/EXP040450.B-cells.BACH2.MA1470.1.damo.IntLogOdds
+
+[Wed Jan 17 11:44:21 2024]
+Job 3525: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR867WPH.liver.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:21 2024]
+Job 3833: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE58864.dendrite.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:21 2024]
+Job 3847: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE74999.K562_myelogenous_leukemia_NABUT.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:21 2024]
+Job 3392: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP034436.subcutaneous_white_adipose_tissue.PPARG.MA0066.1.damo.IntLogOdds
+
+[Wed Jan 17 11:44:21 2024]
+Job 3504: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BMN.HeLa_S3_cervical_adenocarcinoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:21 2024]
+Job 3812: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP047757.MDMmonocyte_derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3820: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP048338.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3848: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE74999.K562_myelogenous_leukemia_SAHA.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3813: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP047758.MDMmonocyte_derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3383: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP033780.hMADS-3_adipose-derived_stem_cells.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3513: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BUU.Ishikawa_endometrial_adenocarcinoma.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3387: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP034424.subcutaneous_white_adipose_tissue.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3527: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/EXP039673.HEK293_embryonic_kidney.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3821: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP049120.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:22 2024]
+Job 3817: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP047819.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3394: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/GSE21366.hASC_preadipocytes.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3828: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE56857.H929_plasma_cell_myeloma.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3842: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE70660.CD34_cells_ADULT.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3831: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE56857.OCI-LY3_diffuse_large_B-cell_lymphoma_SHCTR.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 2212: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IRF3/MA1418.1/ENCSR000EDF.HeLa_S3_cervical_adenocarcinoma.IRF3.MA1418.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3094: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/NFIB/MA1643.1/ENCSR702BYX.MCF7_Invasive_ductal_breast_carcinoma.NFIB.MA1643.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3822: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP049121.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:22 2024]
+Job 3395: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/GSE25426.THP-1_acute_monocytic_leukemia.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3381: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/ERP008801.macrophages.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3815: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP047817.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3829: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE56857.OCI-LY10_diffuse_large_B-cell_lymphoma.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3389: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP034426.subcutaneous_white_adipose_tissue.PPARG.MA0066.1.damo.IntLogOdds
+
+[Wed Jan 17 11:44:22 2024]
+Job 3529: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR871KYB.GM23338.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 2206: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/IRF1/MA0050.2/EXP038038.HAEC_human_aortic_endothelial_cells.IRF1.MA0050.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3382: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP000907.Simpson_Golabi_Behmel_Syndrome_adipocytes.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3830: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE56857.OCI-LY3_diffuse_large_B-cell_lymphoma.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3844: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE71616.RS4-11_adult_B_acute_lymphoblastic_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:22 2024]
+Job 3509: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/REST/MA0138.2/ENCSR000BQS.GM12878_female_B-cells_lymphoblastoid_cell_line.REST.MA0138.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:22 2024]
+Finished job 3536.
+47 of 4336 steps (1%) done
+[Wed Jan 17 11:44:22 2024]
+Finished job 3538.
+48 of 4336 steps (1%) done
+[Wed Jan 17 11:44:22 2024]
+Finished job 3510.
+49 of 4336 steps (1%) done
+[Wed Jan 17 11:44:22 2024]
+Finished job 3497.
+50 of 4336 steps (1%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:23 2024]
+Job 3802: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/ENCSR000BGW.K562_myelogenous_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:23 2024]
+Job 3390: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP034433.subcutaneous_white_adipose_tissue.PPARG.MA0066.1.damo.IntLogOdds
+
+[Wed Jan 17 11:44:23 2024]
+Job 3386: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP034423.subcutaneous_white_adipose_tissue.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:23 2024]
+Job 3827: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE47188.macrophages_IL4.SPI1.MA0080.5.damo.IntLogOdds
+
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:29 2024]
+Finished job 278.
+51 of 4336 steps (1%) done
+
+[Wed Jan 17 11:44:29 2024]
+Job 3818: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP047820.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:29 2024]
+Finished job 3838.
+52 of 4336 steps (1%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:29 2024]
+Job 3388: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP034425.subcutaneous_white_adipose_tissue.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:30 2024]
+Finished job 3811.
+53 of 4336 steps (1%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:30 2024]
+Job 3803: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/ENCSR000BIJ.GM12891_male_B-_cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:30 2024]
+Finished job 3847.
+54 of 4336 steps (1%) done
+[Wed Jan 17 11:44:30 2024]
+Finished job 3839.
+55 of 4336 steps (1%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:30 2024]
+Job 3809: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP038591.monocyte-derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:30 2024]
+Job 3825: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP054624.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:30 2024]
+Finished job 3384.
+56 of 4336 steps (1%) done
+[Wed Jan 17 11:44:30 2024]
+Finished job 3391.
+57 of 4336 steps (1%) done
+[Wed Jan 17 11:44:30 2024]
+Finished job 3846.
+58 of 4336 steps (1%) done
+[Wed Jan 17 11:44:30 2024]
+Finished job 3832.
+59 of 4336 steps (1%) done
+[Wed Jan 17 11:44:30 2024]
+Finished job 3804.
+60 of 4336 steps (1%) done
+[Wed Jan 17 11:44:30 2024]
+Finished job 3525.
+61 of 4336 steps (1%) done
+[Wed Jan 17 11:44:30 2024]
+Finished job 3385.
+62 of 4336 steps (1%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:30 2024]
+Job 3823: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP054612.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:30 2024]
+Job 3837: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE66594.macrophages_IL4.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:30 2024]
+Job 3810: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP040651.monocyte-derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:30 2024]
+Job 3814: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP047759.MDMmonocyte_derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:30 2024]
+Job 3806: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP036835.monocyte-derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:30 2024]
+Job 3834: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE60130.Kasumi-1_acute_myeloblastic_leukemia_SICTR.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:30 2024]
+Job 3807: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP036836.monocyte-derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:30 2024]
+Finished job 279.
+63 of 4336 steps (1%) done
+[Wed Jan 17 11:44:30 2024]
+Finished job 3833.
+64 of 4336 steps (1%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:30 2024]
+Job 3843: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE70660.CD34_cells_FETAL.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:30 2024]
+Job 3819: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP048337.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:32 2024]
+Finished job 3812.
+65 of 4336 steps (1%) done
+
+[Wed Jan 17 11:44:32 2024]
+Job 3393: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/PPARG/MA0066.1/EXP039615.HepG2_hepatoblastoma.PPARG.MA0066.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:32 2024]
+Finished job 3821.
+66 of 4336 steps (2%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:32 2024]
+Job 3801: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/ENCSR000BGQ.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:32 2024]
+Finished job 3394.
+67 of 4336 steps (2%) done
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Select jobs to execute...
+
+[Wed Jan 17 11:44:32 2024]
+Job 3808: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP038590.monocyte-derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:32 2024]
+Finished job 3848.
+68 of 4336 steps (2%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:32 2024]
+Job 3826: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE46044.ME-1_acute_myeloid_leukemia_.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:32 2024]
+Finished job 3392.
+69 of 4336 steps (2%) done
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:32 2024]
+Job 3824: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP054623.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:33 2024]
+Finished job 3820.
+70 of 4336 steps (2%) done
+[Wed Jan 17 11:44:33 2024]
+Finished job 3504.
+71 of 4336 steps (2%) done
+[Wed Jan 17 11:44:33 2024]
+Finished job 3383.
+72 of 4336 steps (2%) done
+[Wed Jan 17 11:44:33 2024]
+Finished job 3813.
+73 of 4336 steps (2%) done
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:33 2024]
+Finished job 3817.
+74 of 4336 steps (2%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:33 2024]
+Job 3840: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE69558.OCI-LY7_diffuse_large_B-cell_lymphoma.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:33 2024]
+Job 3816: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/EXP047818.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:33 2024]
+Job 3836: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE66594.macrophages_IFNG.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:33 2024]
+Job 3845: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE71616.RS4-11_adult_B_acute_lymphoblastic_leukemia_DEX.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:33 2024]
+Job 3835: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE60130.Kasumi-1_acute_myeloblastic_leukemia_SIRUNX1ETO.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:33 2024]
+Finished job 3828.
+75 of 4336 steps (2%) done
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:33 2024]
+Finished job 3387.
+76 of 4336 steps (2%) done
+[Wed Jan 17 11:44:33 2024]
+Finished job 3513.
+77 of 4336 steps (2%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:33 2024]
+Job 3805: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/ERP004110.LCL_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+
+[Wed Jan 17 11:44:33 2024]
+Job 895: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/EXP053296.EndoC-BH1_human_pancreatic_beta_cell_line.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:33 2024]
+Job 3841: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/SPI1/MA0080.5/GSE70482.K562_myelogenous_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:33 2024]
+Finished job 3527.
+78 of 4336 steps (2%) done
+[Wed Jan 17 11:44:33 2024]
+Finished job 3381.
+79 of 4336 steps (2%) done
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:33 2024]
+Finished job 3395.
+80 of 4336 steps (2%) done
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:33 2024]
+Finished job 3094.
+81 of 4336 steps (2%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:33 2024]
+Job 708: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/ENCSR972LYL.upper_lobe_of_left_lung.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:34 2024]
+Job 734: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/ENCSR727HME.lower_leg_skin.CTCF.MA0139.1.damo.IntLogOdds
+
+[Wed Jan 17 11:44:34 2024]
+Job 3126: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/NR1H3/MA0494.1/GSE41629.SGBS_Simpson_Golabi_Behmel_syndrome_type_1_adipocytes.NR1H3.MA0494.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:34 2024]
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Job 728: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/ENCSR005LPI.omental_fat_pad.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:34 2024]
+Finished job 3389.
+82 of 4336 steps (2%) done
+[Wed Jan 17 11:44:34 2024]
+Finished job 3815.
+83 of 4336 steps (2%) done
+[Wed Jan 17 11:44:34 2024]
+Finished job 3822.
+84 of 4336 steps (2%) done
+[Wed Jan 17 11:44:34 2024]
+Finished job 3830.
+85 of 4336 steps (2%) done
+[Wed Jan 17 11:44:34 2024]
+Finished job 3827.
+86 of 4336 steps (2%) done
+[Wed Jan 17 11:44:34 2024]
+Finished job 3390.
+87 of 4336 steps (2%) done
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:34 2024]
+Finished job 3529.
+88 of 4336 steps (2%) done
+[Wed Jan 17 11:44:34 2024]
+Finished job 2212.
+89 of 4336 steps (2%) done
+[Wed Jan 17 11:44:34 2024]
+Finished job 2206.
+90 of 4336 steps (2%) done
+[Wed Jan 17 11:44:34 2024]
+Finished job 3382.
+91 of 4336 steps (2%) done
+Select jobs to execute...
+
+[Wed Jan 17 11:44:34 2024]
+Job 466: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/ENCSR000DKN.D54_H54_Human_glioblastoma.CTCF.MA0139.1.damo.IntLogOdds
+
+[Wed Jan 17 11:44:34 2024]
+Job 703: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/ENCSR618QYE.stomach.CTCF.MA0139.1.damo.IntLogOdds
+
+[Wed Jan 17 11:44:34 2024]
+Job 663: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/EXP037803.retinoblastoma_xenograft.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:34 2024]
+Job 3654: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/RXRA/MA0494.1/ENCSR098XMN.liver.RXRA.MA0494.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:34 2024]
+Job 956: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/GSE50893.gm18951.CTCF.MA0139.1.damo.IntLogOdds
+
+[Wed Jan 17 11:44:34 2024]
+Job 984: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/GSE70764.OVCAR8_high_grade_ovarian_serous_adenocarcinoma.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:34 2024]
+Job 4109: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/THAP11/MA1573.1/EXP036770.HUES64_embryonic_stem_cells.THAP11.MA1573.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:35 2024]
+Job 668: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/EXP038623.MCF10A_breast_epithelial_cells.CTCF.MA0139.1.damo.IntLogOdds
+
+[Wed Jan 17 11:44:35 2024]
+Job 3651: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/RXRA/MA0494.1/ENCSR352QSB.liver.RXRA.MA0494.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:35 2024]
+Job 477: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/ENCSR000DLK.WA01_H1_human_embryonic_stem_cells.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:35 2024]
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Finished job 3842.
+92 of 4336 steps (2%) done
+[Wed Jan 17 11:44:35 2024]
+Finished job 3844.
+93 of 4336 steps (2%) done
+[Wed Jan 17 11:44:35 2024]
+Finished job 3509.
+94 of 4336 steps (2%) done
+[Wed Jan 17 11:44:35 2024]
+Finished job 3831.
+95 of 4336 steps (2%) done
+[Wed Jan 17 11:44:35 2024]
+Finished job 3829.
+96 of 4336 steps (2%) done
+[Wed Jan 17 11:44:35 2024]
+Finished job 3802.
+97 of 4336 steps (2%) done
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:35 2024]
+Finished job 3386.
+98 of 4336 steps (2%) done
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:35 2024]
+Job 733: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/ENCSR203QEB.PANC1_pancreatic_ductal_adenocarcinoma.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:35 2024]
+Job 691: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/ENCSR790VEV.subcutaneous_adipose_tissue.CTCF.MA0139.1.damo.IntLogOdds
+
+[Wed Jan 17 11:44:35 2024]
+Job 990: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/GSE84432.VCaP_prostate_carcinoma_R1881.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:35 2024]
+Job 816: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/EXP040679.HCT-116-RAD21-mAC.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:35 2024]
+Job 732: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/ENCSR071XWO.gastrocnemius_medialis.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:35 2024]
+Job 275: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/BACH2/MA1101.2/GSE44420.OCI-LY7_diffuse_large_B-cell_lymphoma.BACH2.MA1101.2.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:35 2024]
+Job 780: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/ENCSR089DTY.omental_fat_pad.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Select jobs to execute...
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+[Wed Jan 17 11:44:39 2024]
+Finished job 3818.
+99 of 4336 steps (2%) done
+
+[Wed Jan 17 11:44:39 2024]
+Job 496: 
+        Converts intput motif models to the IntLogOdds PWM format.
+        
+Reason: Missing output files: results/tfbs-scan/CTCF/MA0139.1/ENCSR000DPG.AG04449_fibroblasts.CTCF.MA0139.1.damo.IntLogOdds
+
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Terminating processes on user request, this might take some time.
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 466
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/ENCSR000DKN.D54_H54_Human_glioblastoma.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/ENCSR000DKN.D54_H54_Human_glioblastoma.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 703
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/ENCSR618QYE.stomach.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/ENCSR618QYE.stomach.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 477
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/ENCSR000DLK.WA01_H1_human_embryonic_stem_cells.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/ENCSR000DLK.WA01_H1_human_embryonic_stem_cells.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 4109
+    input: resources/data/unibind/damo_hg38_PWMS/THAP11/MA1573.1/EXP036770.HUES64_embryonic_stem_cells.THAP11.MA1573.1.damo.pwm
+    output: results/tfbs-scan/THAP11/MA1573.1/EXP036770.HUES64_embryonic_stem_cells.THAP11.MA1573.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3654
+    input: resources/data/unibind/damo_hg38_PWMS/RXRA/MA0494.1/ENCSR098XMN.liver.RXRA.MA0494.1.damo.pwm
+    output: results/tfbs-scan/RXRA/MA0494.1/ENCSR098XMN.liver.RXRA.MA0494.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 816
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/EXP040679.HCT-116-RAD21-mAC.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/EXP040679.HCT-116-RAD21-mAC.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3816
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/EXP047818.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/EXP047818.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3805
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/ERP004110.LCL_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/ERP004110.LCL_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3801
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/ENCSR000BGQ.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/ENCSR000BGQ.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 990
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/GSE84432.VCaP_prostate_carcinoma_R1881.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/GSE84432.VCaP_prostate_carcinoma_R1881.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3835
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/GSE60130.Kasumi-1_acute_myeloblastic_leukemia_SIRUNX1ETO.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/GSE60130.Kasumi-1_acute_myeloblastic_leukemia_SIRUNX1ETO.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3810
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/EXP040651.monocyte-derived_macrophages.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/EXP040651.monocyte-derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 732
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/ENCSR071XWO.gastrocnemius_medialis.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/ENCSR071XWO.gastrocnemius_medialis.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 984
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/GSE70764.OVCAR8_high_grade_ovarian_serous_adenocarcinoma.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/GSE70764.OVCAR8_high_grade_ovarian_serous_adenocarcinoma.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3126
+    input: resources/data/unibind/damo_hg38_PWMS/NR1H3/MA0494.1/GSE41629.SGBS_Simpson_Golabi_Behmel_syndrome_type_1_adipocytes.NR1H3.MA0494.1.damo.pwm
+    output: results/tfbs-scan/NR1H3/MA0494.1/GSE41629.SGBS_Simpson_Golabi_Behmel_syndrome_type_1_adipocytes.NR1H3.MA0494.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3826
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/GSE46044.ME-1_acute_myeloid_leukemia_.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/GSE46044.ME-1_acute_myeloid_leukemia_.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 691
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/ENCSR790VEV.subcutaneous_adipose_tissue.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/ENCSR790VEV.subcutaneous_adipose_tissue.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3651
+    input: resources/data/unibind/damo_hg38_PWMS/RXRA/MA0494.1/ENCSR352QSB.liver.RXRA.MA0494.1.damo.pwm
+    output: results/tfbs-scan/RXRA/MA0494.1/ENCSR352QSB.liver.RXRA.MA0494.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 708
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/ENCSR972LYL.upper_lobe_of_left_lung.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/ENCSR972LYL.upper_lobe_of_left_lung.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 733
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/ENCSR203QEB.PANC1_pancreatic_ductal_adenocarcinoma.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/ENCSR203QEB.PANC1_pancreatic_ductal_adenocarcinoma.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3819
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/EXP048337.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/EXP048337.THP-1_acute_monocytic_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3841
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/GSE70482.K562_myelogenous_leukemia.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/GSE70482.K562_myelogenous_leukemia.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 663
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/EXP037803.retinoblastoma_xenograft.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/EXP037803.retinoblastoma_xenograft.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3845
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/GSE71616.RS4-11_adult_B_acute_lymphoblastic_leukemia_DEX.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/GSE71616.RS4-11_adult_B_acute_lymphoblastic_leukemia_DEX.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 275
+    input: resources/data/unibind/damo_hg38_PWMS/BACH2/MA1101.2/GSE44420.OCI-LY7_diffuse_large_B-cell_lymphoma.BACH2.MA1101.2.damo.pwm
+    output: results/tfbs-scan/BACH2/MA1101.2/GSE44420.OCI-LY7_diffuse_large_B-cell_lymphoma.BACH2.MA1101.2.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+[Wed Jan 17 11:44:39 2024]
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3836
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/GSE66594.macrophages_IFNG.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/GSE66594.macrophages_IFNG.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3824
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/EXP054623.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/EXP054623.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3840
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/GSE69558.OCI-LY7_diffuse_large_B-cell_lymphoma.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/GSE69558.OCI-LY7_diffuse_large_B-cell_lymphoma.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 956
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/GSE50893.gm18951.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/GSE50893.gm18951.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3823
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/EXP054612.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/EXP054612.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 668
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/EXP038623.MCF10A_breast_epithelial_cells.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/EXP038623.MCF10A_breast_epithelial_cells.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 734
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/ENCSR727HME.lower_leg_skin.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/ENCSR727HME.lower_leg_skin.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 895
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/EXP053296.EndoC-BH1_human_pancreatic_beta_cell_line.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/EXP053296.EndoC-BH1_human_pancreatic_beta_cell_line.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpdxra_kef.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp24ku2xbk.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3834
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/GSE60130.Kasumi-1_acute_myeloblastic_leukemia_SICTR.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/GSE60130.Kasumi-1_acute_myeloblastic_leukemia_SICTR.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3393
+    input: resources/data/unibind/damo_hg38_PWMS/PPARG/MA0066.1/EXP039615.HepG2_hepatoblastoma.PPARG.MA0066.1.damo.pwm
+    output: results/tfbs-scan/PPARG/MA0066.1/EXP039615.HepG2_hepatoblastoma.PPARG.MA0066.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3807
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/EXP036836.monocyte-derived_macrophages.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/EXP036836.monocyte-derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3843
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/GSE70660.CD34_cells_FETAL.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/GSE70660.CD34_cells_FETAL.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3808
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/EXP038590.monocyte-derived_macrophages.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/EXP038590.monocyte-derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpuhetb2zj.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 728
+    input: resources/data/unibind/damo_hg38_PWMS/CTCF/MA0139.1/ENCSR005LPI.omental_fat_pad.CTCF.MA0139.1.damo.pwm
+    output: results/tfbs-scan/CTCF/MA0139.1/ENCSR005LPI.omental_fat_pad.CTCF.MA0139.1.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3809
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/EXP038591.monocyte-derived_macrophages.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/EXP038591.monocyte-derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3803
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/ENCSR000BIJ.GM12891_male_B-_cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/ENCSR000BIJ.GM12891_male_B-_cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpy7d3sv0l.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3825
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/EXP054624.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/EXP054624.GM12878_female_B-cells_lymphoblastoid_cell_line.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpukfxw566.pwm.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpn8zy2zur.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3837
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/GSE66594.macrophages_IL4.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/GSE66594.macrophages_IL4.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpa8hb1glw.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3806
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/EXP036835.monocyte-derived_macrophages.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/EXP036835.monocyte-derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+Error in rule scan_calculate_IntLogOdds:
+    jobid: 3814
+    input: resources/data/unibind/damo_hg38_PWMS/SPI1/MA0080.5/EXP047759.MDMmonocyte_derived_macrophages.SPI1.MA0080.5.damo.pwm
+    output: results/tfbs-scan/SPI1/MA0080.5/EXP047759.MDMmonocyte_derived_macrophages.SPI1.MA0080.5.damo.IntLogOdds
+    conda-env: /home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpwfnc0py1.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpwp6t8z2m.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp8ud6sbks.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp5q2kpl87.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpwnzntorv.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpkbmql1he.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmph515g1u1.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmptboge8d0.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpvcwqd4zb.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmprca2a4iw.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmphv40g_k7.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp437d14hf.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp3ogawsid.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp9sekvq2t.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmptyc4utdn.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpl_fey_la.pwm.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmptk5g7jym.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpfytq6uci.pwm.py' returned non-zero exit status 1.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp_anu4a9w.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp16tj4can.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp6bu1gy21.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpyjikoa_s.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp2776xzhz.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp8xjbrw5c.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp1uub0cr_.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpxj8c1qbn.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmp_g47yszy.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmptdnqvifv.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpymtrh750.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpnxil9u4f.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpobhlps0v.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmprrfinv8j.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpyyoux7sq.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpnwtf7gsf.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpxu5co7hp.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmphsus0qbg.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpg_ibvrel.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+RuleException:
+CalledProcessError in file /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk, line 97:
+Command 'source /panfs/accrepfs.vampire/home/tubbsca/miniforge-pypy3/bin/activate '/home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_'; set -euo pipefail;  python /panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/.snakemake/scripts/tmpkzx88mn_.pwm.py' died with <Signals.SIGINT: 2>.
+  File "/panfs/accrepfs.vampire/data/ruderferlab/projects/biovu/cnv/cre/CTCF-Variant-Annotation/snakemake/workflows/common/tfbs-scan/workflow/rules/scan.smk", line 97, in __rule_calculate_IntLogOdds
+  File "/accre/arch/easybuild/software/BinDist/Anaconda3/2022.05/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+Activating conda environment: ../../../../../../../../../../../../../home/tubbsca/snakemake_condas/15eac168b67d44f04e70744dacff5721_
+Complete log: .snakemake/log/2024-01-17T114358.580296.snakemake.log
