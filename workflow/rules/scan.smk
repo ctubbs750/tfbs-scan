@@ -13,14 +13,14 @@ MATRIX_DIR = config["matrices"]
 min_version("7.32.4")
 
 
-# rule all:
-#     input:
-#         expand(
-#             "results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}-sites.masked.genome.sorted.bed.gz",
-#             matrix=MATRICES,
-#             assembly=ASSEMBLY,
-#         ),
-#     default_target: True
+rule all:
+    input:
+        expand(
+            "results/tfbs-scan/{assembly}/scan/{matrix}/{matrix}-sites.masked.genome.sorted.bed.gz",
+            matrix=MATRICES,
+            assembly=ASSEMBLY,
+        ),
+    default_target: True
 
 
 rule compile_pwmscan:
