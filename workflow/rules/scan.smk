@@ -322,6 +322,7 @@ rule calculate_cutoff:
         """
         Relative threshold is percentage of best PWM.
         For 80%, format as interger 80. Makes life easier.
+        Second awk grabs the head -n1, avoids pipefail
         """
     input:
         rules.process_probabilities.output,
@@ -338,7 +339,7 @@ rule calculate_cutoff:
         "../envs/tfbs-scan.yaml"
     shell:
         """
-        awk '{{if($2 < {params.pthresh} && $3>={params.rthresh}) print $1}}' {input} | head -n1 > {output}
+        awk '{{if($2 < {params.pthresh} && $3>={params.rthresh}) print $1}}' {input} | awk 'FNR < 2' > {output}
         """
 
 
