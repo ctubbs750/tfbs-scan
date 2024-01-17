@@ -125,9 +125,9 @@ rule all:
         expand(
             ASSEMBLED_SCAN,
             zip,
-            tf_name=TF_NAMES[:2],
-            profile=PROFILES[:2],
-            dataset=DATASETS[:2],
+            tf_name=TF_NAMES,
+            profile=PROFILES,
+            dataset=DATASETS,
         ),
     default_target: True
 
