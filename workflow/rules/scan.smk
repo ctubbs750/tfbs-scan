@@ -104,7 +104,7 @@ ASSEMBLED_SCAN = os.path.join(
     "{tf_name}",
     "{profile}",
     "{dataset}",
-    "sites.masked.genome.sorted.bed.gz",
+    "sites.masked.genome.sorted.bed.starch",
 )
 
 # ------------- #
@@ -389,5 +389,5 @@ rule assemble_scan:
     threads: 2
     shell:
         """
-        cat {input} | sort --parallel=2 -k 1,1 -k2,2n | gzip > {output}
+        cat {input} | sort --parallel=2 -k 1,1 -k2,2n | starch - > {output}
         """
