@@ -372,6 +372,7 @@ rule assemble_scan:
     message:
         """
         Assembles individual chromosome scans into genome sites file.
+        Vawk removes duplicate seqs on opposite strands due to palindromic seqs
         """
     input:
         expand(
@@ -389,5 +390,8 @@ rule assemble_scan:
     threads: 2
     shell:
         """
-        cat {input} | sort --parallel=2 -k 1,1 -k2,2n | starch - > {output}
+        cat {input} | 
+        sort --parallel=2 -k 1,1 -k2,2n | 
+        vawk '!a[$1, $2, $3]++' |
+        starch - > {output}
         """
