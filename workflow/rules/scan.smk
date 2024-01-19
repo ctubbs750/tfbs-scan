@@ -107,6 +107,28 @@ ASSEMBLED_SCAN = os.path.join(
     "sites.masked.genome.sorted.bed.starch",
 )
 
+# Logo plot
+PROFILE_LOGO = os.path.join(
+    OUTPUT_DIR,
+    ASSEMBLY,
+    "scan",
+    "{tf_name}",
+    "{profile}",
+    "{dataset}",
+    "logo.png",
+)
+
+# PWM IC
+PROFILE_IC = os.path.join(
+    OUTPUT_DIR,
+    ASSEMBLY,
+    "scan",
+    "{tf_name}",
+    "{profile}",
+    "{dataset}",
+    "IntLogOdds.IC.tsv",
+)
+
 # ------------- #
 # Params        #
 # ------------- #
@@ -124,6 +146,13 @@ rule all:
     input:
         expand(
             ASSEMBLED_SCAN,
+            zip,
+            tf_name=TF_NAMES,
+            profile=PROFILES,
+            dataset=DATASETS,
+        ),
+        expand(
+            PROFILE_LOGO,
             zip,
             tf_name=TF_NAMES,
             profile=PROFILES,
@@ -395,3 +424,24 @@ rule assemble_scan:
         vawk '!a[$1, $2, $3]++' |
         starch - > {output}
         """
+
+rule make_logo:
+    message:
+        """
+        Saves PWM as logo and saves IC
+        """
+    input:
+        PROFILE_IntLogOdds
+    output:
+        PROFILE_LOGO,
+        PROFILE_IC,
+    params:
+        dataset=lambda wc: wc.dataset
+    log:
+        stdout="workflow/logs/make_logo_{tf_name}_{profile}_{dataset}.stdout",
+        stderr="workflow/logs/make_logo_{tf_name}_{profile}_{dataset}.stderr",
+    conda:
+        "../envs/tfbs-scan.yaml"
+    threads: 1
+    script:
+        "../scripts/logo/logo.py"
