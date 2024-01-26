@@ -579,35 +579,6 @@ rule scan_chromosome:
         """
 
 
-# rule assemble_scan:
-#     message:
-#         """
-#         Assembles individual chromosome scans into genome sites file.
-#         Vawk removes duplicate seqs on opposite strands due to palindromic seqs
-#         """
-#     input:
-#         expand(
-#             f"{OUTPUT_DIR}/{ASSEMBLY}/scan/"
-#             + "{{tf_name}}/{{profile}}/{{dataset}}/sites.masked.{chrom}.bed",
-#             chrom=CHROMOSOMES,
-#         ),
-#     output:
-#         ASSEMBLED_SCAN,
-#     log:
-#         stdout="workflow/logs/assemble_scan_{tf_name}_{profile}_{dataset}.stdout",
-#         stderr="workflow/logs/assemble_scan_{tf_name}_{profile}_{dataset}.stderr",
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     threads: 2
-#     shell:
-#         """
-#         cat {input} |
-#         sort --parallel=2 -k 1,1 -k2,2n |
-#         vawk '!a[$1, $2, $3]++' |
-#         starch - > {output}
-#         """
-
-
 rule assemble_scan:
     message:
         """
@@ -617,7 +588,7 @@ rule assemble_scan:
     input:
         expand(
             f"{OUTPUT_DIR}/{ASSEMBLY}/scan/"
-            + "{tf_name}/{profile}/{dataset}/sites.masked.{chrom}.bed",
+            + "{{tf_name}}/{{profile}}/{{dataset}}/sites.masked.{chrom}.bed",
             chrom=CHROMOSOMES,
         ),
     output:
@@ -630,13 +601,11 @@ rule assemble_scan:
     threads: 2
     shell:
         """
-        # Concatenate the input files, sort them, remove duplicates, and compress the output
-        cat {input} | 
-        sort --parallel=2 -k 1,1 -k2,2n | 
+        cat {input} |
+        sort --parallel=2 -k 1,1 -k2,2n |
         vawk '!a[$1, $2, $3]++' |
         starch - > {output}
         """
-
 
 # rule make_logo:
 #     message:
