@@ -1,4 +1,6 @@
-#!/usr/bin/python
+"""
+This script reads in a position weight matrix (PWM), calculates its information content (IC), and generates a logo plot.
+"""
 
 import logomaker
 from pandas import DataFrame, read_csv
@@ -16,17 +18,20 @@ DATASET = snakemake.params[0]  # type: ignore
 
 
 def read_pwm(filepath: str, names: list[str] = ["A", "C", "G", "T"]) -> DataFrame:
-    """Reads input pwm as DF"""
+    """Reads input PWM as DataFrame"""
     return read_csv(filepath, header=None, names=names, sep="\t", engine="c")
 
 
 def calculate_ic(pwm_masked: DataFrame) -> float:
-    """Approxiamtes IC from masked pwm"""
+    """Approximates IC from masked PWM"""
     return pwm_masked.max(axis=1).mean()
 
 
 def main() -> None:
-    """Main program"""
+    """
+    Main program that reads in a position weight matrix (PWM), calculates its information content (IC),
+    generates a logo plot, and saves the IC and the plot.
+    """
     # Read pwm
     pwm = read_pwm(IP_PWM)
 

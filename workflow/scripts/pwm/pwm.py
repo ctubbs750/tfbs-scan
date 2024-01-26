@@ -1,4 +1,8 @@
-#!/usr/bin/python
+"""
+This script converts a Position Weight Matrix (PWM) to integer log-odds format.
+It reads a PWM from a file, rounds the values to integers, transposes the matrix for PWMScan format, and writes the result to a new file.
+The script uses the BioPython library for handling biological sequences, and the pandas library for data manipulation.
+"""
 
 from pathlib import Path
 from Bio import motifs

@@ -47,4 +47,3 @@ rule all:
         """
     input:
         rules.scan_all.input,
-    default_target: True
