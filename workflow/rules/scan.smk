@@ -160,24 +160,6 @@ rule all:
         ),
 
 
-# rule decompress_genome:
-#     message:
-#         """
-#         Necessary to scan genome.
-#         """
-#     input:
-#         GENOME_FILE,
-#     output:
-#         temp(f"{GENOME_FILE[:-3]}.fa"),
-#     log:
-#         stdout="workflow/logs/decompress_genome.stdout",
-#         stderr="workflow/logs/decompress_genome.stderr",
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     shell:
-#         "gunzip {input} -c > {output}"
-
-
 rule decompress_genome:
     message:
         "Necessary to scan genome."
@@ -192,32 +174,6 @@ rule decompress_genome:
         "../envs/tfbs-scan.yaml"
     shell:
         "gunzip {input} -c > {output}"
-
-
-# rule mask_regions:
-#     message:
-#         """
-#         Makes exclude regions in BED format for genome masking.
-#         """
-#     input:
-#         exons=EXONS,
-#         blacklist=BLACKLIST,
-#     output:
-#         temp(MASK_REGIONS),
-#     params:
-#         gaps=UCSC_GAPS,
-#     log:
-#         stdout="workflow/logs/mask_regions.stdout",
-#         stderr="workflow/logs/mask_regions.stderr",
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     shell:
-#         """
-#         cat {params.gaps} {input.exons} {input.blacklist} |
-#         vawk '{{print $1, $2, $3}}' |
-#         vawk '!seen[$1, $2, $3]++' |
-#         sort -k 1,1 -k2,2n > {output}
-#         """
 
 
 rule mask_regions:
@@ -235,7 +191,6 @@ rule mask_regions:
         stderr="workflow/logs/mask_regions.stderr",
     conda:
         "../envs/tfbs-scan.yaml"
-    threads: 1
     shell:
         """
         # Concatenate gaps, exons, and blacklist files
@@ -247,28 +202,6 @@ rule mask_regions:
         # Sort the output by the first two columns
         sort -k 1,1 -k2,2n > {output}
         """
-
-
-# rule mask_genome:
-#     message:
-#         """
-#         Creates custom-masked genome for scanning against.
-#         """
-#     input:
-#         regions=rules.mask_regions.output,
-#         genome=rules.decompress_genome.output,
-#     output:
-#         temp(GENOME_MASK),
-#     log:
-#         stdout="workflow/logs/mask_genome.stdout",
-#         stderr="workflow/logs/mask_genomestderr",
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     threads: 1
-#     shell:
-#         """
-#         bedtools maskfasta -fi {input.genome} -bed {input.regions} -fo {output}
-#         """
 
 
 rule mask_genome:
@@ -289,31 +222,6 @@ rule mask_genome:
         # Use bedtools to mask the genome with the regions
         bedtools maskfasta -fi {input.genome} -bed {input.regions} -fo {output}
         """
-
-
-# rule split_genome:
-#     message:
-#         """
-#         Splits masked genome by chromsome from parallel scanning.
-#         High thread-count seems to be necessary to avoid issues with parallel access.
-#         Needs to be sufficiently high to scale with high number of cores.
-#         """
-#     input:
-#         rules.mask_genome.output,
-#     output:
-#         CHROMOSOME_MASK,
-#     params:
-#         chromosome=lambda wc: wc.chrom,
-#     log:
-#         stdout="workflow/logs/split_genome_{chrom}.stdout",
-#         stderr="workflow/logs/split_genome_{chrom}.stderr",
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     threads: 12
-#     shell:
-#         """
-#         faidx --regex "{params.chromosome}" --out {output} {input}
-#         """
 
 
 rule split_genome:
@@ -338,31 +246,6 @@ rule split_genome:
         """
 
 
-# rule compile_pwmscan:
-#     message:
-#         """
-#         Compiles PWMScan. Note c99 flag.
-#         Installs into resources/software by default.
-#         """
-#     input:
-#         prob=workflow.source_path(f"../../{MATRIX_PROB}"),
-#         scan=workflow.source_path(f"../../{MATRIX_SCAN}"),
-#     output:
-#         compiled_prob=COMPILED_PROB,
-#         compiled_scan=COMPILED_SCAN,
-#     log:
-#         stdout="workflow/logs/compile_pwmscan.stdout",
-#         stderr="workflow/logs/compile_pwmscan.stderr",
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     threads: 1
-#     shell:
-#         """
-#         gcc -std=c99 -o {output.compiled_prob} {input.prob}
-#         gcc -std=c99 -o {output.compiled_scan} {input.scan}
-#         """
-
-
 rule compile_pwmscan:
     message:
         "Compiles PWMScan. Note c99 flag. Installs into resources/software by default."
@@ -383,27 +266,6 @@ rule compile_pwmscan:
         gcc -std=c99 -o {output.compiled_prob} {input.prob}
         gcc -std=c99 -o {output.compiled_scan} {input.scan}
         """
-
-
-# rule calculate_IntLogOdds:
-#     message:
-#         """
-#         Converts intput motif models to the IntLogOdds PWM format.
-#         """
-#     input:
-#         PROFILE,
-#     output:
-#         PROFILE_IntLogOdds,
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     log:
-#         stdout="workflow/logs/calculate_pwm_{tf_name}_{profile}_{dataset}.stdout",
-#         stderr="workflow/logs/calculate_pwm_{tf_name}_{profile}_{dataset}.stderr",
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     threads: 1
-#     script:
-#         "../scripts/pwm/pwm.py"
 
 
 rule calculate_IntLogOdds:
@@ -441,25 +303,6 @@ rule calculate_probabilities:
         "{input.matrix_prob} {input.pwm} > {output}"
 
 
-# rule process_probabilities:
-#     message:
-#         """
-#         Relative threshold is percentage of best PWM.
-#         For 80%, format as interger 80. Makes life easier.
-#         """
-#     input:
-#         rules.calculate_probabilities.output,
-#     output:
-#         PVALS_CLEANED,
-#     log:
-#         stdout="workflow/logs/process_probabilities_{tf_name}_{profile}_{dataset}.stdout",
-#         stderr="workflow/logs/process_probabilities_{tf_name}_{profile}_{dataset}.stderr",
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     shell:
-#         "sed 's/%//g' {input} | sort -k1n > {output}"
-
-
 rule process_probabilities:
     message:
         "Relative threshold is percentage of best PWM. For 80%, format as integer 80. Makes life easier."
@@ -477,32 +320,6 @@ rule process_probabilities:
         # Remove percentage signs and sort the input
         sed 's/%//g' {input} | sort -k1n > {output}
         """
-
-
-# rule calculate_cutoff:
-#     message:
-#         """
-#         Relative threshold is percentage of best PWM.
-#         For 80%, format as interger 80. Makes life easier.
-#         Second awk grabs the head -n1, avoids pipefail
-#         """
-#     input:
-#         rules.process_probabilities.output,
-#     output:
-#         CUTOFF,
-#     params:
-#         pthresh=0.05,
-#         rthresh=80,
-#     log:
-#         stdout="workflow/logs/calculate_cutoff_{tf_name}_{profile}_{dataset}.stdout",
-#         stderr="workflow/logs/calculate_cutoff_{tf_name}_{profile}_{dataset}.stderr",
-#     threads: 1
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     shell:
-#         """
-#         awk '{{if($2 < {params.pthresh} && $3>={params.rthresh}) print $1}}' {input} | awk 'FNR < 2' > {output}
-#         """
 
 
 rule calculate_cutoff:
@@ -530,31 +347,6 @@ rule calculate_cutoff:
         awk '{{if($2 < {params.pthresh} && $3>={params.rthresh}) print $1}}' {input} |
         awk 'FNR == 1' > {output}
         """
-
-
-# rule scan_chromosome:
-#     message:
-#         """
-#         Scans reference genome for matches againts input motif.
-#         Output compressed.
-#         """
-#     input:
-#         pwm=rules.calculate_IntLogOdds.output,
-#         cut=rules.calculate_cutoff.output,
-#         ref=rules.split_genome.output,
-#         matrix_scan=rules.compile_pwmscan.output.compiled_scan,
-#     output:
-#         temp(SCANNED_CHROMOSOME),
-#     log:
-#         stdout="workflow/logs/scan_chromosome_{tf_name}_{profile}_{dataset}_{chrom}.stdout",
-#         stderr="workflow/logs/scan_chromosome_{tf_name}_{profile}_{dataset}_{chrom}.stderr",
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     threads: 1
-#     shell:
-#         """
-#         {input.matrix_scan} -m {input.pwm} -c $(cat {input.cut}) {input.ref} > {output}
-#         """
 
 
 rule scan_chromosome:
@@ -606,27 +398,6 @@ rule assemble_scan:
         vawk '!a[$1, $2, $3]++' |
         starch - > {output}
         """
-
-# rule make_logo:
-#     message:
-#         """
-#         Saves PWM as logo and saves IC
-#         """
-#     input:
-#         PROFILE_IntLogOdds,
-#     output:
-#         PROFILE_LOGO,
-#         PROFILE_IC,
-#     params:
-#         dataset=lambda wc: wc.dataset,
-#     log:
-#         stdout="workflow/logs/make_logo_{tf_name}_{profile}_{dataset}.stdout",
-#         stderr="workflow/logs/make_logo_{tf_name}_{profile}_{dataset}.stderr",
-#     conda:
-#         "../envs/tfbs-scan.yaml"
-#     threads: 1
-#     script:
-#         "../scripts/logo/logo.py"
 
 
 rule make_logo:

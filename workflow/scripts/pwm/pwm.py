@@ -14,9 +14,9 @@ from numpy import int64
 IP_MATRIX = snakemake.input[0]  # type: ignore
 OP_MATRIX = snakemake.output[0]  # type: ignore
 
-###
-# Functions
-###
+# ------------- #
+# Functions     #
+# ------------- #
 
 
 def input_format(filepath: str) -> str:

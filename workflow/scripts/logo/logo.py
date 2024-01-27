@@ -12,9 +12,9 @@ OP_FIG = snakemake.output[0]  # type: ignore
 OP_IC = snakemake.output[1]  # type: ignore
 DATASET = snakemake.params[0]  # type: ignore
 
-###
-# Functions
-###
+# ------------- #
+# Functions     #
+# ------------- #
 
 
 def read_pwm(filepath: str, names: list[str] = ["A", "C", "G", "T"]) -> DataFrame:
