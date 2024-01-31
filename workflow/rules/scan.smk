@@ -137,6 +137,7 @@ wildcard_constraints:
     tf_name="\w+",
     profile="MA\d{4}\.\d",
     dataset="[^/]+",
+    chrom="chr[0-9XYM]+"
 
 TF_NAMES, PROFILES, DATASETS = glob_wildcards(
     os.path.join(PROFILES_DIR, "{tf_name}", "{profile}", "{dataset}" + f".{FORMAT}")
