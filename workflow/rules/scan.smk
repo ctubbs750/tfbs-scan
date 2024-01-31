@@ -386,7 +386,7 @@ rule assemble_scan:
         expand(
             f"{OUTPUT_DIR}/{ASSEMBLY}/scan/"
             + "{{tf_name}}/{{profile}}/{{dataset}}/sites.masked.{chrom}.bed",
-            chrom=CHROMOSOMES,
+            tf_name=TF_NAMES, profile=PROFILES, chrom=CHROMOSOMES,
         ),
     output:
         temp(ASSEMBLED_SCAN),
