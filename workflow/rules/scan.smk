@@ -104,7 +104,7 @@ ASSEMBLED_SCAN = os.path.join(
     "{tf_name}",
     "{profile}",
     "{dataset}",
-    "sites.masked.genome.sorted.bed.starch",
+    "sites.masked.genome.sorted.bed",
 )
 
 # Logo plot
@@ -384,7 +384,7 @@ rule assemble_scan:
             chrom=CHROMOSOMES,
         ),
     output:
-        ASSEMBLED_SCAN,
+        temp(ASSEMBLED_SCAN),
     log:
         stdout="workflow/logs/assemble_scan_{tf_name}_{profile}_{dataset}.stdout",
         stderr="workflow/logs/assemble_scan_{tf_name}_{profile}_{dataset}.stderr",
@@ -393,10 +393,7 @@ rule assemble_scan:
     threads: 2
     shell:
         """
-        cat {input} |
-        sort --parallel=2 -k 1,1 -k2,2n |
-        vawk '!a[$1, $2, $3]++' |
-        starch - > {output}
+        cat {input} | vawk '!a[$1, $2, $3]++' | sort --parallel=2 -k 1,1 -k2,2n > {output}
         """
 
 
