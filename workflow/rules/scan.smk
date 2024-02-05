@@ -256,8 +256,10 @@ rule compile_pwmscan:
     message:
         "Compiles PWMScan. Note c99 flag. Installs into resources/software by default."
     input:
-        prob=workflow.source_path(f"../../{MATRIX_PROB}"),
-        scan=workflow.source_path(f"../../{MATRIX_SCAN}"),
+        # prob=workflow.source_path(f"../../{MATRIX_PROB}"),
+        # scan=workflow.source_path(f"../../{MATRIX_SCAN}"),
+        prob="../scripts/scan/matrix_prob.c",
+        scan="../scripts/scan/matrix_scan.c",
     output:
         compiled_prob=COMPILED_PROB,
         compiled_scan=COMPILED_SCAN,
@@ -297,7 +299,7 @@ rule calculate_probabilities:
         """
     input:
         pwm=rules.calculate_IntLogOdds.output,
-        matrix_prob=ancient(rules.compile_pwmscan.output.compiled_prob),
+        matrix_prob=rules.compile_pwmscan.output.compiled_prob,
     output:
         temp(PVALS_RAW),
     log:
@@ -362,7 +364,7 @@ rule scan_chromosome:
         pwm=rules.calculate_IntLogOdds.output,
         cut=rules.calculate_cutoff.output,
         ref=rules.split_genome.output,
-        matrix_scan=ancient(rules.compile_pwmscan.output.compiled_scan),
+        matrix_scan=rules.compile_pwmscan.output.compiled_scan,
     output:
         temp(SCANNED_CHROMOSOME),
     log:
