@@ -297,7 +297,7 @@ rule calculate_probabilities:
         """
     input:
         pwm=rules.calculate_IntLogOdds.output,
-        matrix_prob=rules.compile_pwmscan.output.compiled_prob,
+        matrix_prob=ancient(rules.compile_pwmscan.output.compiled_prob),
     output:
         temp(PVALS_RAW),
     log:
@@ -362,7 +362,7 @@ rule scan_chromosome:
         pwm=rules.calculate_IntLogOdds.output,
         cut=rules.calculate_cutoff.output,
         ref=rules.split_genome.output,
-        matrix_scan=rules.compile_pwmscan.output.compiled_scan,
+        matrix_scan=ancient(rules.compile_pwmscan.output.compiled_scan),
     output:
         temp(SCANNED_CHROMOSOME),
     log:
