@@ -26,6 +26,24 @@ def calculate_ic(pwm_masked: DataFrame) -> float:
     """Approximates IC from masked PWM"""
     return pwm_masked.max(axis=1).mean()
 
+def calculate_gc(pwm_masked: DataFrame) -> float:
+    """Aprroximates GC content from masked PWM"""
+    # PWM length
+    pwm_length = pwm_masked.shape[0]
+    gc_bases = []
+    # Loop over PWM
+    for row in pwm_masked.itertuples():
+        # row info
+        base_values = {'A': row.A, 'C': row.C, 'G': row.G, 'T': row.T}
+        # Max across row
+        row_max = max(base_values.values())
+        # Which base is max
+        max_base = [base for base, value in base_values.items() if value == row_max][0]
+    # If max is g/c
+    if max_base == 'G' or max_base == 'C':
+        gc_bases.append(1)
+    # Return Proportion of GC bases
+    return sum(gc_bases) / pwm_length
 
 def main() -> None:
     """
@@ -43,6 +61,9 @@ def main() -> None:
 
     # Calculate and store IC approximation
     ic = calculate_ic(pwm)
+    
+    # Calculate and store GC approximation
+    gc = calculate_gc(pwm)
 
     # Create Logo object
     pwm_logo = logomaker.Logo(pwm, flip_below=False)
@@ -58,8 +79,8 @@ def main() -> None:
     pwm_logo.ax.xaxis.set_tick_params(pad=-1)
     pwm_logo.ax.set_title(DATASET, color="r")
 
-    # Save IC
-    DataFrame({"dataset": [DATASET], "IC": [ic]}).to_csv(OP_IC, index=False, sep="\t")
+    # Save IC and GC
+    DataFrame({"dataset": [DATASET], "IC": [ic], "GC": [gc]}).to_csv(OP_IC, index=False, sep="\t")
 
     # Save figure
     plt.savefig(OP_FIG, dpi=100)
