@@ -391,7 +391,7 @@ rule calculate_cutoff:
                     break
         # Write out
         with open(output[0], "w") as f:
-            f.write(str(cutoff))
+            f.write(str(int(cutoff)))
 
 rule scan_chromosome:
     message:
