@@ -370,7 +370,6 @@ rule calculate_cutoff:
         """
     input:
         rules.calculate_probabilities.output,
-        thresholds="results/unibind/biosample_thresholds.txt",
     output:
         CUTOFF,
     params:
@@ -379,9 +378,20 @@ rule calculate_cutoff:
         stdout="workflow/logs/calculate_cutoff_{tf_name}_{profile}_{dataset}.stdout",
         stderr="workflow/logs/calculate_cutoff_{tf_name}_{profile}_{dataset}.stderr",
     run:
+        # Get the threshold from the unibind map
         threshold = DICT_THRESHOLDS[wildcards.dataset]
+        # Get score from prob that is closest to threshold
+        with open(input[0], "r") as f:
+            for line in f:
+                score = float(line.split()[0])
+                pval = float(line.split()[1])
+                perc = float(line.split()[2])
+                if perc < threshold:
+                    cutoff = score
+                    break
+        # Write out
         with open(output[0], "w") as f:
-            f.write(str(threshold))
+            f.write(str(cutoff))
 
 rule scan_chromosome:
     message:
