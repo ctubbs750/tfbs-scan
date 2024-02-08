@@ -39,9 +39,9 @@ def calculate_gc(pwm_masked: DataFrame) -> float:
         row_max = max(base_values.values())
         # Which base is max
         max_base = [base for base, value in base_values.items() if value == row_max][0]
-    # If max is g/c
-    if max_base == 'G' or max_base == 'C':
-        gc_bases.append(1)
+        # If max is g/c
+        if max_base == 'G' or max_base == 'C':
+            gc_bases.append(1)
     # Return Proportion of GC bases
     return sum(gc_bases) / pwm_length
 
