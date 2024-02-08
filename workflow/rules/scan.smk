@@ -143,7 +143,7 @@ TF_NAMES, PROFILES, DATASETS = glob_wildcards(
     os.path.join(PROFILES_DIR, "{tf_name}", "{profile}", "{dataset}" + f".{FORMAT}")
 )
 
-SCAN_THRESHOLDS = "resources/data/unibind/biosample_thresholds.txt"
+SCAN_THRESHOLDS = "results/unibind/biosample_thresholds.txt"
 DICT_THRESHOLDS = dict(
     (line.split()[0], (float(line.split()[-1])))
     for line in open(SCAN_THRESHOLDS)
