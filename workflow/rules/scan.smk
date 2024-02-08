@@ -143,6 +143,12 @@ TF_NAMES, PROFILES, DATASETS = glob_wildcards(
     os.path.join(PROFILES_DIR, "{tf_name}", "{profile}", "{dataset}" + f".{FORMAT}")
 )
 
+SCAN_THRESHOLDS = "resources/data/unibind/biosample_thresholds.txt"
+DICT_THRESHOLDS = dict(
+    (line.split()[0], (float(line.split()[-1])))
+    for line in open(SCAN_THRESHOLDS)
+)
+
 # ------------- #
 # Rules         #
 # ------------- #
@@ -330,32 +336,52 @@ rule process_probabilities:
         """
 
 
+# rule calculate_cutoff:
+#     message:
+#         """
+#         Relative threshold is percentage of best PWM.
+#         For 80%, format as integer 80. Makes life easier.
+#         Second awk grabs the head -n1, avoids pipefail
+#         """
+#     input:
+#         rules.process_probabilities.output,
+#     output:
+#         CUTOFF,
+#     params:
+#         pthresh=0.05,
+#         rthresh=80,
+#     log:
+#         stdout="workflow/logs/calculate_cutoff_{tf_name}_{profile}_{dataset}.stdout",
+#         stderr="workflow/logs/calculate_cutoff_{tf_name}_{profile}_{dataset}.stderr",
+#     conda:
+#         "../envs/tfbs-scan.yaml"
+#     shell:
+#         """
+#         # Use awk to filter the input and print the first line that matches the conditions
+#         awk '{{if($2 < {params.pthresh} && $3>={params.rthresh}) print $1}}' {input} |
+#         awk 'FNR == 1' > {output}
+#         """
+
+
 rule calculate_cutoff:
     message:
         """
-        Relative threshold is percentage of best PWM.
-        For 80%, format as integer 80. Makes life easier.
-        Second awk grabs the head -n1, avoids pipefail
+        Get interger cutoff form unibind map
         """
     input:
-        rules.process_probabilities.output,
+        rules.calculate_probabilities.output,
+        thresholds="results/unibind/biosample_thresholds.txt",
     output:
         CUTOFF,
     params:
-        pthresh=0.05,
-        rthresh=80,
+        biosample=lambda wc: wc.dataset,
     log:
         stdout="workflow/logs/calculate_cutoff_{tf_name}_{profile}_{dataset}.stdout",
         stderr="workflow/logs/calculate_cutoff_{tf_name}_{profile}_{dataset}.stderr",
-    conda:
-        "../envs/tfbs-scan.yaml"
-    shell:
-        """
-        # Use awk to filter the input and print the first line that matches the conditions
-        awk '{{if($2 < {params.pthresh} && $3>={params.rthresh}) print $1}}' {input} |
-        awk 'FNR == 1' > {output}
-        """
-
+    run:
+        threshold = DICT_THRESHOLDS[wildcards.dataset]
+        with open(output[0], "w") as f:
+            f.write(str(threshold))
 
 rule scan_chromosome:
     message:
