@@ -379,7 +379,7 @@ rule calculate_cutoff:
         stderr="workflow/logs/calculate_cutoff_{tf_name}_{profile}_{dataset}.stderr",
     run:
         # Get the threshold from the unibind map
-        threshold = DICT_THRESHOLDS[wildcards.dataset]
+        threshold = DICT_THRESHOLDS[wildcards.dataset + ".pwm"]
         # Get score from prob that is closest to threshold
         with open(input[0], "r") as f:
             for line in f:
