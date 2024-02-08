@@ -385,7 +385,7 @@ rule calculate_cutoff:
             for line in f:
                 score = float(line.split()[0])
                 pval = float(line.split()[1])
-                perc = float(line.split()[2])
+                perc = float(line.split()[2][:-1])
                 if perc < threshold:
                     cutoff = score
                     break
